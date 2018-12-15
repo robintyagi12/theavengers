@@ -1,0 +1,5 @@
+INFO  | 2018-10-08 19:55:12 | [main] logging.Log4j2Example (Log4j2Example.java:13) - This Will Be Printed On Info
+WARN  | 2018-10-08 19:55:12 | [main] logging.Log4j2Example (Log4j2Example.java:14) - This Will Be Printed On Warn
+ERROR | 2018-10-08 19:55:12 | [main] logging.Log4j2Example (Log4j2Example.java:15) - This Will Be Printed On Error
+FATAL | 2018-10-08 19:55:12 | [main] logging.Log4j2Example (Log4j2Example.java:16) - This Will Be Printed On Fatal
+INFO  | 2018-10-08 19:55:12 | [main] logging.Log4j2Example (Log4j2Example.java:18) - Appending string: Hello, World.

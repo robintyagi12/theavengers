@@ -1,0 +1,1747 @@
+﻿<Category name="Factory Suite">
+    <!-- Maximum usage of css and ids to be done -->
+
+<Environment>production</Environment>
+<ExcelLocation>.//testdata//TestData_Automation.xlsx</ExcelLocation>
+<ExcelLocationStage>.//testdata//TestData_Automation_Stage.xlsx</ExcelLocationStage>
+<ExcelLocationBreakfix>.//testdata//TestData_Automation_Breakfix.xlsx</ExcelLocationBreakfix>
+<ExcelLocationDryRun>.//testdata//TestData_Automation_DryRun.xlsx</ExcelLocationDryRun>
+<ExcelLocationProduction>.//src//test//resources//testdata//TestData_Automation_Production.xlsx</ExcelLocationProduction>
+<ExcelLocationPerfB>.//testdata//TestData_Automation_PerfB.xlsx</ExcelLocationPerfB>
+<ExcelLocationIAD>.//testdata//TestData_Automation_IAD.xlsx</ExcelLocationIAD>
+<ExcelLocationORD>.//testdata//TestData_Automation_ORD.xlsx</ExcelLocationORD>
+<Factory>
+    <HP_EmailLabel>css=[class='component-label']</HP_EmailLabel>
+	<HP_Lnk_PrivacyPolicy>css=[data-slnm-id='privacyPolicy']</HP_Lnk_PrivacyPolicy>
+	<HP_Lnk_PrivacyPolicyMobile>css=[href='/privacy']</HP_Lnk_PrivacyPolicyMobile>
+	<HP_lable_rightReserved>xpath=//*[@class='footerHover']/li[1]</HP_lable_rightReserved>
+	<MBL_HP_lable_rightReserved>xpath=//*[contains(@class,'copyRight RightFloatClass')]</MBL_HP_lable_rightReserved>
+	<HP_lnk_CaliforniaPolicy>css=[data-slnm-id='californiaPolicy']</HP_lnk_CaliforniaPolicy>
+	<HP_lnk_TermsofUse>css=[data-slnm-id='termsOfUse']</HP_lnk_TermsofUse>
+	<HP_lnk_ResponsiblyAnn>css=[data-slnm-id='responsibilityAnn']</HP_lnk_ResponsiblyAnn>
+	<HP_lnk_CaliforniaTransparency>css=[data-slnm-id='californiaTransparency']</HP_lnk_CaliforniaTransparency>
+	<HP_lnk_corporate_Investors>css=[data-slnm-id='investors']</HP_lnk_corporate_Investors>
+	<HP_lnk_SiteMap>css=[data-slnm-id='siteMap']</HP_lnk_SiteMap>
+	<HP_footer_txt_emailSignUp>css=[data-slnm-id='emailInput']</HP_footer_txt_emailSignUp>
+	<HP_Footer_Cheetah_Modal_Email_Id>xpath=//input[@id='email']</HP_Footer_Cheetah_Modal_Email_Id>
+	<HP_Footer_Cheetah_Modal_FName>xpath=.//*[@id='FNAME']</HP_Footer_Cheetah_Modal_FName>
+	<HP_Footer_Cheetah_Modal_LName>xpath=.//*[@id='LNAME']</HP_Footer_Cheetah_Modal_LName>
+	<HP_Footer_Cheetah_Modal_PinCode>xpath=//*[@id='ZIP']</HP_Footer_Cheetah_Modal_PinCode>
+	<HP_Footer_Cheetah_Modal_B_Month>xpath=//*[@id='bd0']</HP_Footer_Cheetah_Modal_B_Month>
+	<HP_Footer_Cheetah_Modal_B_Day>xpath=//*[@id='bd1']</HP_Footer_Cheetah_Modal_B_Day>
+	<HP_Footer_Cheetah_Modal_Save_Button>xpath=//*[@id='imageField']</HP_Footer_Cheetah_Modal_Save_Button>
+	<HP_Footer_Cheetah_Modal_Verification>xpath=//div[@class='footerInfo']/h1</HP_Footer_Cheetah_Modal_Verification>
+	<HP_Footer_Cheetah_Modal_Close_Button>xpath=//button[@id='modal-close']</HP_Footer_Cheetah_Modal_Close_Button>
+	
+	<HP_footer_txt_emailConfirm>css=[data-slnm-id='confirmEmailInput']</HP_footer_txt_emailConfirm>
+	<HP_footer_txt_emailConfirm_Placeholder>xpath=.//*[@data-slnm-id='confirmEmailInput']/../span[2]</HP_footer_txt_emailConfirm_Placeholder>
+	<HP_footer_lnk_customerService>css=[data-slnm-id='footerCustomerService']</HP_footer_lnk_customerService>
+	<HP_Footer_lnk_trackOrder>css=[data-slnm-id='trackOrder']</HP_Footer_lnk_trackOrder>
+	<HP_Footer_lnk_ReturnsExchanges>css=[data-slnm-id=returnsExchanges]</HP_Footer_lnk_ReturnsExchanges>
+	<HP_Footer_lnk_ShippingInfo>css=[data-slnm-id=shippingInformation]</HP_Footer_lnk_ShippingInfo>
+	<HP_Footer_lnk_SizeGuide>css=[data-slnm-id=sizeGuide]</HP_Footer_lnk_SizeGuide>
+	<HP_Footer_lnk_ContactUS>css=[data-slnm-id=contactUs]</HP_Footer_lnk_ContactUS>
+	<HP_Footer_lnk_AboutOurAds>css=[data-slnm-id=aboutAds]</HP_Footer_lnk_AboutOurAds>
+	<HP_footer_lnk_ourcompany>css=[data-slnm-id='ourCompany']</HP_footer_lnk_ourcompany>
+	<HP_footer_lnk_AboutAnnFactory>css=[data-slnm-id=aboutAnnTaylorFactory]</HP_footer_lnk_AboutAnnFactory>
+	<HP_footer_lnk_corporate>css=[data-slnm-id=corporate]</HP_footer_lnk_corporate>
+	<HP_footer_lnk_careers>css=[data-slnm-id=careers]</HP_footer_lnk_careers>
+	<HP_footer_lnk_annCares>xpath=//*[contains(@href,'anncares')]</HP_footer_lnk_annCares>
+	<HP_footer_lnk_anntaylor>css=[data-slnm-id=annTaylor]</HP_footer_lnk_anntaylor>
+	<HP_footer_lnk_loft>css=[data-slnm-id=loft]</HP_footer_lnk_loft>
+	<HP_footer_lnk_storelocator>css=a[data-slnm-id='storeLocator']</HP_footer_lnk_storelocator>
+	<HP_footer_lnk_findInStore>css=[data-slnm-id='findStore']</HP_footer_lnk_findInStore>
+	<HP_footer_img_findInStore>xpath=//*[@data-slnm-id='storeLocator']//img</HP_footer_img_findInStore>
+	<HP_lbl_CaliforniaPolicyValidation>css=[data-slnm-id='californiaPolicy']</HP_lbl_CaliforniaPolicyValidation>
+	<HP_footer_lnk_cc>css=[data-slnm-id='annTaylorCreditCard']</HP_footer_lnk_cc>
+	<HP_footer_lnk_manageccAccount>css=[data-slnm-id='manageCardAccounts']</HP_footer_lnk_manageccAccount>
+	<HP_EmailSignUp_Join>css=[data-slnm-id=newsAlertButton]</HP_EmailSignUp_Join>	
+	<HP_CreditCardLOFT>css=[data-slnm-id='creditCardImg']</HP_CreditCardLOFT>
+	<HP_MasterCardLOFT>css=[data-slnm-id='anntaylorCardImg']</HP_MasterCardLOFT>
+	<HP_CCMP_Modal_Close_Button>css=[data-slnm-id=modalWrapperCloseButton]</HP_CCMP_Modal_Close_Button>
+	
+	<!-- Home Page Footer Mobile -->
+	<MBL_HP_footer_lnk_customerService_HamBurger>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/customer-service']</MBL_HP_footer_lnk_customerService_HamBurger>
+	<MBL_HP_footer_lnk_storelocater_HamBurger>xpath=//*[@data-slnm-id='openDrawerButton']/parent::div//*[@href='/stores']</MBL_HP_footer_lnk_storelocater_HamBurger>
+	<MBL_HP_footer_lnk_storelocater_HamBurger_LO>xpath=//*[@data-slnm-id='brandLogo']/parent::div/following-sibling::div//*[@href='/stores']</MBL_HP_footer_lnk_storelocater_HamBurger_LO>
+	<MBL_HP_footer_lnk_store_HamBurger>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/stores']</MBL_HP_footer_lnk_store_HamBurger>
+	<MBL_HP_footer_lnk_login_HamBurger>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/login']</MBL_HP_footer_lnk_login_HamBurger>
+	<MBL_HP_footer_lnk_order_HamBurger>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/profile/order']</MBL_HP_footer_lnk_order_HamBurger>
+	<MBL_HP_footer_creditcard_HamBurger>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/creditCards']</MBL_HP_footer_creditcard_HamBurger>
+	<MBL_HP_footer_lnk_customerService>css=[data-slnm-id=customerServiceMobile]</MBL_HP_footer_lnk_customerService>
+	<MBL_HP_footer_lnk_storelocator>css=[data-slnm-id='storeLocatorMobile']</MBL_HP_footer_lnk_storelocator>
+	<MBL_Link_PrivacyPolicy>css=[data-slnm-id='privacyPolicy']</MBL_Link_PrivacyPolicy>
+	<MBL_HP_SubCategory>xpath=//*[@data-slnm-id='megaMenu']//li</MBL_HP_SubCategory>
+	<!-- Home Page Utility Navigation Controls -->
+	
+	<HP_UN_Lnk_ShoppingBag>xpath=//*[@href='/cart' or @data-slnm-id='bagItems']</HP_UN_Lnk_ShoppingBag>
+	<HP_UN_Lnk_StoreLocator>xpath=//*[@data-slnm-id='storeLocator']/a</HP_UN_Lnk_StoreLocator>
+	<MBL_HP_storelocater>xpath=//*[@data-slnm-id='openDrawerButton']//following::a[1]</MBL_HP_storelocater>
+	<MBL_HP_storelocater_LO>xpath=//*[@data-slnm-id='openDrawerButton']//following::a[2]</MBL_HP_storelocater_LO>
+	<HP_UN_Lnk_CreateAccount>css=[data-slnm-id='createAccount']</HP_UN_Lnk_CreateAccount>
+	<HP_UN_Lnk_OrderStatus>css=[data-slnm-id=orderStatus]</HP_UN_Lnk_OrderStatus>
+	<HP_UN_Lnk_CheckOrderStatus>css=[data-slnm-id=checkOrderStatus]</HP_UN_Lnk_CheckOrderStatus>
+	<HP_lnk_SignIn>css=[data-slnm-id='userAccount']</HP_lnk_SignIn>
+	<MBL_HP_lnk_SignIn>xpath=//*[@href='/login']</MBL_HP_lnk_SignIn>
+	<HP_Btn_GuestSignIn>css=[data-slnm-id='signIn']</HP_Btn_GuestSignIn>
+	<HP_Lnk_Search>css=[data-slnm-id=searchButton]</HP_Lnk_Search>
+	<HP_txt_SearchBox>css=[data-slnm-id='searchBar']</HP_txt_SearchBox>
+	<HP_lbl_SearchBoxText_ATF>xpath=//*[contains(text(),'help you find')]</HP_lbl_SearchBoxText_ATF>
+	<HP_lbl_SearchBoxText_LO>xpath=//*[contains(text(),'looking for')]</HP_lbl_SearchBoxText_LO>
+	<HP_Logo>css=[data-slnm-id='brandLogo']</HP_Logo>
+	<HP_PPH>xpath=//div[@id='pphBanner']</HP_PPH>
+	<MBL_PPH_AT>xpath=//div[@class='testMobilePPH']</MBL_PPH_AT>
+	<MBL_PPH_LO>xpath=//div[@id='testMobilePPH']</MBL_PPH_LO>
+	<HP_ShoppingBagMiniCart>css=</HP_ShoppingBagMiniCart>
+	<HP_MyAccountDashboard>css=</HP_MyAccountDashboard>
+	//<HP_EmailSignUp_Join>css=[data-slnm-id=newsAlertButton]</HP_EmailSignUp_Join>
+	<MBL_HP_lnk_MyAccount>xpath=//*[@href='/my-account']</MBL_HP_lnk_MyAccount>
+	
+	<!--  Login Page Controls-->
+	<MBL_HP_Lnk_MyAccountHeader>xpath=//*[contains(@class,'MyAccountPage')]/h1</MBL_HP_Lnk_MyAccountHeader>
+	<HP_Lnk_MyAccountHeader>css=[data-slnm-id='signInHeading']</HP_Lnk_MyAccountHeader>
+	<Login_txt_email>css=[data-slnm-id='loginEmail']</Login_txt_email>
+	<Login_txt_password>css=[data-slnm-id='loginPassword']</Login_txt_password>
+	<Login_btn_SignIn>css=[data-slnm-id='loginSubmit']</Login_btn_SignIn>
+	
+	<!-- Home Page Top Navigation Controls -->
+	<HP_TN>css=[data-component='MainNavigation']</HP_TN>
+	<Header_TopNavigationMenu>xpath=.//*[@data-slnm-id='navbar']/ul</Header_TopNavigationMenu>
+	<SubHeader_Lnk_TopNavigation>xpath=.//*[@data-slnm-id='navbar']/ul/li</SubHeader_Lnk_TopNavigation>
+	<SubMenuList>xpath=.//*[@data-slnm-id='megaMenu']</SubMenuList>
+	<TP_SubMenuCategoryListType>xpath=.//*[@data-slnm-id='megaMenu']/div</TP_SubMenuCategoryListType>
+	<TP_TallCategory>xpath=.//*[contains(@href,'tall')]</TP_TallCategory>
+	<TP_TallSubCategory>css=</TP_TallSubCategory> <!-- Any sub link  after clicking TALL megaMenu-->
+	<PLP_lnk_Tall_PDP>css=</PLP_lnk_Tall_PDP> <!-- any product -->
+	<PLP_AllProductListing>css=</PLP_AllProductListing> <!-- Complete div of PLP page -->
+	<HP_MegaMenu>xpath=//nav[@data-slnm-id='navbar']//li</HP_MegaMenu>
+	
+	<PLP_Loading_More>xpath=//*[contains(text(),'LOADING MORE')]</PLP_Loading_More>
+	
+	<!-- Home Page Utility Navigation Controls Mobile-->
+	
+	<MB_HamBurger>css=[data-slnm-id='openDrawerButton']</MB_HamBurger>
+	<MB_logo>xpath=//*[contains(@class,'logo')]</MB_logo>
+	<MB_SearchBox_lbl_text>xpath=//*[contains(@class,'icon search')]/parent::label//span[text()='Search']</MB_SearchBox_lbl_text>
+	<MB_SearchBox>css=[data-slnm-id=searchBar]</MB_SearchBox>
+	<MB_CustomerService>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/customer-service']</MB_CustomerService>
+	<MB_CreditCard>xpath=.//*[@href='/creditCards']</MB_CreditCard>
+	<MB_Logo>css=[data-slnm-id='brandLogo']</MB_Logo>
+	<MB_Promo>css=[class='mobilepromo']</MB_Promo>
+	<MB_SignIn>css=[href='/login']</MB_SignIn>
+	<MB_OrderStatus>xpath=.//nav[@data-slnm-id='navbar']/following-sibling::ul//a[@href='/profile/order']</MB_OrderStatus>
+	<MB_CloseIcon>css=[data-slnm-id='closeDrawerButton']</MB_CloseIcon>
+	<MBL_SignUp_IOS>Sign up for Email Updates</MBL_SignUp_IOS>
+	<MBL_ConfirmSignUp>Confirm email address</MBL_ConfirmSignUp>
+	
+	<!-- Home Page Ham Burger Menu Mobile-->
+	<MB_TopNavigationCategories>xpath=.//*[@data-slnm-id='navbar']/ul</MB_TopNavigationCategories>
+	<MB_TopNavigationIndividualCategory>xpath=.//*[@data-slnm-id='navbar']/ul/li/button</MB_TopNavigationIndividualCategory>
+	<MB_SubMenuList>xpath=.//*[@data-slnm-id='megaMenu']//a</MB_SubMenuList>
+	<MB_TP_SubMenuCategoryListType>xpath=.//*[@data-slnm-id='megaMenu']/div</MB_TP_SubMenuCategoryListType>
+	<MB_HamBurgerClosed>xpath=.//*[contains(@class,'drawer-open')]</MB_HamBurgerClosed>
+	<!-- messages check -->
+	<err_EmailSignUp>xpath=.//*[contains(@class,'is-error')]/following-sibling::*[contains(text(),'address')]</err_EmailSignUp>
+	<Join_ThankYou>xpath=.//*[contains(text(),'MY PREFERENCES')]</Join_ThankYou>
+	<err_EmailAddressInvalidEmail>xpath=.//*[contains(text(),'Invalid email')]</err_EmailAddressInvalidEmail>
+	<Join_EmailAddress>css=intput#email</Join_EmailAddress>
+	<Join_SelectEmailList>xpath=.//*[contains(text(),'Select Email')]/parent::*/parent::*/following-sibling::*</Join_SelectEmailList>
+	
+	<!-- PDP Page Controls -->	
+	<PDP_btn_FlyoutViewBag>css=[data-slnm-id='checkoutNowButton']</PDP_btn_FlyoutViewBag>
+	<PDP_btn_FlyoutCheckout>xpath=.//*[contains(text(),'Checkout Now')]</PDP_btn_FlyoutCheckout>
+	<PDP_BreadCrumb>xpath=.//*[@data-slnm-id='breadcrumb']/a</PDP_BreadCrumb>
+	<PDP_BreadCrumb_Parent>css=[data-slnm-id='breadcrumb']</PDP_BreadCrumb_Parent>
+	<PDP_CompleteBreadCrumb>xpath=.//*[@data-slnm-id='breadcrumb']</PDP_CompleteBreadCrumb>
+	<PDP_ProductName>css=[data-slnm-id=modalWrapperProductName]</PDP_ProductName>	
+	<PDP_Rating>css=</PDP_Rating>
+	<PDP_Price>xpath=//*[@data-slnm-id='priceDisplay']/div[contains(@class,'price')]</PDP_Price>
+	<PDP_ColorSwatchPrice>xpath=.//*[@data-slnm-id='priceDisplay']</PDP_ColorSwatchPrice>
+	<PDP_Lnk_ColorSwatch>css=[data-slnm-id='color-swatches']</PDP_Lnk_ColorSwatch>
+	<PDP_Lnk_ColorSwatchDefault>xpath=//*[@data-slnm-id='color-swatches' and @aria-checked='true']</PDP_Lnk_ColorSwatchDefault>
+	<PDP_Lnk_ColorSwatchQuickShop>css=[data-slnm-id=color-swatches]</PDP_Lnk_ColorSwatchQuickShop>
+	<PDP_Lnk_SizeType>css=[data-slnm-id=sizeTypes]>*</PDP_Lnk_SizeType>
+	<PDP_Lnk_MB_SizeType_Options>css=[class=sizeTypes-select]>*</PDP_Lnk_MB_SizeType_Options>
+	<PDP_ColorSwatchName>xpath=//*[contains(@class,'name-displayed')]//span[contains(@class,'color-swatches-name')]</PDP_ColorSwatchName>
+	<PDP_Lnk_MB_SizeType>css=[class=sizeTypes-select]</PDP_Lnk_MB_SizeType>
+	<PDP_Lnk_SizeSwatch>css=[data-slnm-id=sizeSwatches]</PDP_Lnk_SizeSwatch>
+	<PDP_btn_AddToBag>css=[data-slnm-id='addToBag']</PDP_btn_AddToBag> 
+	<PDP_Lnk_MB_SizeSwatch>xpath=//select[contains(@class,'sizeSwatche')]</PDP_Lnk_MB_SizeSwatch>
+	<PDP_Lnk_MB_SizeSwatch_options>xpath=//select[contains(@class,'sizeSwatche')]//*</PDP_Lnk_MB_SizeSwatch_options>
+	<PDPAddToBagNotification>xpath=//*[text()='Checkout Now']</PDPAddToBagNotification> 
+	<PDP_ProductInfomationAccordionLabel>css=[data-slnm-id=productInformation]</PDP_ProductInfomationAccordionLabel>
+	<PDP_FabricInfoLabel>css=[data-slnm-id=fabricCareText]</PDP_FabricInfoLabel>
+	<PDP_FabricInfoDesc>xpath=.//*[@data-slnm-id='fabricCareText']/..//ul</PDP_FabricInfoDesc>
+	<PDP_SizeGuide>css=[data-slnm-id=sizeGuide]</PDP_SizeGuide>
+	<PDP_LO_lnk_SizeChart>css=[data-slnm-id=sizeChartButton]</PDP_LO_lnk_SizeChart>
+	<PDP_SizeChart_Modal>css=[data-slnm-id=sizeGuideModal]</PDP_SizeChart_Modal>
+	<PDP_MB_SizeGuide>xpath=.//*[contains(text(),'SIZE CHART')]</PDP_MB_SizeGuide>
+	<PDP_ShippingReturn>css=[data-slnm-id=shippingAndReturns]</PDP_ShippingReturn>
+	<PDP_ShippingReturnToolTip>xpath=//*[@data-slnm-id='shippingAndReturnsBodyText']//*[@data-slnm-id='toolTipCTA']//parent::span</PDP_ShippingReturnToolTip>
+	<PDP_ShippingReturnToolTip_Desc>xpath=//*[@data-slnm-id='shippingAndReturnsBodyText']//*[@data-slnm-id='toolTipBubble']</PDP_ShippingReturnToolTip_Desc>
+	<PDP_ShippingLink>xpath=//*[@data-slnm-id='shippingAndReturnsBodyText']//a[text()='Shipping']</PDP_ShippingLink>
+	<PDP_ReturnLink>xpath=//*[@data-slnm-id='shippingAndReturnsBodyText']//a[text()='Returns']</PDP_ReturnLink>
+	<PDP_SocialLinksPI>xpath=//*[@data-tool-tip='social-share-pinterest']</PDP_SocialLinksPI>
+	<PDP_SocialLinksFB>xpath=//*[@data-tool-tip='social-share-facebook']</PDP_SocialLinksFB>
+	<PDP_SocialLinksPIToolTip>xpath=//*[@data-tool-tip='social-share-pinterest']/parent::*/parent::*//span[@data-slnm-id='toolTipBubble']//div</PDP_SocialLinksPIToolTip>
+	<PDP_SocialLinksFBToolTip>xpath=//*[@data-tool-tip='social-share-facebook']/parent::*/parent::*//span[@data-slnm-id='toolTipBubble']//div</PDP_SocialLinksFBToolTip>
+	<PDP_SocialLinksPIToolTipImg>xpath=//*[@data-tool-tip='social-share-pinterest']/parent::*/parent::*//span[@data-slnm-id='toolTipBubble']//div//*[2]</PDP_SocialLinksPIToolTipImg>
+	<PDP_SocialLinksFBToolTipImg>xpath=//*[@data-tool-tip='social-share-facebook']/parent::*/parent::*//span[@data-slnm-id='toolTipBubble']//div//img</PDP_SocialLinksFBToolTipImg>
+	<PDP_FB_Lnk_LO>xpath=//*[contains(@href,'facebook')]</PDP_FB_Lnk_LO>
+	<PDP_Pinterest_Lnk_LO>xpath=//*[contains(@href,'pinterest')]</PDP_Pinterest_Lnk_LO>
+	<PinterestFrame>xpath=//iframe[contains(@id,'ssIFrame_google')]</PinterestFrame>
+	<PDP_Pinterest>xpath=//input[@id='email']</PDP_Pinterest>
+	<PDP_MB_SizeGuide_Clicked>css=[data-slnm-id=sizeGuideModalTitle]</PDP_MB_SizeGuide_Clicked>
+	<PDP_MB_SizeGuideClose>css=[data-slnm-id=sizeGuideModalCloseButton]</PDP_MB_SizeGuideClose>
+	<PDP_ErrorMessageBag>css=[data-slnm-id='detailAddToBag']>div</PDP_ErrorMessageBag>
+	<PDP_BagFlyout>css=[data-slnm-id=modalWrapper]</PDP_BagFlyout>
+	<PDP_FlyoverProductInfomation>xpath=.//*[@data-slnm-id='itemImage']/parent::*/following-sibling::div[1]</PDP_FlyoverProductInfomation>
+	<PDP_MB_FLyOutProductInfomation>css=[class=mobileDescription]</PDP_MB_FLyOutProductInfomation>
+	<PDP_MB_SizeGuide_Clicked_LO>xpath=.//*[text()='SIZE CHART']</PDP_MB_SizeGuide_Clicked_LO>
+	<PDP_FlyoverProductImage>css=[data-slnm-id='itemImage']</PDP_FlyoverProductImage>
+	<PDP_FlyoverProductPrice>css=[data-slnm-id='itemOriginalPrice']</PDP_FlyoverProductPrice>
+	<PDP_ShoppingBagProduct>xpath=.//*[contains(@class,'product-detail')]</PDP_ShoppingBagProduct>
+	<PDP_continueShopping>xpath=.//*[contains(text(),'Continue Shopping')]</PDP_continueShopping>
+	<PDP_ProductInfomationAccordionDetail>css=[data-slnm-id=productInformationBodyText]</PDP_ProductInfomationAccordionDetail>
+	<PDP_ProductInfomationAccordionDescription>xpath=(.//*[@data-slnm-id='productInformationBodyText']//p)[1]</PDP_ProductInfomationAccordionDescription>
+	<PDP_ProductInfomationAccordionDescription_2>xpath=(.//*[@data-slnm-id='productInformationBodyText']//p)[2]</PDP_ProductInfomationAccordionDescription_2>
+	<PDP_ProductInfomationAccordionDescription_3>xpath=(.//*[@data-slnm-id='productInformationBodyText']//p)[3]</PDP_ProductInfomationAccordionDescription_3>
+	<PDP_ViewSizeGuide_Link>xpath=//*[text()='View full size guide']</PDP_ViewSizeGuide_Link>
+	<PDP_ShippingReturnDescription>css=[data-slnm-id=shippingAndReturnsBodyText]</PDP_ShippingReturnDescription>
+	<PDP_priceRange>css=[data-slnm-id='priceDisplay']</PDP_priceRange>
+	<PDP_FirstPricePMP>xpath=(.//*[@data-slnm-id='priceDisplay'])[2]//*</PDP_FirstPricePMP>
+	<PDP_OutofStock>css=[data-slnm-id=outOfStockText]</PDP_OutofStock>
+	<PDP_OOS_Message>css=[class='out-of-stock-msg']</PDP_OOS_Message>
+	<PDP_lnk_Shipping>xpath=.//*[@class='shippingPolicy']/a[1]</PDP_lnk_Shipping>
+	<PDP_lnk_ReturnPolicy>xpath=.//*[@class='shippingPolicy']/a[2]</PDP_lnk_ReturnPolicy>
+	<PDP_ShopNewArrival>css=[data-slnm-id=outOfStockButton]</PDP_ShopNewArrival>
+	<PDP_LeftNavOpenCategoryName>xpath=//*[contains(@data-slnm-id,'left-nav-list-item')]//i[contains(@class,'expanded')]/ancestor::*[contains(@data-slnm-id,'leftNavProductCategory')]</PDP_LeftNavOpenCategoryName>
+	<PDP_LeftNaviagtionCategoriesPan>xpath=</PDP_LeftNaviagtionCategoriesPan>
+	<PDP_LeftNavSubCategory>xpath=//*[contains(@data-slnm-id,'left-nav-list-item')]//i[contains(@class,'expanded')]</PDP_LeftNavSubCategory>
+	<PDP_LeftNavSubCategoryName>xpath=//*[contains(@data-slnm-id,'left-nav-list-item')]//i[contains(@class,'expanded')]/parent::a/span</PDP_LeftNavSubCategoryName>
+	<PDP_MB_SizeDesc>xpath=//*[@class='modal-body']</PDP_MB_SizeDesc>
+	<PDP_BreadCrumbArrows>xpath=//*[@data-slnm-id='breadcrumb']//span[2]</PDP_BreadCrumbArrows>
+	<PDP_productImage>//div[@class='slider-frame']//img</PDP_productImage>
+	<MBL_PDP_OSS_Message>css=[class=out-of-stock-msg]</MBL_PDP_OSS_Message>
+	<Allow_NewTab_IOS>Allow</Allow_NewTab_IOS>
+	<PDP_Size_androidATF>//android.widget.Spinner[contains(@text,'Select a size')]</PDP_Size_androidATF>
+	<PLP_SortBy_androidLO>//android.widget.Spinner[contains(@text,'Please select a size')]</PLP_SortBy_androidLO>
+
+	<PDP_MiniBag_orderValue>xpath=//div[contains(@class,'sub-total')]</PDP_MiniBag_orderValue>
+	<PDP_MiniBag_productLNK>xpath=//*[contains(@data-slnm-id,'itemName')]//a</PDP_MiniBag_productLNK>
+
+
+	<PDP_MarketingMsg>css=[data-slnm-id=marketingMessage]</PDP_MarketingMsg>
+	<PDP_ShippingReturnsIcon>xpath=//div[@class='shippingEstimated']/span[1]</PDP_ShippingReturnsIcon>
+	<PDP_ShippingReturnsIconToolTip>xpath=//div[@class='shippingEstimated']//span[@data-slnm-id='toolTipBubble']</PDP_ShippingReturnsIconToolTip>
+	<PDP_FinalSaleMsg>xpath=//div[@data-slnm-id='priceDisplay']/parent::*//div[contains(text(),'Final Sale')]</PDP_FinalSaleMsg>
+	
+    <BV_WriteAReviewLink>xpath=//*[@id='WAR' or text()='  Write a Review ']</BV_WriteAReviewLink>
+    <BV_SelectRating>xpath=.//*[@id='bv-radio-rating-5']/span[1]</BV_SelectRating>
+    <BV_ReviewTitle>xpath=.//*[@id='bv-text-field-title']</BV_ReviewTitle>
+    <BV_Reviews>xpath=.//*[@id='bv-textarea-field-reviewtext']</BV_Reviews>
+    <BV_recommended>xpath=.//*[@id='bv-radio-isrecommended-true-label']</BV_recommended>
+    <BV_nickname>xpath=//*[@id="bv-text-field-usernickname"]</BV_nickname>
+    <BV_wheredoyoulive>xpath=//*[@id="bv-text-field-userlocation"]</BV_wheredoyoulive>
+    <BV_email>xpath=//*[@id="bv-email-field-hostedauthentication_authenticationemail"]</BV_email>
+    <BV_age>xpath=.//*[@id='bv-select-field-contextdatavalue_Age']</BV_age>
+    <BV_style>xpath=//*[@id="bv-select-field-contextdatavalue_Style"]</BV_style>
+    <BV_bodyType>xpath=//*[@id="bv-select-field-contextdatavalue_BodyType"]</BV_bodyType>
+    <BV_height>xpath=//*[@id="bv-select-field-contextdatavalue_HeightFt"]</BV_height>
+    <BV_inches>xpath=//*[@id="bv-select-field-contextdatavalue_HeightIn"]</BV_inches>
+    <BV_firsttimepurchase>xpath=//*[@id='bv-select-field-contextdatavalue_FirstTime']</BV_firsttimepurchase>
+    <BV_reviewsread>xpath=//*[@id='bv-select-field-contextdatavalue_ReadReviews'or @id='bv-select-field-contextdatavalue_ReadReviews_1']</BV_reviewsread>
+    <BV_wheredoyoupurchase>xpath=//*[@id='bv-select-field-contextdatavalue_WhereDidYouPurchase' or @id='bv-select-field-contextdatavalue_WhereDidYouPurchase_1']</BV_wheredoyoupurchase>
+    <BV_fit>xpath=//*[@id="bv-radio-rating_Fit-3-label"]/span[1]</BV_fit>
+    <BV_recommend>xpath=//*[@id="bv-radio-netpromoterscore-10-label"]</BV_recommend>
+    <BV_termsagree>xpath=//*[@id="bv-checkbox-reviews-termsAndConditions"]</BV_termsagree>
+    <BV_reviewsubmit>xpath=//*[@name="bv-submit-button"]</BV_reviewsubmit>
+    <BV_reviewsubmitconfirmation>xpath=//*[@id="bv-mbox-label-text"]</BV_reviewsubmitconfirmation>
+	
+
+	
+							<!-- FIS Controls -->
+	<FIS_locateStoreBtn>xpath=//button[contains(text(),'Find In Store')]</FIS_locateStoreBtn>
+	<FIS_findInStoreBtn>xpath=(//button[contains(text(),'Find In Store')])[2]</FIS_findInStoreBtn>
+	<FIS_ErrorMsg>xpath=//*[contains(text(),'Please enter a zip or city')]</FIS_ErrorMsg>
+	<FIS_ErrorMsg_afterZip>xpath=//p[contains(text(),'Please select a size to continue.')]</FIS_ErrorMsg_afterZip>
+	<FIS_Enter_ZipCode>id=find-in-store-location</FIS_Enter_ZipCode>
+	<FIS_closeFIS>css=[data-slnm-id='modalWrapperCloseButton']</FIS_closeFIS>
+	<FIS_distance>xpath=//ul[@role='presentation']/li</FIS_distance>
+	<FIS_distanceValue_Mbl>xpath=//option[contains(text(),'Miles')]</FIS_distanceValue_Mbl>
+	<FIS_defaultDistanceValue>xpath=//span[contains(text(),'Miles')]</FIS_defaultDistanceValue>
+	<FIS_distance_dropdown>css=[data-slnm-id='undefinedSelectBoxLabel']</FIS_distance_dropdown>
+	<MBL_FIS_distance_dropdown>css=[data-slnm-id='undefinedNativeSelectBox']</MBL_FIS_distance_dropdown>
+	<FIS_Logo>xpath=//*[@class='logo']/img</FIS_Logo>
+	<FIS_PhoneNumber>xpath=//*[contains(@href,'tel:')]</FIS_PhoneNumber>
+	<FIS_continueShop>css=[aria-label='Continue Shopping']</FIS_continueShop>
+	<FIS_FindAddress>xpath=//div[@class='store']</FIS_FindAddress>
+	<FIS_SizeAndroid>android.widget.Spinner</FIS_SizeAndroid>
+	<FIS_ColorSwatchName>xpath=.//span[contains(text(),'color:')]</FIS_ColorSwatchName>
+	<FIS_Size>xpath=.//span[contains(text(),'size:')]</FIS_Size>
+	<FIS_Style>xpath=.//*[@data-slnm-id='modalWrapper']//*[contains(text(),'Style #')]</FIS_Style>
+	<FIS_totalStore>xpath=.//*[@class='row search-info']//span</FIS_totalStore>
+	<FIS_result>xpath=.//*[@class='row search-info']</FIS_result>
+	<FIS_distance_Mbl>css=[data-slnm-id='undefinedNativeSelectBox']</FIS_distance_Mbl>
+	<FIS_zipCode_IOS>Search Zip, City, or State</FIS_zipCode_IOS>
+	<FIS_BackToFIS>css=[data-slnm-id='backToFindInStore']</FIS_BackToFIS>
+	<FIS_GetDirections>xpath=//a[contains(@class,'get-directions') or @aria-label="MAP"]</FIS_GetDirections>
+	<MBL_FIS_GetDirections>xpath=//div[@class='details']/a</MBL_FIS_GetDirections>
+	<FIS_StoreResult></FIS_StoreResult>
+	<FIS_StoreLocator_PickupStore></FIS_StoreLocator_PickupStore>
+	<!-- ShoppingBag Page Controls -->
+	dd-optns-3
+	<SB_edit_drpdwn_qty>css=[data-slnm-id='editCartQuantity-0-SelectBoxLabel']</SB_edit_drpdwn_qty>
+	<SB_Header>css=[data-slnm-id=bagHeading]</SB_Header>
+	<SB_ProceedToCheckout>css=[data-slnm-id=proceedToCheckout]</SB_ProceedToCheckout>
+	<SB_ProductImage>xpath=.//*[@data-slnm-id='itemImage']/..</SB_ProductImage>
+	<SB_ProductName>css=[data-slnm-id=itemName]</SB_ProductName>
+	<SB_ProductPrice>css=[data-slnm-id=itemOriginalPrice]</SB_ProductPrice>
+	<SB_PromoDiscountPrice>css=[data-slnm-id=itemDiscountedPrice]</SB_PromoDiscountPrice>
+	<SB_StyleId>css=[data-slnm-id=itemStyleId]</SB_StyleId>
+	<SB_lbl_EmptySBMessage>css=[data-slnm-id=emptyShoppingBagPageMessage]</SB_lbl_EmptySBMessage>
+	<SB_ShoppingBagItems>xpath=//*[@data-slnm-id='itemImage']//ancestor::li</SB_ShoppingBagItems>
+	<SB_btn_ContinueShopping>css=[data-slnm-id=emptyShoppingBagPageLink]</SB_btn_ContinueShopping>
+	<SB_chkbox_giftBox></SB_chkbox_giftBox>
+	<SB_lbl_selected_size_type>css=[data-slnm-id=itemSizeTypeLabel]</SB_lbl_selected_size_type>
+	<SB_lnk_selected_size_type>css=[data-slnm-id=itemSizeTypeValue]</SB_lnk_selected_size_type>
+	<SB_lbl_Size>css=[data-slnm-id=itemSizeLabel]</SB_lbl_Size>
+	<SB_Size>css=[data-slnm-id=itemSizeValue]</SB_Size>
+	<SB_editQuantity>xpath=.//*[@data-slnm-id='editCartQuantity-0-SelectBoxLabel']//i</SB_editQuantity>
+	<SB_quantityOption>xpath=.//*[contains(@data-slnm-id,'editCartQuantity-0-SelectBoxOption')]</SB_quantityOption>
+	<SB_MB_quantityOption>xpath=//select[contains(@class,'form-control')]</SB_MB_quantityOption>
+	<MBL_ShoppingBagCount>css=[class='quantity']</MBL_ShoppingBagCount>	
+	<SB_lbl_color>css=[data-slnm-id=itemColorLabel]</SB_lbl_color>
+	<SB_selected_color>css=[data-slnm-id=itemColorValue]</SB_selected_color>
+	<SB_lbl_Qty>css=[data-slnm-id=itemQuantityLabel]</SB_lbl_Qty>
+	<SB_Qty_value>css=[data-slnm-id=itemQuantityValue]</SB_Qty_value>
+	<SB_btn_Edit>css=[data-slnm-id=itemEditButton]</SB_btn_Edit>
+	<SB_btn_Remove>css=[data-slnm-id=itemRemoveButton]</SB_btn_Remove>
+	<SB_closenessQualifier></SB_closenessQualifier>
+	<SB_EditModalColor>xpath=//*[contains(@data-slnm-id,'color-swatches')]//button</SB_EditModalColor>
+	<SB_Edit_errmsgSize>css=[class=error-messages]</SB_Edit_errmsgSize>
+	<SB_Edit_errmsgColor></SB_Edit_errmsgColor>
+	<SB_EditSizeList_Mobile>xpath=//select[contains(@class,'sizeSwatches')]</SB_EditSizeList_Mobile>
+	<SB_EditSizeList_Options_Mobile>xpath=//*[contains(@class,'sizeSwatches')]//select/option</SB_EditSizeList_Options_Mobile>
+	<SB_EditSizeList>xpath=.//*[contains(@class,'sizeSwatches')]/button</SB_EditSizeList>
+	<SB_btn_saveEdit>css=[data-slnm-id='itemSaveButton']</SB_btn_saveEdit>
+	<SB_btn_cancelEdit>css=[data-slnm-id=itemCancelButton]</SB_btn_cancelEdit>
+	<SB_lbl_promoMessage>css=p.error</SB_lbl_promoMessage>
+	<SB_lbl_promoSuccess>xpath=//*[@data-slnm-id='promotionalCodeSuccessMessage']</SB_lbl_promoSuccess>
+	<SB_DonationList>xpath=//div[contains(@class,'donation_wrapper')]//area[@class='add_donation']</SB_DonationList>
+	<SB_OrderSummaryTitle>css=[data-slnm-id=orderSummaryTitle]</SB_OrderSummaryTitle>
+	<SB_OrderSummary_Section>css=[data-slnm-id=order-summary]</SB_OrderSummary_Section>
+	<SB_OSOrderMerchandise_lbl>css=[data-slnm-id=merchandise-label]</SB_OSOrderMerchandise_lbl>
+	<SB_OSOrderMerchandise_value>css=[data-slnm-id=merchandise-total]</SB_OSOrderMerchandise_value>
+	<SB_OSTaxes_lbl>css=[data-slnm-id=est-taxes-label]</SB_OSTaxes_lbl>
+	<SB_OSTaxes_value>css=[data-slnm-id=est-taxes]</SB_OSTaxes_value>
+	<SB_OSShipping_lbl>css=[data-slnm-id='est-shipping-label']</SB_OSShipping_lbl>
+	<SB_OSShipping_value>css=[data-slnm-id=est-shipping]</SB_OSShipping_value>
+	<SB_OSShippingStandard>css=[data-slnm-id=shippingMethodPrice-Standard]</SB_OSShippingStandard>
+	<SB_OSOrderTotal_lbl>css=[data-slnm-id=orderTotal]</SB_OSOrderTotal_lbl>
+	<SB_OSOrderTotal_value>css=[data-slnm-id=orderTotal]>span.amount-value</SB_OSOrderTotal_value>
+	<SB_OSOrderGift_lbl>css=[data-slnm-id=order-gift]</SB_OSOrderGift_lbl>
+	<SB_OSOrderGift_value>xpath=//*[contains(@data-slnm-id,'order-gift-value')]</SB_OSOrderGift_value>
+	<SB_OSOrderBalToCC_lbl>css=[data-slnm-id=final-total]</SB_OSOrderBalToCC_lbl>
+	<SB_OSOrderBalToCC_value>css=[data-slnm-id=final-total]>span.amount-value</SB_OSOrderBalToCC_value>
+	<SB_OrderSummary_EstTax_TooltipInfo>css=[data-slnm-id=estimatedShippingTaxTooltip]</SB_OrderSummary_EstTax_TooltipInfo>
+	<SB_OrderSummary_EstTax_TooltipInfotext>xpath=//*[@class='est-taxes']//*[@data-slnm-id='toolTipBubble']</SB_OrderSummary_EstTax_TooltipInfotext>
+	<SB_OrderSummary_ShippingHandling_TooltipInfo>css=[data-slnm-id=estimatedShippingTooltip]</SB_OrderSummary_ShippingHandling_TooltipInfo>
+	<SB_OrderSummary_ShippingHandling_TooltipInfoText>xpath=//*[contains(@class,'est-shipping')]//*[@data-slnm-id='toolTipBubble']</SB_OrderSummary_ShippingHandling_TooltipInfoText>
+	<SB_Paypal>css=[data-slnm-id=paypalButton]</SB_Paypal>
+	<SB_HaveAPromoCodeSection>xpath=//*[@data-slnm-id='promotionalCodeSection']/parent::li</SB_HaveAPromoCodeSection>
+	<SB_HaveAPromoCode>css=[data-slnm-id=promotionalCodeSection]</SB_HaveAPromoCode>
+	<SB_promoCodeLabel>css=[data-slnm-id=promotionalCodelabel]</SB_promoCodeLabel>
+	<SB_PromoCodeTxtBox>css=[data-slnm-id=promotionalCodeInput]</SB_PromoCodeTxtBox>
+	<SB_PromoApplyButton>css=[data-slnm-id=promotionalCodeApplyButton]</SB_PromoApplyButton>
+	<SB_promoMarketingBanner>id=checkoutBanner</SB_promoMarketingBanner>
+	<SB_promoMarketingBannerLNK>xpath=//div[@id='checkoutBanner']//a</SB_promoMarketingBannerLNK>
+	<SB_PromoMessageSucess>css=[data-slnm-id=promotionalCodeSuccessMessage]</SB_PromoMessageSucess>
+	<SB_PromoMessageError>css=[data-slnm-id=promoErrorMessage]</SB_PromoMessageError>
+	<SB_promoToolTip>xpath=//section[@data-slnm-id='promotionalCodeSection']//span[@data-slnm-id='toolTipCTA']</SB_promoToolTip>
+	<SB_promoCodeSection>css=[data-slnm-id=promotionalCodeTooltipIconCheckout]</SB_promoCodeSection>
+	<SB_promoCodeMarketingPopUp>xpath=//p[@id='popupMain']</SB_promoCodeMarketingPopUp>
+	<SB_promoToolTipMsg>xpath=//section[@data-slnm-id='promotionalCodeSection']//span[@data-slnm-id='toolTipBubble']</SB_promoToolTipMsg>
+	<SR_PromoApplied>css=[data-slnm-id=promotionalCodeName]</SR_PromoApplied>
+	<SB_AppliedPromoRemove>css=[data-slnm-id=promotionalCodeRemoveButton]</SB_AppliedPromoRemove>
+	<SB_ItemDiscountPromoAppliedMsg>xpath=//*[contains(@data-slnm-id,'promoAppliedIcon')]</SB_ItemDiscountPromoAppliedMsg>
+	<SB_LiveChatLink>css=[data-slnm-id=btnChatOpen]</SB_LiveChatLink>
+	<SB_LiveChatPopup>xpath=//*[@titleid='react-aria-modal']</SB_LiveChatPopup>
+	<SB_LiveChatPage_Mobile>css=iframe[data-slnm-id='iframeChat']</SB_LiveChatPage_Mobile>
+	<SB_PageHeader>css=[data-slnm-id=bagHeading]</SB_PageHeader>
+	<SB_DonationItem>xpath=//div[@class='donation_wrapper']</SB_DonationItem>
+	<DonationItemShoppingBag></DonationItemShoppingBag>
+	<OS_DonationItem></OS_DonationItem>
+	<SB_LoginModalGuestEmail>xpath=//h4[text()='Guest Checkout']/parent::div[contains(@class,'content')]//input</SB_LoginModalGuestEmail>
+	<SB_LoginModalRegCustmEmail>css=[data-slnm-id='loginEmail']</SB_LoginModalRegCustmEmail>
+	<SB_LoginModalRegCustmPwd>css=[data-slnm-id='loginPassword']</SB_LoginModalRegCustmPwd>
+	<SB_LoginModalRegisteredSignIn>css=[data-slnm-id='loginSubmit']</SB_LoginModalRegisteredSignIn>
+	<SB_LoginModalGuestContinue>xpath=//h4[text()='Guest Checkout']/parent::div[contains(@class,'content')]//button[contains(text(),'CONTINUE')]</SB_LoginModalGuestContinue>
+	<MBL_SB_LoginModalGuestContinue>xpath=//button[contains(.,'CHECKOUT AS GUEST')]</MBL_SB_LoginModalGuestContinue>
+	<MBL_SB_LoginModalRegisteredSignIn>css=[data-slnm-id='loginSubmit']</MBL_SB_LoginModalRegisteredSignIn>
+	<SBEditSizeTypeList>css=[data-slnm-id=sizeTypes]>*</SBEditSizeTypeList>
+	<SBEditSizeTypeList_Mobile></SBEditSizeTypeList_Mobile>
+	<SBEditSizeTypeList_Options_Mobile></SBEditSizeTypeList_Options_Mobile>
+	<SB_ItemCount>xpath=//*[@data-slnm-id='bagItems']</SB_ItemCount>
+	<CheckOut_lblcheckout>xpath=//*[@data-slnm-id='modalWrapper']//h4</CheckOut_lblcheckout>
+	<Checkout_FlyoutDisplay>xpath=.//div[contains(@class,'modal')]//*[text()='CHECKOUT']</Checkout_FlyoutDisplay>
+	<GuestCheckout_FlyoutDisplay>css=[data-slnm-id='checkoutSignInHeading']</GuestCheckout_FlyoutDisplay>
+	<Checkout_EmailValidIcon>xpath=.//*[contains(@class,'valid-icon')]</Checkout_EmailValidIcon>
+	<checkout_checkoutAsGuest>xpath=//*[contains(text(),'CHECKOUT AS GUEST')]</checkout_checkoutAsGuest>
+	<SB_promoSaving>css=[data-slnm-id=promo-savings]</SB_promoSaving>
+	<SB_promoSavingValue>css=[data-slnm-id='promo-savings']>*</SB_promoSavingValue>
+	<SB_InventoryMsg>xpath=//div[contains(@class,'error-messages')]//div[contains(.,'There is not enough')]</SB_InventoryMsg>
+	<SB_MiniBagFlyout>xpath=//div[contains(@class,'flyout')]</SB_MiniBagFlyout>
+	<SB_guestCheckout_Flyout_subHeader>xpath=.//*[@data-slnm-id='checkoutSignInHeading']/following-sibling::p</SB_guestCheckout_Flyout_subHeader>
+	<SB_RegisteredCheckoutHeader>xpath=//*[contains(@data-slnm-id,'signInHeading')]</SB_RegisteredCheckoutHeader>
+	<SB_forgotPwd_overlay>xpath=//*[@data-slnm-id='modalWrapperTitle'][contains(text(),'FORGOT PASSWORD')]</SB_forgotPwd_overlay>
+	<SB_RegisteredCheckout_errorMsgHeader>xpath=//*[contains(@class,'sign-in-error')]</SB_RegisteredCheckout_errorMsgHeader>
+	<SB_RegisteredCheckout_pwd_errorMsg>css=[data-slnm-id='InputField-error']</SB_RegisteredCheckout_pwd_errorMsg>
+	<SB_paypal_lbl>xpath=//*[contains(text(),'Or checkout with')]</SB_paypal_lbl>
+	<SB_colorName>xpath=//span[contains(@class,'color-name')]</SB_colorName>
+	<MBL_SB_ItemCount>xpath=//*[@data-slnm-id='shoppingBagButton']/span[@class='quantity']</MBL_SB_ItemCount>
+	<!-- Shipping page Controls-->
+	<SP_Addr_FirstName>css=[data-slnm-id=shippingPageFirstName]</SP_Addr_FirstName>
+	<MBL_SP_Addr_FirstName>css=[data-slnm-id=shippingPageFirstName]</MBL_SP_Addr_FirstName>
+	<SP_Addr_LastName>css=[data-slnm-id=shippingPageLastName]</SP_Addr_LastName>
+	<SP_Addr_Addr1>css=[data-slnm-id=shippingPageAddress1]</SP_Addr_Addr1>
+	<SP_Addr_Addr2>css=[data-slnm-id=shippingPageAddress2]</SP_Addr_Addr2>
+	<SP_Addr_POBox>xpath=//*[@data-slnm-id='shippingPagePOBox']</SP_Addr_POBox>
+	<SP_Addr_Zipcode>css=[data-slnm-id=shippingPagePostalCode]</SP_Addr_Zipcode>
+	<SP_Addr_City>css=[data-slnm-id=shippingPageCity]</SP_Addr_City>
+	<SP_Addr_PhNum>css=[data-slnm-id=shippingPagePhoneNumber]</SP_Addr_PhNum>
+    <SP_shippingmethods>xpath=//*[@class='shipping-method-list']//strong</SP_shippingmethods>
+	<SP_Addr_State>css=[data-slnm-id=shippingPageStateSelectBoxLabel]</SP_Addr_State>
+	<SP_Addr_State_error>xpath=//*[contains(@data-slnm-id,'shippingPageStateSelectBoxLabel')]/following-sibling::p</SP_Addr_State_error>
+	<MBL_SP_Addr_State_error>xpath=//*[@selectlabel='State']//p</MBL_SP_Addr_State_error>
+	<SP_CheckoutContinueToPayment>xpath=//*[text()='Continue To Payment']</SP_CheckoutContinueToPayment>
+	<MBL_SP_CheckoutContinueToPayment>xpath=//*[text()='CONTINUE']</MBL_SP_CheckoutContinueToPayment>
+	<SP_HeaderCheckout></SP_HeaderCheckout>
+	<SP_Addr_FirstNameError>css=[data-slnm-id=shippingPageFirstName-error]</SP_Addr_FirstNameError>
+	<SP_Addr_LastNameError>css=[data-slnm-id=shippingPageLastName-error]</SP_Addr_LastNameError>
+	<SP_Addr_Addr1Error>css=[data-slnm-id=shippingPageAddress1-error]</SP_Addr_Addr1Error>
+	<SP_Addr_ZipcodeError>css=[data-slnm-id=shippingPagePostalCode-error]</SP_Addr_ZipcodeError>
+	<SP_Addr_CityError>css=[data-slnm-id=shippingPageCity-error]</SP_Addr_CityError>
+	<SP_Addr_PhNumError>css=[data-slnm-id=shippingPagePhoneNumber-error]</SP_Addr_PhNumError>
+	<MBL_SP_header_billing>xpath=//*[contains(@data-slnm-id,'ReviewPayment')]</MBL_SP_header_billing>
+	<SP_ShippingMethods>xpath=//*[contains(@data-slnm-id,'shippingMethodCheckbox')]//span</SP_ShippingMethods>
+	<SP_ShippingMethods_breakfix>xpath=//*[contains(@data-slnm-id,'shippingMethodCheckbox')]/span[1]</SP_ShippingMethods_breakfix>
+	<SP_ShippingPanel>css=[data-tool-tip=shippingForm]</SP_ShippingPanel>
+	<SP_header_shipping>css=[data-slnm-id=shippingPageHeading]</SP_header_shipping>
+	<MBL_SP_header_shipping>xpath=//*[contains(@class,'shipping-heading')]</MBL_SP_header_shipping>
+	<SP_ShippingMethodsName>xpath=//*[contains(@data-slnm-id,'shippingMethodName')]</SP_ShippingMethodsName>
+	<MBL_SP_ShippingMethodsName>xpath=//*[contains(@data-slnm-id,'shippingMethodName')]</MBL_SP_ShippingMethodsName>
+	<SP_Message_OneShippingMethod>xpath=.//*[contains(text(),'Limited shipping options')]</SP_Message_OneShippingMethod>
+	<SP_AddressRecommendation_UserEntered_label>css=[data-slnm-id=shippingPageEnteredAddressHeading]</SP_AddressRecommendation_UserEntered_label>
+	<SP_AddressRecommendation_UserEntered_Address>css=[data-slnm-id=shippingPageEnteredAddress1]</SP_AddressRecommendation_UserEntered_Address>
+	<SP_AddressRecommendation_UserEntered_Address2>css=[data-slnm-id=shippingPageEnteredAddress2]</SP_AddressRecommendation_UserEntered_Address2>
+	<SP_AddressRecommendation_UserEntered_KeepThis_Button>css=[data-slnm-id=shippingPageKeepEnteredAddress]</SP_AddressRecommendation_UserEntered_KeepThis_Button>
+	<SP_AddressRecommendation_suggested_label>css=[data-slnm-id=shippingPageSuggestedAddressHeading]</SP_AddressRecommendation_suggested_label>
+	<SP_AddressRecommendation_suggested_Address>css=[data-slnm-id=shippingPageSuggestedAddress2]</SP_AddressRecommendation_suggested_Address>
+	<SP_AddressRecommendation_btn_useThis>css=[data-slnm-id=shippingPageUseSuggestedAddress]</SP_AddressRecommendation_btn_useThis>
+	<SP_Edit_SBContentModal_Close>css=[data-slnm-id=checkoutEditCloseButton]</SP_Edit_SBContentModal_Close>
+	<SP_Edit_SBContentModal_Cancel_btn>css=[data-slnm-id=checkoutEditClose]</SP_Edit_SBContentModal_Cancel_btn>
+	<SP_EDD_DeliveryDate>css=[data-slnm-id=shippingMethodSelectedDeliveryDateMobile]</SP_EDD_DeliveryDate>
+	<MBL_ShippingMethod>xpath=.//*[contains(text(),'Shipping Method')]</MBL_ShippingMethod>
+	<SP_MBL_ShippingMethodSelected>css=[data-slnm-id=shippingMethodSelectedNameAndPriceOnMobile]</SP_MBL_ShippingMethodSelected>
+	<SP_MBL_ShippingMethodSelected_Arrow>css=[data-slnm-id=shippingMethodSelectedNameAndPriceOnMobile]>button</SP_MBL_ShippingMethodSelected_Arrow>
+	<SP_MBL_EDD>css=[data-slnm-id=shippingMethodSelectedDeliveryDateMobile]</SP_MBL_EDD>
+	<MBL_ViewItemBag>xpath=//div[contains(text(),'View')]/..</MBL_ViewItemBag>
+	<SP_OrderMerchandiseLbl>xpath=.//*[@data-slnm-id='merchandise-label']</SP_OrderMerchandiseLbl>
+	<SP_OrderMerchandiseVal>xpath=.//*[@data-slnm-id='merchandise-total']</SP_OrderMerchandiseVal>
+	<SP_TBD_Price>css=[data-slnm-id='shippingMethodPrice-ThirdBusinessDay']</SP_TBD_Price>
+	<SP_CloseAddressSuggestion>css=[data-slnm-id='modalWrapperCloseButton']</SP_CloseAddressSuggestion>
+	<SP_ColorSwatchImage>css=[data-slnm-id=itemColorValue]>*</SP_ColorSwatchImage>
+	<SP_ImplicitPromoMsg>xpath=//*[contains(@data-slnm-id,'promoMsgList')]</SP_ImplicitPromoMsg>
+	<SP_StrikeDownPrice>xpath=.//*[@data-slnm-id='itemDiscountedPrice']/following-sibling::span[@data-slnm-id='itemOriginalPrice']</SP_StrikeDownPrice>
+	<lbl_ShippingMethod_Header></lbl_ShippingMethod_Header>
+	<Checkout_Bag_Header>xpath=//*[@class='right-rail-header']</Checkout_Bag_Header>
+	<Checkout_Bag_ShippingTxt>xpath=//*[contains(text(),'SHIP TO HOME')]</Checkout_Bag_ShippingTxt>
+	<MBL_Shipping_Handling_Header>xpath=.//button[contains(text(),'1. Shipping')]</MBL_Shipping_Handling_Header>
+	<ShipTo_Header>xpath=.//*[contains(text(),'Ship To')]</ShipTo_Header>
+	<MBL_ShipTo_Header>xpath=.//*[contains(text(),'Ship To')]</MBL_ShipTo_Header>
+	<SP_Quantity_Edit>xpath=.//select[contains(@data-slnm-id,'checkoutEditCart')]</SP_Quantity_Edit>
+	<SP_Quantity_Edit_Mbl>xpath=//select[contains(@data-slnm-id,'editCartQuantity')]</SP_Quantity_Edit_Mbl>
+	<SP_Quantity_Options>xpath=.//select[contains(@data-slnm-id,'checkoutEditCart')]/option</SP_Quantity_Options>
+	<SP_Quantity_Options_Mbl>xpath=.//select[contains(@data-slnm-id,'editCartQuantity')]/option</SP_Quantity_Options_Mbl>
+	<SP_Quantity_Options_val>xpath=.//*[@role='combobox']//*[@class='qty-value']</SP_Quantity_Options_val>
+	<SP_CheckoutTextHeader>xpath=//h1[contains(text(),'Checkout')]</SP_CheckoutTextHeader>
+	<toolTip_ShippingMethod_Header>xpath=//*[@data-tool-tip='shippingMethodList']//*[@data-slnm-id='toolTipCTA']</toolTip_ShippingMethod_Header>
+	<toolTip_Text_ShippingMethos_Header>xpath=//*[@data-tool-tip='shippingMethodList']//*[@data-slnm-id='toolTipBubble']</toolTip_Text_ShippingMethos_Header>
+	<SB_btn_cancel>css=[data-slnm-id='itemCancelButton']</SB_btn_cancel>
+	<SP_inputFields>xpath=//input</SP_inputFields>
+	<SP_checkMarksInFields>xpath=//div[contains(@data-slnm-id,'shippingPageForm')]//label[not(contains(@data-slnm-id,'shippingPagePOBox'))]</SP_checkMarksInFields>
+	<SP_phoneNumToolTip>xpath=//*[contains(@class,'phone-tooltip')]//*[contains(@data-slnm-id,'toolTipCTA')]</SP_phoneNumToolTip>
+	<SP_address>xpath=//*[@data-slnm-id='ShippingPageAddressDetail']</SP_address>
+	<SP_US_ErrorMsg>css=[data-slnm-id="ShippingPageContinueToPaymentErrorMessage"]</SP_US_ErrorMsg>
+	<SP_ShippingMethod>css=[data-slnm-id='ShippingPageshippingMethod']</SP_ShippingMethod>
+	<SP_ShippingPrice>css=[data-slnm-id='ShippingPageshippingMethodPrice']</SP_ShippingPrice>
+	<SP_ShippingArrivalDate>css=[data-slnm-id='ShippingPageshippingMethodArrivalDate']</SP_ShippingArrivalDate>
+	<MBL_SP_savedAddr_dropDown>xpath=//*[@class='selected-address']</MBL_SP_savedAddr_dropDown>
+	<MBL_SP_savedAddrOptions>xpath=//*[@class='address-list']//label[@class='address-label']</MBL_SP_savedAddrOptions>
+	<SP_addNewBtn>css=[data-slnm-id="ShippingPageNonEditableViewAddNewButton"]</SP_addNewBtn>
+	<SP_checkDefaultAddrLabel>xpath=//*[@data-slnm-id='shippingPageSetAsDefault']/span[2]</SP_checkDefaultAddrLabel>
+	<SP_checkDefaultAddrLabelEdit>xpath=//*[@data-slnm-id='addressFormSetAsDefault']/span[2]</SP_checkDefaultAddrLabelEdit>
+	<SP_checkDefaultAddrCheckbox>css=[data-slnm-id='checkbox']</SP_checkDefaultAddrCheckbox>
+	<SP_editOverlay_cancelBtn>xpath=//button[contains(.,'Cancel')]</SP_editOverlay_cancelBtn>
+	<SP_editOverlay_NextBtn>xpath=//button[contains(.,'Next')]</SP_editOverlay_NextBtn>
+	<MBL_SP_state>xpath=//*[contains(@data-slnm-id,'StateNativeSelectBox')]</MBL_SP_state>
+	<MBL_SP_stateAdd>css=[data-slnm-id="shippingPageStateNativeSelectBox"]</MBL_SP_stateAdd>
+	<MBL_SP_stateEditValue>xpath=//*[@data-slnm-id='addressFormStateNativeSelectBox']/parent::*/parent::div//span[contains(@class,'custom-selected')]</MBL_SP_stateEditValue>
+	<MBL_SP_stateAddValue>xpath=//*[@data-slnm-id='shippingPageStateNativeSelectBox']/parent::*/parent::div//span[contains(@class,'custom-selected')]</MBL_SP_stateAddValue>
+	<SP_phoneNumToolTipText>xpath=//*[contains(@class,'phone-tooltip')]//*[contains(@data-slnm-id,'toolTipBubble')]</SP_phoneNumToolTipText>
+	<MBL_SP_US_ErrorMsg>xpath=//*[contains(@class,'address-not-found-error')]</MBL_SP_US_ErrorMsg>	
+	<SP_AddressBook_Tab>xpath=//*[text()='Address Book']</SP_AddressBook_Tab>
+	<SP_AddressBookModal_Addreesses>xpath=//*[@class='card-content']</SP_AddressBookModal_Addreesses>
+	<SP_AddressBookModal_Continue>xpath=//button[text()='CONTINUE']</SP_AddressBookModal_Continue>
+	<SP_AddressBookModal_Header>css=[data-slnm-id='modalWrapperTitle']</SP_AddressBookModal_Header>
+	
+	<!-- Payment page controls -->
+	<Paymentiframe>xpath=//iframe[@name='sparkred-iframe']</Paymentiframe>
+	<PaymentPanel>css=[data-slnm-id='PaymentMethods']</PaymentPanel>
+	<PaymentMethodLabel>xpath=//*[@data-slnm-id='PaymentMethods']/h3</PaymentMethodLabel>
+	<PaymentExpiryLbl>xpath=//div[@class='exp floatL']/span</PaymentExpiryLbl>
+	<PaymentSecurityCodeLbl>xpath=//div[contains(@class,'cvv')]</PaymentSecurityCodeLbl>
+	<PaymentSecurityCodeError>xpath=//div[contains(@class,'cvv')]/p</PaymentSecurityCodeError>
+	<Pay_txt_Card_Img>xpath=//span[contains(@class,'card-type-icon')]</Pay_txt_Card_Img>
+	<Pay_txt_CardNo>css=[id=cardNumber]</Pay_txt_CardNo>
+	<Pay_tct_CardNo_WithoutSRFrame>css=[data-slnm-id='cardNumber']</Pay_tct_CardNo_WithoutSRFrame>
+	<Pay_drpdwn_expiryMonth>css=[id=exp_month-span]</Pay_drpdwn_expiryMonth>
+	<MBL_Pay_drpdwn_expiryMonth>css=[id=exp_month]</MBL_Pay_drpdwn_expiryMonth>	
+	<MA_Pay_drpdwn_expiryMonth>css=[id=exp_month-span]</MA_Pay_drpdwn_expiryMonth>
+	<Pay_drpdwn_expiryYear>css=[id=exp_year-span]</Pay_drpdwn_expiryYear>
+	<MBL_Pay_drpdwn_expiryYear>css=[id=exp_year]</MBL_Pay_drpdwn_expiryYear>
+	<Pay_expMonthOptions>xpath=//*[contains(@id,'dd-opt-1')]</Pay_expMonthOptions>
+	<MBL_Pay_expMonthOptions>xpath=//*[@id='exp_month']//*[contains(@aria-label,'Payment Method, Expiration Month, ')]</MBL_Pay_expMonthOptions>
+	<Pay_expMonthOptions_withoutSRframe>xpath=//*[@id='exp_month]/option</Pay_expMonthOptions_withoutSRframe>
+	<Pay_expYearOptions>xpath=//*[contains(@id,'dd-opt-2')]</Pay_expYearOptions>
+	<MBL_Pay_expYearOptions>xpath=//*[@id='exp_year']//*[contains(@aria-label, 'Payment Method, Expiration Year, ')]</MBL_Pay_expYearOptions>
+	<Pay_expYearOptions_withoutSRframe>xpath=//*[@id='exp_year]/option</Pay_expYearOptions_withoutSRframe>
+	<MA_Pay_drpdwn_expiryYear>xpath=//div[@aria-labelledby='exp_year-span']//li</MA_Pay_drpdwn_expiryYear>
+	<Payment_txt_CVV>css=[id='cvvCode']</Payment_txt_CVV>
+	<Payment_txt_CVV_withoutSRFrame>css=[data-slnm-id='nsCvvField']</Payment_txt_CVV_withoutSRFrame>
+	<Payment_CVV_reviewPage>css=[data-slnm-id='cvv']</Payment_CVV_reviewPage>
+	<Payment_sectionGiftCard>xpath=//*[@class="giftcard-title"]//button</Payment_sectionGiftCard>
+	<Payment_sectionGiftcardTooltip>xpath=.//*[contains(@class,'giftcard-tooltip')]//*[@data-slnm-id='toolTipCTA']//button</Payment_sectionGiftcardTooltip>
+	<Payment_giftCard_tooltipText>xpath=.//*[contains(@class,'giftcard-tooltip')]//*[@data-slnm-id='toolTipBubble']</Payment_giftCard_tooltipText>
+	<Payment_giftCard_tooltipLink>xpath=.//*[contains(@class,'giftcard-tooltip')]//*[@data-slnm-id='toolTipBubble']//button</Payment_giftCard_tooltipLink>
+	<Payment_txt_GCNumber>xpath=//*[@data-slnm-id='checkoutGiftCardNumber']</Payment_txt_GCNumber>
+	<Payment_txt_PinNumber>xpath=//*[@data-slnm-id='checkoutGiftCardPin']</Payment_txt_PinNumber>
+	<Payment_btn_ApplyGC>xpath=//*[@data-tool-tip='giftcard']//button[@type='submit']</Payment_btn_ApplyGC>
+	<Payment_btn_OrderReview>xpath=//*[@value='Review Your Order' or text()='Review Your Order']</Payment_btn_OrderReview>
+	<MBL_Payment_btn_OrderReview>id=billing-continue</MBL_Payment_btn_OrderReview>
+	<Payment_btn_OrderReview_withoutSRFrame>xpath=.//*[text()='Review Your Order']</Payment_btn_OrderReview_withoutSRFrame>
+	<Payment_GC_errormsg>css=[data-slnm-id=checkoutGiftCardNumber-error]</Payment_GC_errormsg>
+	<Payment_GC_Pin_ErrorMsg>css=[data-slnm-id=checkoutGiftCardPin-error]</Payment_GC_Pin_ErrorMsg>
+	<Payment_validationError>xpath=(//*[contains(@class,'error')])</Payment_validationError>
+	<Payment_validationError_breakfix>css=[class='error']</Payment_validationError_breakfix>
+	<Payment_validationError_firstName>xpath=//input[@placeholder='First Name']/parent::label//span[@class='error-content']</Payment_validationError_firstName>
+	<Payment_GC_applied>css=[data-slnm-id=PaymentGiftCardNumber]</Payment_GC_applied>
+	<Payment_ShippingHandling_Header>xpath=.//h2[contains(text(),'Shipping')]</Payment_ShippingHandling_Header>
+	<Payment_ShippingHandling_Header_LO>xpath=.//h2[contains(text(),'shipping')]</Payment_ShippingHandling_Header_LO>
+	<Payment_btn_AddShipping>css=</Payment_btn_AddShipping>
+	<Payment_btn_EditShipping>css=[data-slnm-id=ShippingPageNonEditableViewEditButton]</Payment_btn_EditShipping>
+	<Payment_Header>xpath=.//*[contains(text(),'2. Payment')]</Payment_Header>
+	<Payment_Header_Mbl>xpath=.//*[contains(text(),'2. Billing')]</Payment_Header_Mbl>
+	<MBL_Payment_Header>xpath=.//*[contains(text(),'2. Billing')]</MBL_Payment_Header>
+	<Payment_tooltip_securityCode>xpath=//div[contains(@class,'cvv')]//span[@data-slnm-id='toolTipCTA']</Payment_tooltip_securityCode>
+	<Payment_tooltip_securityCode_details>xpath=//div[contains(@class,'cvv')]//span[@data-slnm-id='toolTipBubble']</Payment_tooltip_securityCode_details>
+	<Payment_chckbox_samebillingshipping>xpath=//*[@name='useShipping']</Payment_chckbox_samebillingshipping>
+	<Payment_lbl_requireFields>xpath=//p[@class='disclaimer']</Payment_lbl_requireFields>
+	<Payment_removeAppliedCard>xpath=//*[contains(@class,'remove-gift-card')]</Payment_removeAppliedCard>
+	<Payment_Addr_FirstName>xpath=//*[@name='firstName']</Payment_Addr_FirstName>
+	<Payment_Addr_LastName>xpath=//*[@name='lastName']</Payment_Addr_LastName>
+	<Payment_Addr_Addr1>xpath=//*[@name='address1']</Payment_Addr_Addr1>
+	<Payment_Addr_Addr2>xpath=//*[@name='address2']</Payment_Addr_Addr2>
+	<Payment_Addr_POBox></Payment_Addr_POBox>
+	<Payment_Addr_Zipcode>xpath=//*[@name='zipcode']</Payment_Addr_Zipcode>
+	<Payment_Addr_City>xpath=//*[@name='city']</Payment_Addr_City>
+	<Payment_Addr_PhNum>xpath=//*[@name='phone']</Payment_Addr_PhNum>
+	<ReviewOrder_IOS>Review Order</ReviewOrder_IOS>
+	<ReviewOrder_breakfix_IOS>REVIEW YOUR ORDER</ReviewOrder_breakfix_IOS>
+	<Month_IOS>Month</Month_IOS>
+	<Year_IOS>Year</Year_IOS>
+	<CVV_IOS>CVV</CVV_IOS>
+	<Payment_VisaCardImageIOS>You have entered a visa card.</Payment_VisaCardImageIOS>
+	<Payment_MasterCardImageIOS>You have entered a masterCard card.</Payment_MasterCardImageIOS>
+	<Payment_DiscoverCardIOS>You have entered a discover card.</Payment_DiscoverCardIOS>
+	<Payment_AmexCardIOS>You have entered a American Express card.</Payment_AmexCardIOS>
+	<Payment_DinerCardIOS>You have entered a Diners Club card.</Payment_DinerCardIOS>
+	<Payment_JCBCardIOS>You have entered a jcb card.</Payment_JCBCardIOS>
+	<Payment_PLCCCardIOS>You have entered a anntaylorLoftCard card.</Payment_PLCCCardIOS>
+	<Payment_CBCCCardIOS>You have entered a anntaylorLoftMasterCard card.</Payment_CBCCCardIOS>
+	<Payment_CreditCardHeader>css=[data-slnm-id='PaymentMethodCreditCard']</Payment_CreditCardHeader>
+	<Payment_InvalidCardNoMsgIOS>The credit card number is not valid.</Payment_InvalidCardNoMsgIOS>
+	<Payment_CardNumber_Visa_IOS>Payment Section. Card Number. You have entered a visa card.</Payment_CardNumber_Visa_IOS>
+	<Payment_SelectMonthErrorMsg_IOS>Please select a month</Payment_SelectMonthErrorMsg_IOS>
+	<Payment_SelectMonthErrorMsg_Android>exp_month-error</Payment_SelectMonthErrorMsg_Android>
+	<Payment_SelectYearErrorMsg_IOS>Please select a year</Payment_SelectYearErrorMsg_IOS>
+	<Payment_SelectYearErrorMsg_Android>exp_year-error</Payment_SelectYearErrorMsg_Android>
+	<Payment_FirstNameIOS>Bill to Section. First Name.</Payment_FirstNameIOS>
+	<Payment_LastNameIOS>Bill to Section. Last Name.</Payment_LastNameIOS>
+	<Payment_ZipCodeIOS>Bill to Section. Zip Code.</Payment_ZipCodeIOS>
+	<Payment_CityIOS>Bill to Section. City.</Payment_CityIOS>
+	<Payment_Address1IOS>Bill to Section. Address Line 1.</Payment_Address1IOS>
+	<Payment_FirstNameAndroid>billingFirstName</Payment_FirstNameAndroid>
+	<Payment_LastNameAndroid>billingLastName</Payment_LastNameAndroid>
+	<Payment_Address1Android>billingAddress</Payment_Address1Android>
+	<Payment_Address2Android>address_2</Payment_Address2Android>
+	<Payment_StateAndroid>billingState</Payment_StateAndroid>
+	<Payment_CityAndroid>billingCity</Payment_CityAndroid>
+	<Payment_PhoneNumberAndroid>billingPhone</Payment_PhoneNumberAndroid>	
+	<Payment_ZipCodeAndroid>billingZip</Payment_ZipCodeAndroid>
+	<Payment_FirstNameErrorMsg_IOS>Please enter a first name</Payment_FirstNameErrorMsg_IOS>
+	<Payment_FirstNameErrorMsgNotBlank_IOS>Please enter a valid first name</Payment_FirstNameErrorMsgNotBlank_IOS>
+	<Payment_FirstNameErrorMsg_Android>billingFirstName-error</Payment_FirstNameErrorMsg_Android>
+	<Payment_ZipCodeErrorMsg_IOS>Please enter a zipcode</Payment_ZipCodeErrorMsg_IOS>
+	<Payment_CityCodeErrorMsg_IOS>Please enter a city</Payment_CityCodeErrorMsg_IOS>
+	<Payment_StateErrMsg_IOS>Please enter a state</Payment_StateErrMsg_IOS>
+	<Payment_StateErrMsg_IOS_Reg>Please select a state</Payment_StateErrMsg_IOS_Reg>
+	<Payment_StateErrorMsgIOS></Payment_StateErrorMsgIOS>
+	<Payment_ZipCodeErrorMsg_Android></Payment_ZipCodeErrorMsg_Android>
+	<Payment_CityErrorMsg_Android></Payment_CityErrorMsg_Android>
+	<Payment_StateErrorMsgAndroid></Payment_StateErrorMsgAndroid>
+	<Payment_PhoneNumErrorMsgAndroid>billingPhone-error</Payment_PhoneNumErrorMsgAndroid>
+	<Payment_PhoneNumTootip>suggestion--phoneNumber</Payment_PhoneNumTootip>
+	<Payment_phoneNumTooltipText></Payment_phoneNumTooltipText>
+	<Payment_BillingAddressCheckbox_Android>//android.widget.CheckBox[contains(@text,'My Billing')]</Payment_BillingAddressCheckbox_Android>
+	<Payment_CardNumber_Android>cardNumber</Payment_CardNumber_Android>
+	<Payment_CVV_Android>cvvCode</Payment_CVV_Android>
+	<Payment_Month_Android>billing-exp-month-dropdown-span</Payment_Month_Android>
+	<Payment_Year_Android>billing-exp-year-dropdown-span</Payment_Year_Android>
+	<Payment_InvalidCardNoMsgAndroid>cardNumber-error</Payment_InvalidCardNoMsgAndroid>
+	<Payment_CardPresent_Android>billingData-cardNumber</Payment_CardPresent_Android>
+	<Payment_StaticTextBelowBillingIOS>Please make sure that you have entered information in all of the required fields above.</Payment_StaticTextBelowBillingIOS>
+	<Payment_StaticTextBelowBillingAndroid></Payment_StaticTextBelowBillingAndroid>
+	<ReviewOrder_Android>billing-continue</ReviewOrder_Android>
+	<Delete>Delete</Delete>
+	<delete>delete</delete>
+	<Payment_UpdatedAddressMsg>css=[data-slnm-id='modalWrapper']</Payment_UpdatedAddressMsg>
+	<Payment_toolTipOverlay_clsButton>xpath=//*[@data-slnm-id='modalWrapper']//button</Payment_toolTipOverlay_clsButton>
+	<Payment_btn_ReturnFAQOverlay></Payment_btn_ReturnFAQOverlay>
+	<Payment_btn_ReturnClose></Payment_btn_ReturnClose>
+	<Payment_btn_Return></Payment_btn_Return>
+	<Payment_btn_ShippingPolicyFAQOverlay></Payment_btn_ShippingPolicyFAQOverlay>
+	<Payment_btn_ShippingPolicyClose></Payment_btn_ShippingPolicyClose>
+	<Payment_btn_ShippingPolicy></Payment_btn_ShippingPolicy>
+	<Payment_Edit_Shipping>xpath=[data-slnm-id='ShippingPageNonEditableViewEditButton']</Payment_Edit_Shipping>
+	<PaymentMethod_Edit>css=[data-slnm-id=PaymentEditButton]</PaymentMethod_Edit>
+	<Payment_ShippingAddress>css=[data-slnm-id=ShippingPageAddressDetail]</Payment_ShippingAddress>
+	<Payment_CardPresentInField>xpath=//span[contains(@class,'card-type-icon')]</Payment_CardPresentInField>
+	<Payment_ExpDate_Label>xpath=//span[contains(@class,'placeholder-inactive')]</Payment_ExpDate_Label>
+	<Payment_ExpDate_ErrorMsg>xpath=//span[contains(.,'This date has expired')])[1]</Payment_ExpDate_ErrorMsg>
+	<MBL_Payment_SelectedCardOption></MBL_Payment_SelectedCardOption>
+	<MBL_Payment_MultiCard_Options>options by classname</MBL_Payment_MultiCard_Options>
+	<MBL_selectedCard_Imag></MBL_selectedCard_Imag>
+	<MBL_PinEmail>Pin/Email</MBL_PinEmail>
+	<MBL_PinEmail_breakfix>giftcard Pin / email field</MBL_PinEmail_breakfix>
+	<MBL_billTo_optionsDropdown>bill to address dropdown</MBL_billTo_optionsDropdown>
+	<MBL_billTo_options>addr options by class name</MBL_billTo_options>
+	<MBL_addNew_PaymentCard_Btn>xpath=.//*[text()='ADD NEW']</MBL_addNew_PaymentCard_Btn>
+	<MBL_PaymentEdit_EditPaymentPage>xpath=.//button[text()='ADD NEW']/..//*[1]</MBL_PaymentEdit_EditPaymentPage>
+	<Payment_cardNum_error>xpath=//*[@id='cardNumber']/following-sibling::span[contains(@class,'validation-error')]</Payment_cardNum_error>
+	<PaymentMethodsList>xpath=//div[@data-slnm-id="PaymentMethods"]//label</PaymentMethodsList>
+	<Payment_wallet_tab>xpath=//*[contains(text(), 'Wallet')]</Payment_wallet_tab>
+	<Payment_addOrEditTab>xpath=//*[contains(text(), 'Edit/Add')]</Payment_addOrEditTab>
+	<Payment_Wallet_AddrCard_Details>xpath=//div[contains(@class,'card-details-wrapper')]//p</Payment_Wallet_AddrCard_Details>
+	<wallet_default_checkbox>css=[data-slnm-id="checkbox"]</wallet_default_checkbox>
+	<wallet_card_image>xpath=//div[contains(@class,'card-content')]//img</wallet_card_image>
+	<wallet_card_edit>css=[data-slnm-id="editCardBtn0"]</wallet_card_edit>
+	<Payment_wallet_continue>xpath=//button[contains(.,'CONTINUE')]</Payment_wallet_continue>
+	<Payment_wallet_cancel>xpath=//button[contains(.,'Cancel')]</Payment_wallet_cancel>
+	<MBL_Payment_editOverlayCloseBtn>css=[data-slnm-id="modalWrapperCloseButton"]</MBL_Payment_editOverlayCloseBtn>
+	<MBL_Payment_editOverlaysaveBtn></MBL_Payment_editOverlaysaveBtn>
+	<MBL_AddNew_AddPaymentMethodLabel></MBL_AddNew_AddPaymentMethodLabel>
+	<MBL_Payment_PhoneNumber_IOS>Please enter a phone number</MBL_Payment_PhoneNumber_IOS>
+	<MBL_Payment_PhoneNumber_IOS_Reg>Please enter a valid phone number</MBL_Payment_PhoneNumber_IOS_Reg>
+	<MBL_Payment_LastName_IOS>Please enter a last name</MBL_Payment_LastName_IOS>
+	<MBL_Payment_Address1_IOS>Please enter an address or PO box number</MBL_Payment_Address1_IOS>
+	<Payment_ZipCodeErrorMsg_IOS_Reg>Please enter a zip code</Payment_ZipCodeErrorMsg_IOS_Reg>
+	<Payment_giftCardCloseBtn>css=[data-slnm-id='GiftCardRemoveGiftCard']</Payment_giftCardCloseBtn>
+	<Payment_giftCardCheckBal>xpath=//button[contains(@class,'giftcard-balance')]</Payment_giftCardCheckBal>
+	<giftCard_CheckBal_Header>css=[data-slnm-id="checkoutGiftCardBalanceTitle"]</giftCard_CheckBal_Header>
+	<checkBalOverlay_cardNum>css=[data-slnm-id="checkoutGiftCardNumber"]</checkBalOverlay_cardNum>
+	<checkBalOverlay_pinNum>css=[data-slnm-id="checkoutGiftCardPin"]</checkBalOverlay_pinNum>
+	<checkBalOverlay_checkBalBtn>xpath=//button[contains(.,'CHECK BALANCE')]</checkBalOverlay_checkBalBtn>
+	<checkBalOverlay_HeaderError>xpath=//div[@class='modal']//form[contains(@class,'giftcard')]//p</checkBalOverlay_HeaderError>
+	<EGC_applied>xpath=//*[contains(@class,'giftcard-applied')]</EGC_applied>
+	<Payment_CreditCardSaved>xpath=.//*[@data-slnm-id='undefinedSelectBoxOption-0']/../li</Payment_CreditCardSaved>
+	<Select_DifferentPayment_IOS>[object Object]</Select_DifferentPayment_IOS>
+	<CardNumber_Visa>Payment Section. Card Number. You have entered a Visa card.</CardNumber_Visa>
+	<Payment_CreateAcc_Password>Create Password</Payment_CreateAcc_Password>
+	<Payment_CreateAcc_PasswordConfirm>Confirm Password</Payment_CreateAcc_PasswordConfirm>
+	<Payment_ShippingEdit>css=[data-slnm-id='ReviewShippingEditButton']</Payment_ShippingEdit>
+	<Payment_GiftCard_CheckBalance>Gift Card Number</Payment_GiftCard_CheckBalance>
+	<checkBalOverlay_closeBtn>css=[data-slnm-id="checkoutGiftCardBalanceCloseButton"]</checkBalOverlay_closeBtn>
+	<Payment_WalletModal_Header>css=[data-slnm-id='modalWrapperTitle']</Payment_WalletModal_Header>
+	<Payment_WalletModal_Cards>xpath=//*[@class='card-details-wrapper']</Payment_WalletModal_Cards>
+	<Payment_WalletModal_Continue>xpath=//button[text()='CONTINUE']</Payment_WalletModal_Continue>
+	<Payment_Tax_Heading>xpath=//li[@class='est-taxes']/div/span</Payment_Tax_Heading>
+	<Payment_Tax_Value>xpath=//li[@class='est-taxes']/span</Payment_Tax_Value>
+	<Payment_Shipping_Heading>xpath=//div[@aria-label='Estimate Shipping and Handling']</Payment_Shipping_Heading>
+	<Payment_Shipping_Value>xpath=//li[@class='est-shipping bottom-line']/span</Payment_Shipping_Value>
+	
+	<!-- Paypal -->
+
+	<PaypalRadiobtn>css=[data-slnm-id='PaymentMethodPaypal']</PaypalRadiobtn>
+	<SBCheckoutPaypal>css=[data-slnm-id='paypalButton']</SBCheckoutPaypal>
+	<PayPalLogin>xpath=//a[@class='btn full ng-binding']</PayPalLogin>
+	<PaypalRadiobtn>xpath=//*[@data-slnm-id='PaymentMethodPaypal']/input</PaypalRadiobtn>
+	<!-- <SBCheckoutPaypal>css=[data-slnm-id=paypalButton]</SBCheckoutPaypal> -->
+	<PaypalEmailField>xpath=//input[@id='email']</PaypalEmailField>
+	<PayPalNext>xpath=//button[@id='btnNext']</PayPalNext>
+	<PaypalPwdField>xpath=//input[@id='password']</PaypalPwdField>
+	<PaypalLoginbtn>xpath=//*[@id='btnLogin']</PaypalLoginbtn>
+	<Paypal_ChangeAddress>css=[data-test-id='shipToChangeLink']</Paypal_ChangeAddress>
+	<Paypal_addressWithIncorrectZipCode>xpath=//*[contains(text(),'Parv bh')]</Paypal_addressWithIncorrectZipCode>
+	<Paypal_SelectedAddress>css=[data-test-id=fullAddress]</Paypal_SelectedAddress>
+	<PaypalContinuebtn>xpath=//input[@id='confirmButtonTop']</PaypalContinuebtn>
+	<PaypalLogin>Log In</PaypalLogin>
+	<PaypalContinue>Continue</PaypalContinue>
+	<PaypalChangePaymentLink>xpath=//a[contains(@aria-label,'Change payment')]</PaypalChangePaymentLink>
+	<PaypalAddLink>xpath=//span[contains(.,'Add')]</PaypalAddLink>
+	<PaypalBillingAddr_firstName>id=firstName</PaypalBillingAddr_firstName>
+	<PaypalBillingAddr_lastName>id=lastName</PaypalBillingAddr_lastName>
+	<PaypalBillingAddrDrpDown>id=billingAddressDropdown</PaypalBillingAddrDrpDown>
+	<PaypalAddCardBackBtn>xpath=//a[contains(.,'Back')]</PaypalAddCardBackBtn>
+	<PayPal_AddPayment>Add</PayPal_AddPayment>
+	<OR_PayPalEmail>css=[class='paypal-payment__email-text']</OR_PayPalEmail>
+	<PayPal_FirstName>First name</PayPal_FirstName>
+	<Paypal_BackPaymentAdd>Back</Paypal_BackPaymentAdd>
+	<paypal_details>xpath=//*[contains(@class,'paypal-form__helptext')]</paypal_details>
+	<PayPal_Email_IOS>Email</PayPal_Email_IOS>
+	<PayPal_Password_IOS>Password</PayPal_Password_IOS>
+	<PayPal_SelectCredit>Select</PayPal_SelectCredit>
+	<PayPal_ChangePayment>Change payment method</PayPal_ChangePayment>
+	<PayPal_Balance>PayPal Balance ‏</PayPal_Balance>
+	<!-- Order Review Controls -->
+	<OR_ShippingHandling_Header>xpath=.//h2[contains(text(),'shipping')]</OR_ShippingHandling_Header>
+	<OR_PayPalLogo>css=[alt='Paypal Logo']</OR_PayPalLogo>
+	<OR_cardLabel>css=[data-slnm-id=PaymentCreditCardLabel]</OR_cardLabel>
+	<OR_BillTo_Section>css=[data-slnm-id=BillingAddressDetail]</OR_BillTo_Section>
+	<OR_Billto_Adress>css=[data-slnm-id=BillingAddressDetail]</OR_Billto_Adress>
+	<OR_Billto_GiftCard>xpath=//*[contains(text(),'additional payment')]</OR_Billto_GiftCard>
+	<OR_BillTo_AppliedPayment>css=[data-slnm-id=PaymentCreditCardNumber]</OR_BillTo_AppliedPayment>
+	<OR_BillTo_AppliedPayment_GC>css=[data-slnm-id=PaymentGiftCardNumber]</OR_BillTo_AppliedPayment_GC>
+	<OR_btn_PlaceOrder>css=[data-slnm-id='reviewPagePlaceOrder']</OR_btn_PlaceOrder>
+	<OR_billing_expiryDate_lbl>css=[data-slnm-id='PaymentexpiryDateLabel']</OR_billing_expiryDate_lbl>
+	<OR_billing_GCEGC_lbl>css=[data-slnm-id=PaymentGiftCardTitle]</OR_billing_GCEGC_lbl>
+	<OR_GiftCardTitle>css=[data-slnm-id='PaymentGiftCardTitle']</OR_GiftCardTitle>
+	<OR_GiftCardImage>css=[data-slnm-id='PaymentGiftCardImage']</OR_GiftCardImage>
+	<OR_GiftCardNumber>css=[data-slnm-id='PaymentGiftCardNumber']</OR_GiftCardNumber>
+	<OR_ShipToNew>css=[data-slnm-id='ShippingPageNonEditableViewAddNewButton']</OR_ShipToNew>
+	<OR_BillToNew>css=[data-slnm-id='PaymentEditButton']</OR_BillToNew>
+	<OR_ShipToEdit>css=[data-slnm-id='ShippingPageNonEditableViewEditButton']</OR_ShipToEdit>
+	<OR_BillToEdit>css=[data-slnm-id='PaymentEditButton']</OR_BillToEdit>
+	<OR_TermsNConditionLbl>css=[class='terms-condition']</OR_TermsNConditionLbl>
+	<OR_TermsNConditionLink>css=[class='terms-condition']>a[href='/terms']</OR_TermsNConditionLink>
+	<OR_giftCardSection_giftCardTitle>css=[data-slnm-id="GiftCardGiftCardTitle"]</OR_giftCardSection_giftCardTitle>
+	<OR_giftCardCloseBtn>css=[data-slnm-id="GiftCardRemoveGiftCard"]</OR_giftCardCloseBtn>
+	<OR_Payment_HeaderLabel>xpath=//h2[contains(text(),'Payment')]</OR_Payment_HeaderLabel>
+	<OR_reviewAndOrder_HeaderLabel></OR_reviewAndOrder_HeaderLabel>
+	<OR_BillTo_HeaderLabel>css=[data-slnm-id="BillToLabel"]</OR_BillTo_HeaderLabel>
+	<MBL_BillTo_HeaderLabel>xpath=.//*[text()='Bill To:']</MBL_BillTo_HeaderLabel>
+	<MBL_shippingAndHandling_Btn></MBL_shippingAndHandling_Btn>
+	<OR_Paypal_PaymentMethod>xpath=//*[contains(@class,'paypal-payment__heading')]</OR_Paypal_PaymentMethod>
+	<OR_Paypal_email>xpath=//*[contains(@class,'paypal-payment__email')]</OR_Paypal_email>
+	<MBL_viewItemsHeader>accordion__title-5</MBL_viewItemsHeader>
+	<MBL_viewItemsHeaderAccordian></MBL_viewItemsHeaderAccordian>
+	<OR_CVV>css=[data-slnm-id='cvv']</OR_CVV>
+	<OR_CreateAcntEmailID>css=[data-slnm-id='orderCreateAccountEmail']</OR_CreateAcntEmailID>
+	<OR_CreateAcntPassword>css=[data-slnm-id='resetPassword']</OR_CreateAcntPassword>
+	<MBL_OR_CreateAcntPassword>xpath=//*[@class='row form-wrapper']/form/div[4]/div</MBL_OR_CreateAcntPassword>
+	<OR_CreateAcntConfirmPassword>css=[data-slnm-id='resetConfirmPassword']</OR_CreateAcntConfirmPassword>	
+	<MBL_OR_CreateAcntConfirmPassword>xpath=//*[@class='row form-wrapper']/form/div[5]</MBL_OR_CreateAcntConfirmPassword>	
+	<OR_crateAccSection>xpath=//div[contains(@class,'create-account')]</OR_crateAccSection>
+	<OR_orderCreateAccCreatePwd>id=registerPassword</OR_orderCreateAccCreatePwd>
+	<OR_orderCreateAccConfirmPwd>name=confirmPassword</OR_orderCreateAccConfirmPwd>
+	<OR_btnEditBillingSection>xpath=//*[contains(@data-slnm-id,'PaymentEditButton')]</OR_btnEditBillingSection>
+	<OR_btnEditShippingSection>xpath=//*[contains(@data-slnm-id,'ShippingPageNonEditableViewEditButton')]</OR_btnEditShippingSection>
+	<OR_btnAddShippingSection>xpath=//*[@aria-label='add new shipping address']</OR_btnAddShippingSection>
+	<OR_lblCardNumber>xpath=//*[contains(@data-slnm-id,'PaymentCreditCardNumber')]</OR_lblCardNumber>
+	<OR_ShippingAddressOrderReview>xpath=//*[@data-slnm-id='ShippingPageAddressDetail']</OR_ShippingAddressOrderReview>
+	
+	<OR_btnAddNewBillingSection>xpath=//*[@aria-label='Add New Billing' or @data-slnm-id='PaymentAddButton']</OR_btnAddNewBillingSection>
+	
+	
+	<!-- Order Confirmation Page controls -->
+	<Order_ConfirmationMessage_ThankYou>xpath=.//*[contains(text(),'Thank')]</Order_ConfirmationMessage_ThankYou>
+	<Order_ConfirmationMessageEmail>xpath=.//*[contains(text(),'confirmation email')]</Order_ConfirmationMessageEmail>
+	<Order_ConfirmationMessageOrderNumber>xpath=.//*[contains(text(),'order number')]</Order_ConfirmationMessageOrderNumber>
+	<ReviewOrderStatusText>xpath=.//*[contains(text(),'You may review')]</ReviewOrderStatusText>
+	<Order_OrderNumber>xpath=.//*[contains(text(),'order number')]//strong</Order_OrderNumber>
+	<Order_PaymentAppliedImage>css=[data-slnm-id=PaymentGiftCardImage]</Order_PaymentAppliedImage>
+	<OC_MBL_SelectedShippingMethod>css=[data-slnm-id=ShippingPageshippingMethod]</OC_MBL_SelectedShippingMethod>
+	<OC_MBL_EDD>css=[data-slnm-id=ShippingPageshippingMethodEstimatedHeading]</OC_MBL_EDD>
+	<OC_MBL_ED_Date>css=[data-slnm-id='ShippingPageshippingMethodArrivalDate']</OC_MBL_ED_Date>
+	<OC_orderStatus_lnk>css=[data-slnm-id='orderConfirmationAnchorBackToOrderStatus']</OC_orderStatus_lnk>
+	<OC_creditCardImage>css=[data-slnm-id='PaymentCreditCardTypeImage']</OC_creditCardImage>
+	<OC_shippingPolicyLink>css=[data-slnm-id='shippingShippingPolicyButtonClick']</OC_shippingPolicyLink>
+	<OC_returnPolicyLink>css=[data-slnm-id='shippingReturnPolicyButtonClick']</OC_returnPolicyLink>
+	<OC_orderSummeryLabel>css=[data-slnm-id="order-summary-title"]</OC_orderSummeryLabel>
+	<MBL_OC_BackToShopping></MBL_OC_BackToShopping>
+	
+	
+	
+	<!-- PLP Page Objects -->
+	<PLP_PageHeading>css=[data-slnm-id='PageHeading']</PLP_PageHeading>
+	<PLP_MainMenuXpath1>//*[@data-slnm-id='navbar']//*[contains(text(),'</PLP_MainMenuXpath1>
+	<PLP_MainMenuXpath2>')]</PLP_MainMenuXpath2>
+	<PLP_subMenuXpath1>(.//*[@data-slnm-id='megaMenu']//*[contains(text(),'</PLP_subMenuXpath1>
+	<PLP_subMenuXpath2>')])[1]</PLP_subMenuXpath2>
+	<PLP_subMenuFeatureLinksList>/..//a</PLP_subMenuFeatureLinksList>
+	<PLP_MBL_subMenuFeature>xpath=.//*[@data-slnm-id='megaMenu']/div[2]//li</PLP_MBL_subMenuFeature>
+	<PLP_LeftNavLNK>//*[contains(@data-slnm-id,'leftNavSubCategory')]//*[contains(text(),'</PLP_LeftNavLNK>
+    <PLP_LeftNavSubMenu>/parent::div</PLP_LeftNavSubMenu>
+   	<PLP_LeftNavSubList> /following-sibling::nav/a</PLP_LeftNavSubList>
+   	<PLP_RatingStar>(.//*[@class='stars'])[</PLP_RatingStar>
+   	<PLP_BackToTop>css=[data-slnm-id=backToTopButton]</PLP_BackToTop>
+   	<PLP_ProductList>xpath=.//*[@class='quickShopContainer']//*[contains(@data-slnm-id,'ProductGridLink')]//img</PLP_ProductList>
+	<PLP_ProductListPath1>//div[contains(@class,'product-listing component')]/ul/li[</PLP_ProductListPath1>
+	<PLPGridxPath2>]</PLPGridxPath2>
+	<PLP_MBL_Filter_Modal_Close>css=[data-slnm-id=modalWrapperCloseButton]</PLP_MBL_Filter_Modal_Close>
+	<PLP_SelectColor_1>.//*[@data-slnm-id='</PLP_SelectColor_1>
+	<PLP_SelectColor_2>Check']</PLP_SelectColor_2>
+	<PLP_SelectSize>.//*[@data-slnm-id='</PLP_SelectSize>
+	<PLP_SelectSize_2>Check']</PLP_SelectSize_2>
+	<PLP_SelectSleeveLength>.//*[contains(text(),'</PLP_SelectSleeveLength>
+	<PLP_ColorFilter>css=[data-slnm-id='ColorFilter']</PLP_ColorFilter>
+	<PLP_sizeTypeFilter>css=[data-slnm-id=sizetypeFilter]</PLP_sizeTypeFilter>
+	<PLP_FilterResult>xpath=//*[contains(@class,'results-for')]</PLP_FilterResult>
+	<PLP_CloseFilter>xpath=//*[contains(@data-slnm-id,'FilterClose')]</PLP_CloseFilter>
+	<PLP_closeupwardscarret>xpath=(//button[@data-slnm-id='SizeFilter']//following::i[1])[1]</PLP_closeupwardscarret>
+	<PLP_FilterApply>css=[data-slnm-id=btnFiltersApply]</PLP_FilterApply>
+	<PLP_MoreFilter>css=[data-slnm-id=MoreFilter]</PLP_MoreFilter>
+	<PLP_FilterSelected>xpath=//*[contains(@data-slnm-id,'appliedFilters')]</PLP_FilterSelected>
+	<PLP_FilterSelected_CrossIcon>xpath=//*[contains(@data-slnm-id,'appliedFilters-')]//i</PLP_FilterSelected_CrossIcon>
+	<PLP_ProductTally>css=[data-slnm-id=totalItemCountProgressText]</PLP_ProductTally>
+	<PLP_ProductTallyCircle>css=[data-slnm-id=totalItemCount]</PLP_ProductTallyCircle>
+	<PLP_MB_CountTally>xpath=.//*[contains(text(),'Search Results')]/../../following-sibling::*</PLP_MB_CountTally>
+	<PLP_PriceFilter>css=[data-slnm-id=PriceFilter]</PLP_PriceFilter>
+	<PLP_PriceRange>xpath=//div[contains(@class,'selected-price')]</PLP_PriceRange>
+	<PLP_PriceRangeBar>xpath=//*[contains(@class,'range-slider')]</PLP_PriceRangeBar>
+	<PLP_categoryFilter>css=[data-slnm-id='categoryFilter']</PLP_categoryFilter>
+	<PLP_PriceFilter_seprate_min_max>xpath=//div[contains(@class,'selected-price')]//i</PLP_PriceFilter_seprate_min_max>
+	<PLP_FromPriceFilter>css=[data-slnm-id=priceFilterRangeMinValue]</PLP_FromPriceFilter>
+	<PLP_ToPriceFilter>css=[data-slnm-id=priceFilterRangeMaxValue]</PLP_ToPriceFilter>
+	<PLP_MinPrice>xpath=//*[contains(@class,'range-slider')]/following-sibling::div/*[1]</PLP_MinPrice>
+	<PLP_MaxPrice>xpath=//*[contains(@class,'range-slider')]/following-sibling::div/*[2]</PLP_MaxPrice>
+	<PLP_ProductName>xpath=//*[contains(@data-slnm-id,'productName')]</PLP_ProductName>
+	<PLP_productImages>xpath=//img[contains(@data-slnm-id,'ProductGridImage')]</PLP_productImages>
+	<PLP_ProductPrice>xpath=//*[@data-slnm-id='priceWrapper']</PLP_ProductPrice>
+	<PLP_MinSalePrice>css=[data-slnm-id=minSalePrice]</PLP_MinSalePrice>
+	<PLP_MaxSalePrice>css=[data-slnm-id=maxSalePrice]</PLP_MaxSalePrice>
+	<PLP_SalePrice>css=[data-slnm-id=salePrice]</PLP_SalePrice>
+	<PLP_Promos>xpath=//*[contains(@data-slnm-id,'posPromoPromoMessage')]</PLP_Promos>
+	<PLP_ItemCount>css=[data-slnm-id=totalItemsCount]</PLP_ItemCount>
+	<PLP_Rating></PLP_Rating>
+	<PLP_colorswatch>css=[data-slnm-id=color-swatches]</PLP_colorswatch>
+	<PLP_colorswatchList>xpath=(//*[@data-slnm-id='color-swatches'])[1]/ul/li</PLP_colorswatchList>
+	<PLP_showMoreColors>css=[data-slnm-id=showMoreColors]</PLP_showMoreColors>
+	<PLP_moreColorSwatchList>xpath=(//ul[contains(@class,'more-available')])[1]/li</PLP_moreColorSwatchList>
+	<SortByFilter>xpath=.//span[@aria-label='Sort by, no selected value']</SortByFilter>
+	<SortByFilter_Mbl>xpath=//select[contains(@class,'select')]/following-sibling::span</SortByFilter_Mbl>
+	<PLP_MB_FilterExpand>css=[data-slnm-id=filterByLabel]</PLP_MB_FilterExpand>
+	<PLP_MB_ApplyFilter>css=[data-slnm-id='btnFiltersApply']</PLP_MB_ApplyFilter>
+	<PLP_MB_ClearAll>css=[data-slnm-id='btnFiltersClear']</PLP_MB_ClearAll>
+	<PLP_ClearAll>css=[data-slnm-id=clearAllAppliedFilters]</PLP_ClearAll>
+	<PLP_lnk_Product_PDP>xpath=(//*[contains(@data-slnm-id,'ProductGridLink')]//img)[1]</PLP_lnk_Product_PDP>
+	<PLP_NarrowByCategory>css=[data-slnm-id=narrowByCategoryLabel]</PLP_NarrowByCategory>
+	<PLP_NarrowByCategoryOverlay>css=[data-slnm-id=narrowByCategoryModal]</PLP_NarrowByCategoryOverlay>
+	<PLP_NarrowByCategoryOverlayContent>xpath=//*[contains(@data-slnm-id,'searchLeftNav-undefined')]</PLP_NarrowByCategoryOverlayContent>
+	<PLP_FilterColorList>xpath=.//*[@data-slnm-id='ColorFilter']/following-sibling::*//label</PLP_FilterColorList>
+	<PLP_MB_FilterCount>xpath=.//*[contains(@class,'filter-count')]</PLP_MB_FilterCount>
+	<PLP_FilterSizeList>xpath=//*[contains(@data-slnm-id,'Check')]/..</PLP_FilterSizeList>
+	<PLP_FilterSize>xpath=//*[contains(@data-slnm-id,'Check')]</PLP_FilterSize>
+	<PLP_FilterSleeveList></PLP_FilterSleeveList>
+	<PLP_shopNow>xpath=.//*[contains(@data-slnm-id,'ProductGridQuickShop')]</PLP_shopNow>
+	<PLP_MoreColorQS>xpath=//button[contains(@class,'show-more')]/../../../../..//button[contains(@data-slnm-id,'ProductGridQuickShop')]</PLP_MoreColorQS>
+	<PLP_FilterCountXpath_2>')]/parent::a//*[contains(text(),'(')]</PLP_FilterCountXpath_2>
+	<PLP_SizeFilter>css=[data-slnm-id='SizeFilter']</PLP_SizeFilter>
+	<PLP_TotalFilters>xpath=.//*[text()='Filter By']/following-sibling::ul/li</PLP_TotalFilters>
+	<MBL_PLP_TotalFilters>xpath=//*[@class='modal-body']/ul/li</MBL_PLP_TotalFilters>
+	<PLP_MoreFilterNames>xpath=.//*[@data-slnm-id='MoreFilter']//following::ul[1]/li/button</PLP_MoreFilterNames>
+	<PLP_FilterInsideMore>xpath=.//*[@data-slnm-id='MoreFilter']//following::ul[1]//div/div/div[1]/div</PLP_FilterInsideMore>
+	<PLP_QuickShopHeader>xpath=.//*[@role='dialog']//*[text()='QUICK SHOP']</PLP_QuickShopHeader>
+	<PLP_QuickShopAltImageXpath1>.//*[@class='zoom-container']//img[contains(@alt,'</PLP_QuickShopAltImageXpath1>
+	<PLP_QuickShopImageXpath>xpath=.//*[@class='zoom-container']//img</PLP_QuickShopImageXpath>
+	<PLP_QSProductName>css=[data-slnm-id=modalWrapperProductName]</PLP_QSProductName>
+	<PLP_QSProductPrice>css=[data-slnm-id=priceDisplay]</PLP_QSProductPrice>
+	<PLP_QSViewFD>xpath=.//*[text()='View Full Details']</PLP_QSViewFD>
+	<PLP_QSClose>xpath=.//button[contains(@class,'close')]</PLP_QSClose>
+	<PLP_sortByLowToHigh>css=[data-slnm-id=sortBySelectBoxOption-1]</PLP_sortByLowToHigh>
+	<PLP_sortByHighToLow>css=[data-slnm-id=sortBySelectBoxOption-2]</PLP_sortByHighToLow>
+	<PLP_QS_AltImg>.//*[@class='viewport']//img[contains(@alt,'</PLP_QS_AltImg>
+	<PickerWheel>//XCUIElementTypePickerWheel[1]</PickerWheel>
+	<Done>Done</Done>
+	<sortBy_Native_ClassName>XCUIElementTypeOther</sortBy_Native_ClassName>
+	<sortByXpath>//XCUIElementTypeOther[@value='SORT BY']</sortByXpath>
+	<PLP_PMFullPrice>xpath=//a[contains(@data-slnm-id,'ProductGridLink')]</PLP_PMFullPrice>
+	<PLP_finalSale>xpath=//div[@class='product-wrapper']//span[@class='posPromo'][last()]/following-sibling::span[@class='finalPromo' and contains(.,'Final')]</PLP_finalSale>
+	<PLP_SalePrice_2>css=[class=price-two]</PLP_SalePrice_2>
+	<PLP_LeftNavSubCatagory_TypesList>xpath=//*[contains(@data-slnm-id,'leftNavSubCategory')]//a</PLP_LeftNavSubCatagory_TypesList>
+	<PLP_ODP>xpath=(//a[@data-slnm-id='shopTheLook'])[2]</PLP_ODP>
+	<PLP_QS_AddBag_Error_message>css=[data-slnm-id=sizeErrorText]</PLP_QS_AddBag_Error_message>
+	<PLP_QS_RollOverZoom>xpath=//span[@data-slnm-id='rollOverToZoomIn']</PLP_QS_RollOverZoom>
+	<PLP_ODP_corsuel>xpath=.//*[contains(@class,'modal') and @role='dialog']//button[contains(@class,'gallery-thumbnail')]</PLP_ODP_corsuel>
+	<PLP_SortBy_android>//android.widget.Spinner[contains(@text,'SORT BY')]</PLP_SortBy_android>
+	<PLP_SortByOptions>android.widget.CheckedTextView</PLP_SortByOptions>
+	<PLP_PriceWrapper>css=[data-slnm-id='priceWrapper']</PLP_PriceWrapper>
+	
+	<!-- Search Page controls -->
+	<PLP_SearchKeyword_label>xpath=.//*[@data-slnm-id='breadcrumb']/a[2]</PLP_SearchKeyword_label>
+	<SRP_typeahead_results>xpath=.//*[contains(@data-slnm-id,'typeAheadFlyoutLink')]</SRP_typeahead_results>
+	<SRP_typeahead_shopAll>xpath=.//button[contains(text(),'SHOP ALL')]</SRP_typeahead_shopAll>
+	<SRP_typeahead_prodImage>xpath=.//*[contains(@data-slnm-id,'rightTypeAhead')]//img</SRP_typeahead_prodImage>
+	<SRP_typeahead_prodName>xpath=.//*[@class='price']/..//a</SRP_typeahead_prodName>
+	<SRP_typeahead_prodPrice>css=[class=price]</SRP_typeahead_prodPrice>
+	<SRP_typeahead_prodPromos>css=[class=promos]</SRP_typeahead_prodPromos>
+	<SRP_typeahead_prodRating></SRP_typeahead_prodRating>
+	<lbl_searched_keyword>xpath=.//*[contains(text(),'Search Results')]</lbl_searched_keyword>
+	<lst_leftNavigations>css=[data-slnm-id=searchLeftNav]>*>*</lst_leftNavigations>
+	<lst_promotions>xpath=.//*[@class="promos"]</lst_promotions>
+	<SPR_NoSearchResult>xpath=.//*[contains(text(),'Want to try')]/parent::*</SPR_NoSearchResult>
+	<SRP_MB_NoResult>xpath=.//div[contains(@class,'no-results-mobile')]</SRP_MB_NoResult>/
+	<SRP_NoSearchTextBox>xpath=.//*[text()='Search']</SRP_NoSearchTextBox>
+	<SRP_sortByHighLow>css=[value=priceLowToHigh]</SRP_sortByHighLow>
+	<SRP_LoadingMore>xpath=.//*[contains(text(),'LOADING MORE')]</SRP_LoadingMore>
+	<SRP_topProductList>xpath=.//*[contains(@data-slnm-id,'rightTypeAhead')]</SRP_topProductList>
+	<SRP_ContactUs>css=[data-slnm-id=contact-us-search]</SRP_ContactUs>
+	<SRP_leftNav_Result>xpath=.//*[@data-slnm-id='searchLeftNav']/*</SRP_leftNav_Result>
+	<SRP_typeAheadSuggestedKeyword>xpath=//div[@class='right-heading']</SRP_typeAheadSuggestedKeyword>
+	<SRP_typeAheadHighlightedKeyword>xpath=.//*[@id='searchCloseButton']/../following-sibling::*/*[1]//a//span[@class='highlight']</SRP_typeAheadHighlightedKeyword>
+	<Search_closeButton>xpath=.//*[@id='searchCloseButton']</Search_closeButton>
+	<SRP_SecificSearchTermText>xpath=//div[contains(@class,'suggested-content')]</SRP_SecificSearchTermText>
+	<SRP_specificSearchTermLink>xpath=//div[contains(@class,'suggested-content')]//a</SRP_specificSearchTermLink>
+	<SRP_didYouMean>xpath=//div[contains(@class,'search-suggestion')]</SRP_didYouMean>
+	<SRP_AppliedFilterCount>xpath=(//h2[contains(@class,'filter-title')]/span[@class='count'])[1]</SRP_AppliedFilterCount>
+	<SRP_MB_FilterTitles>xpath=//ul[contains(@class,'filter-row')]//li</SRP_MB_FilterTitles>
+	<SRP_MB_FilterBackButton>xpath=//div[contains(@class,'modal-header-container')]/button</SRP_MB_FilterBackButton>
+
+	
+		<!-- ODP Page controls -->
+	<ODP_ShopLooks>css=[data-slnm-id=shopTheLook]</ODP_ShopLooks>
+	<ODP_Discount>xpath=.//*[contains(@class,'promo-messages')]</ODP_Discount>
+	<ODP_FindTrueFit></ODP_FindTrueFit>
+	<ODP_ZoomOverRollIn_dsk>css=[data-slnm-id='modalWrapperRollOverToZoomIn']</ODP_ZoomOverRollIn_dsk>
+	<ODP_ZoomOverRollIn>css=[data-slnm-id='modalWrapperRollOverToZoomIn']</ODP_ZoomOverRollIn>
+	<ODP_Header_ShopTheLook>xpath=.//*[text()='SHOP THIS LOOK']</ODP_Header_ShopTheLook>
+	<ODP_close_Btn>css=[data-slnm-id='modalWrapperCloseButton']</ODP_close_Btn>
+	<ODP_ProductName>css=[data-slnm-id='modalWrapperProductName']</ODP_ProductName>
+	<OPD_Image>xpath=.//*[@data-slnm-id='alternateImage']//img</OPD_Image>
+	<ODP_OtherItemImg>xpath=.//*[contains(@class,'gallery-thumbnails')]//img</ODP_OtherItemImg>
+	<!-- Customer Service controls -->
+	<CS_lbl_FindAnAnswer>css=[data-slnm-id='findAnAnswer']</CS_lbl_FindAnAnswer>
+	<CS_txtSearchInput>xpath=.//*[@id='inputSearch']</CS_txtSearchInput>
+	<CS_lbl_FindAnAnsPlaceHolder>xpath=.//*[@for='inputSearch']/parent::*//span</CS_lbl_FindAnAnsPlaceHolder>
+	<CS_btn_Search>xpath=//button[contains(.,'SEARCH')]</CS_btn_Search>
+	<CS_lbl_TopQuestions>xpath=//h3[text()='Top Questions']</CS_lbl_TopQuestions>
+	<CS_lnk_topQuestions>css=[data-slnm-id='Top Questions']</CS_lnk_topQuestions>
+	<CS_lnk_topQuestions_Mobile>xpath=(//*[text()='Top Questions'])[1]</CS_lnk_topQuestions_Mobile>
+	<CS_lnk_ContactUs>css=[href='/contact-us']</CS_lnk_ContactUs>
+	<section_ContactUs>xpath=//section[contains(@class,'contact-us')]</section_ContactUs>
+	<CS_lst_topQuestions>xpath=//*[@data-slnm-id='TopQuestions']//div[contains(@id,'accordion__title')]</CS_lst_topQuestions>
+	<CS_lst_giftingServicesQuestion>xpath=//*[@data-slnm-id='GIFTCARDS+GIFTINGSERVICES']//div[contains(@id,'accordion__title')]</CS_lst_giftingServicesQuestion>
+	<CS_lst_giftingServicesQuestion_LO>xpath=//*[@data-slnm-id='GIFTCARDSANDGIFTINGSERVICES']//div[contains(@id,'accordion__title')]</CS_lst_giftingServicesQuestion_LO>
+	<CS_lst_retAndExchQuestion>xpath=//*[@data-slnm-id='Returns+Exchanges']//div[contains(@id,'accordion__title')]</CS_lst_retAndExchQuestion>
+	<CS_lst_retAndExchQuestion_LO>xpath=//*[@data-slnm-id='ReturnsAndExchanges']//div[contains(@id,'accordion__title')]</CS_lst_retAndExchQuestion_LO>
+	<CS_lst_shoppingATQuestions>xpath=//*[@data-slnm-id='ShoppingOnAnnTaylorFactory']//div[contains(@id,'accordion__title')]</CS_lst_shoppingATQuestions>
+	<CS_lst_shoppingATQuestions_LO>xpath=//*[@data-slnm-id='ShoppingOnLOFTOutlet']//div[contains(@id,'accordion__title')]</CS_lst_shoppingATQuestions_LO>
+	<CS_para_questionDescription>xpath=//div[@aria-expanded='true']/following-sibling::div[contains(@id,'accordion__body')]//p</CS_para_questionDescription>
+	<CS_lnk_OrderStatusAndTracking>css=[data-slnm-id='Order Status + Tracking']</CS_lnk_OrderStatusAndTracking>
+	<CS_OS_txt_Email>css=input#order-status-email-address</CS_OS_txt_Email>
+	<CS_OS_txt_OrderNumber>css=input#order-status-number</CS_OS_txt_OrderNumber>
+	<CS_btn_viewOrder>xpath=//button[text()='View Order']</CS_btn_viewOrder>
+	<CS_OS_errorMsg>xpath=//*[@class='error-msg']</CS_OS_errorMsg>
+	<OS_OrderDetailsH2>css=[data-slnm-id=orderId]</OS_OrderDetailsH2>
+	<CS_OS_lbl_ReturnAndExchange>xpath=//h3[contains(text(),'Returns')]</CS_OS_lbl_ReturnAndExchange>
+	<CS_lnk_returnsAndExchange_topics>xpath=//*[@data-slnm-id='leftNavigation']//*[contains(@data-slnm-id,'Exchanges')]</CS_lnk_returnsAndExchange_topics>
+	<CS_OS_lbl_ShoppingOnATF>xpath=//h3[contains(text(),'Shopping On')]</CS_OS_lbl_ShoppingOnATF>
+	<CS_CU_txt_email>xpath=(//*[@id='email-form-email-address'])[1]</CS_CU_txt_email>
+	<CS_CU_txt_Name>css=input#first-name</CS_CU_txt_Name>
+	<CS_CU_txt_ConfirmMail>xpath=//*[@id='email-form-confirm-email-address']</CS_CU_txt_ConfirmMail>
+	<CS_CU_drpdwn_Subject>css=[data-slnm-id='sortBySelectBoxLabel']</CS_CU_drpdwn_Subject>
+	<CS_CU_drpdwn_Subject_Android>xpath=//*[contains(@class,'subject')]//select</CS_CU_drpdwn_Subject_Android>
+	<CS_CU_li_subjectOptions>xpath=//*[contains(@data-slnm-id,'sortBySelectBoxOption')]</CS_CU_li_subjectOptions>
+	<CS_CU_li_subjectOption_android>//android.widget.CheckedTextView[@index=1]</CS_CU_li_subjectOption_android>
+	<CS_CU_txt_Message>css=textarea#email-form-message</CS_CU_txt_Message>
+	<CS_CU_h3_CallUs>css=[data-slnm-id='callUs']</CS_CU_h3_CallUs>
+	<CS_CU_h3_WriteUs>css=[data-slnm-id='writeUs']</CS_CU_h3_WriteUs>
+	<CS_CU_h3_EmailUs>css=[data-slnm-id='emailUs']</CS_CU_h3_EmailUs>
+	<CS_EU_emailId>xpath=//*[contains(text(),'@anntaylorfactory.com')]</CS_EU_emailId>
+	<CS_EU_emailIdLO>xpath=//*[contains(text(),'@LOFTOutlet.com')]</CS_EU_emailIdLO>
+	<CS_CallUs_details>xpath=//li[@class='call-us']//p</CS_CallUs_details>
+	<CS_WriteUs_details>xpath=//li[@class='mail-us']//p</CS_WriteUs_details>
+	<CS_EU_btn_send>xpath=//button[text()='Send']</CS_EU_btn_send>
+	<CS_lnk_giftingServices>css=[data-slnm-id='Gift Card + Gifting Services']</CS_lnk_giftingServices>
+	<CS_header_giftingServices>xpath=//h3[contains(text(),'GIFT CARD')]</CS_header_giftingServices>
+	<CS_CU_emailSendConfirmation>xpath=//*[@class='thank-you']</CS_CU_emailSendConfirmation>
+	<CS_MB_topQuestionList>xpath=//div[text()='Top Questions']/../following-sibling::div/a</CS_MB_topQuestionList>
+	<subject_MB_Xpath>//XCUIElementTypeOther</subject_MB_Xpath>
+	<CSC_TopListDiv>xpath=//*[@role='tab']/..</CSC_TopListDiv>
+	<CSC_CloseTopQuestionDiv>xpath=//*[@role='tab']</CSC_CloseTopQuestionDiv>
+	<CSC_PrivacySecurity>xpath=.//*[contains(text(),' Security')]</CSC_PrivacySecurity>
+	<CSC_PrivacySecurityParagraph>xpath=(.//*[@data-slnm-id='Privacy+Policy']//p)[1]</CSC_PrivacySecurityParagraph>
+	<CSC_PrivacySecurityQuestion>xpath=.//*[@data-slnm-id='Privacy+Policy']//*[contains(@id,'accordion__title')]</CSC_PrivacySecurityQuestion>
+	<CSC_PrivacySecurityDescription>xpath=.//*[@data-slnm-id='Privacy+Policy']//*[contains(@id,'accordion__title')]/following-sibling::*//p</CSC_PrivacySecurityDescription>
+	<CSC_TermOfUse>xpath=.//*[text()='Terms of Use']/parent::a</CSC_TermOfUse>
+	<CSC_TermOfUseQues>xpath=.//*[@data-slnm-id='termOfUse']//*[contains(@id,'accordion__title')]</CSC_TermOfUseQues>
+	<CSC_TermOfUseDescription>xpath=.//*[@data-slnm-id='termOfUse']//*[contains(@id,'accordion__title')]/following-sibling::*//p</CSC_TermOfUseDescription>
+	<CS_CustomerService_lnk>xpath=//div[@data-slnm-id='customerServiceTopNavTabs']//li[1]/a/div</CS_CustomerService_lnk>
+	<CS_TermsOfUse>xpath=//div[@data-slnm-id='customerServiceTopNavTabs']//li[2]/a</CS_TermsOfUse>
+	<CS_ContacUS>xpath=.//*[text()='Contact Us']/parent::a</CS_ContacUS>
+	<CS_OrderStatus_Email_ErrMsg>xpath=//span[contains(text(),'Please enter your email address')]</CS_OrderStatus_Email_ErrMsg>
+	<CS_OrderStatus_Ordernum_ErrMsg>xpath=//span[contains(text(),'Please enter your order number')]</CS_OrderStatus_Ordernum_ErrMsg>
+	<CS_CU_ImageIcon>spath=//*[@data-slnm-id='liveChat']</CS_CU_ImageIcon>
+	<CS_CU_StartNow>xpath=//a[@href='#show-chat']</CS_CU_StartNow>
+	<CS_CU_MonFri_text>xpath=(//*[contains(text(),'Mon - Fri:')])[1]</CS_CU_MonFri_text>
+	<CS_CU_SatSun_text>xpath=(//*[contains(text(),'Sat - Sun:')])[1]</CS_CU_SatSun_text>
+	<CS_CU_OrderNumber>xpath=//input[@data-slnm-id='orderNumber']</CS_CU_OrderNumber>
+	<CS_CU_OrderNumberText>xpath=//*[@data-slnm-id='orderNumber']//preceding::span[1]</CS_CU_OrderNumberText>
+	<CS_CU_Order_Validation>xpath=(//span[@class='validation-span'])</CS_CU_Order_Validation>
+	<CS_CU_Order_errorMsg>xpath=//*[@data-slnm-id='orderNumber']//following::span[1]</CS_CU_Order_errorMsg>
+	<CS_CU_InvalidMailError>xpath=//span[contains(text(),'Invalid email address - please re-enter')]</CS_CU_InvalidMailError>
+	<CS_CU_MailErrorMsg>xpath=//input[@id='email-form-email-address']//following::span[1]</CS_CU_MailErrorMsg>
+	<CS_contactUsTab>xpath=//div[@data-slnm-id='customerServiceTopNavTabs']//li[4]/a</CS_contactUsTab>
+	<CS_tab_links>xpath=//div[@data-slnm-id='customerServiceTopNavTabs']//li/a</CS_tab_links>
+	<CS_customerServicePrivacyLink>xpath=//div[contains(text(),'Privacy')]</CS_customerServicePrivacyLink>
+	<CS_accordianItems>xpath=//div[contains(@class,'accordion__item')]//div[contains(@id,'accordion__title')]</CS_accordianItems>
+	<CS_OrderStatusHeading>xpath=.//h1[contains(.,'ORDER STATUS')]</CS_OrderStatusHeading>
+	<CS_ContactUs_Name>Name</CS_ContactUs_Name>
+	<CS_ContactUs_Email>Email</CS_ContactUs_Email>
+	<CS_ContactUs_ConfirmEmail>Confirm Email</CS_ContactUs_ConfirmEmail>
+	<CS_TrackOrder_Email>Email Address</CS_TrackOrder_Email>
+	<CS_TrackOrder_OrderNumber>Order Number</CS_TrackOrder_OrderNumber>
+	<CS_searchField_ATF>What can we help you find?</CS_searchField_ATF>
+	<CS_searchField_LO>What are you looking for?</CS_searchField_LO>
+	
+	<!-- STORE LOCATOR CONTROLS -->
+	<SL_viewAllLocations>css=[data-slnm-id=allLocationsText]</SL_viewAllLocations>
+	<SL_DistanceDropdown>css=[data-slnm-id=undefinedSelectBoxLabel]</SL_DistanceDropdown>
+	<SL_DistanceDropdown_Options>xpath=//*[@data-slnm-id='undefinedNativeSelectBox']/option</SL_DistanceDropdown_Options>
+	<SL_txtZipCode>css=[data-slnm-id=zipCodeInput]</SL_txtZipCode>
+	<SL_btnSearch>xpath=//button[text()='SEARCH']</SL_btnSearch>
+	<SL_numberOfStore_Mbl>css=[data-slnm-id=numberOfStores]</SL_numberOfStore_Mbl>
+	<SL_tabATF>css=[data-slnm-id=storeLocatorFirstTabText]</SL_tabATF>
+	<SL_tabAT>css=[data-slnm-id=storeLocatorSecondTabText]</SL_tabAT>
+	<SL_label_storeResult>css=[data-slnm-id=nearStoresText]</SL_label_storeResult>
+	<MBL_SL_label_storeResult>css=[data-slnm-id=nearStoresText]</MBL_SL_label_storeResult>
+	<SL_StoreAddress>xpath=//*[contains(@data-slnm-id,'-address')]</SL_StoreAddress>
+	<MBL_SL_StoreAddress>xpath=//*[contains(@data-slnm-id,'-address')]</MBL_SL_StoreAddress>
+	<SL_StoreDistance>xpath=//*[contains(@data-slnm-id,'-distance')]</SL_StoreDistance>
+	<MBL_SL_StoreDistance>xpath=//*[contains(@data-slnm-id,'-distance')]</MBL_SL_StoreDistance>
+	<SL_StoreOpenStatus>xpath=//*[contains(@data-slnm-id,'-openStatus')]</SL_StoreOpenStatus>
+	<SL_StoreOpenTimings>xpath=//*[contains(@data-slnm-id,'-openTimings')]</SL_StoreOpenTimings>
+	<MBL_SL_StoreOpenTimings>xpath=//*[contains(@data-slnm-id,'-openTimings')]</MBL_SL_StoreOpenTimings>
+	<SL_btn_viewStoreDetails>css=[data-slnm-id=viewStoreDetailButton]</SL_btn_viewStoreDetails>
+	<SL_firstStoreAddressLine1>xpath=(//*[contains(@data-slnm-id,'-address')])[1]/span[1]</SL_firstStoreAddressLine1>
+	<SL_firstStoreAddressLine2>xpath=(//*[contains(@data-slnm-id,'-address')])[1]/span[2]</SL_firstStoreAddressLine2>
+	<SL_errorMsg_nozipCode>xpath=//*[contains(text(),'use your current location')]</SL_errorMsg_nozipCode>
+	<SL_enterPin_IOS>Enter Address, City, State or Zip Code</SL_enterPin_IOS>
+	<SL_Login_IOS>Log In</SL_Login_IOS>
+	
+	<Next>Next</Next>
+	<!-- My Accounts locaters -->
+	<MA_DashbordHeader>xpath=//*[contains(@class,'my-account dashboard')]</MA_DashbordHeader>
+	<MA_SignIn>css=[data-slnm-id='signIn']</MA_SignIn>
+	<MA_createAccount>css=[data-slnm-id='createAccount']</MA_createAccount>
+	<MA_checkOrderStatus>css=[data-slnm-id='checkOrderStatus']</MA_checkOrderStatus>
+	<MA_Signin_Email>css=[data-slnm-id='loginEmail']</MA_Signin_Email>
+	<MA_Signin_Pwd>css=[data-slnm-id='loginPassword']</MA_Signin_Pwd>
+	<MA_Signin_btn>css=[data-slnm-id='loginSubmit']</MA_Signin_btn>
+	<MA_Signup_Fname>css=[data-slnm-id='firstName']</MA_Signup_Fname>
+	<MA_signup_Lname>css=[data-slnm-id='lastName']</MA_signup_Lname>
+	<MB_MA_signup_Lname>xpath=//*[@class='last-name']</MB_MA_signup_Lname>
+	<MA_Signup_Email>css=[data-slnm-id='emailAddress']</MA_Signup_Email>
+	<MA_Signup_pwd>css=[data-slnm-id='password']</MA_Signup_pwd>
+	<MA_Signup_Confrm_pwd>css=[data-slnm-id='confirmPassword']</MA_Signup_Confrm_pwd>
+	<MA_Signup_revEmail>css=[id='signUpEmail']</MA_Signup_revEmail>
+	<MA_Signup_btn>css=[data-slnm-id='signupSubmit']</MA_Signup_btn>
+	<MA_Signup_registerEmail_error_mg>css=[data-slnm-id='signUpError']</MA_Signup_registerEmail_error_mg>
+	<MA_forgot_password>xpath=//*[contains(text(),'Forgot Password?')]</MA_forgot_password>
+	<MA_forgotpwd_modal>xpath=//h3[contains(text(),'FORGOT PASSWORD')]</MA_forgotpwd_modal>
+	<MA_forgotPwd_email>xpath=(//*[@placeholder='Email Address'])[3]</MA_forgotPwd_email>
+	<MA_forgotPwd_submit>xpath=//*[contains(text(),'SUBMIT')]</MA_forgotPwd_submit>
+	<MA_forgotPwd_Email_check>xpath=(//*[@class='valid-icon checkmark'])[8]</MA_forgotPwd_Email_check>
+	<MA_PaymentsMethod>css=[data-slnm-id='billingInfo']>*</MA_PaymentsMethod>
+	<MA_AddressBook_lnk>css=[data-slnm-id='addressBook']>*</MA_AddressBook_lnk>
+	<MA_AddressBookHeader>xpath=//*[@data-slnm-id='sectionHeading'][text()='Address Book']</MA_AddressBookHeader>
+	<MA_AddressBookAddNew>xpath=//*[@data-slnm-id='sectionHeading'][text()='Address Book']/parent::div/*[@data-slnm-id='addNewBtn']</MA_AddressBookAddNew>
+	<MBL_MA_AddressBookAddNew>xpath=//*[@data-slnm-id='addressBook']//*[@data-slnm-id='addNewBtn']</MBL_MA_AddressBookAddNew>
+	<MA_AddressBookModalHeader>xpath=//*[@data-slnm-id='modalWrapperTitle'][contains(text(),'Add')]</MA_AddressBookModalHeader>
+	<MA_AddressBookModalEditHeader>xpath=//*[@data-slnm-id='modalWrapperTitle'][contains(text(),'Edit')]</MA_AddressBookModalEditHeader>
+	<MA_dashboard_Order_returns>css=[data-slnm-id='orderSectionHeading']</MA_dashboard_Order_returns>
+	<MA_AddNewTitle_Payment>css=[data-slnm-id='modalWrapperTitle']</MA_AddNewTitle_Payment>
+	<MA_Order_retruns_message></MA_Order_retruns_message>
+	<MA_dashboard_profile_preference_lnk>css=[data-slnm-id='preferences']>*</MA_dashboard_profile_preference_lnk>
+	<MA_profile_preference_message></MA_profile_preference_message>
+	<MA_addrerssbook_noItem>css=[data-slnm-id='noSavedAddressText']</MA_addrerssbook_noItem>
+	<MA_PaymentsMethod_header>xpath=//*[@data-slnm-id='sectionHeading'][contains(text(),'Payment Method')]</MA_PaymentsMethod_header>
+	<MA_PaymentsMethod_headerLO>xpath=//*[@data-slnm-id='sectionHeading'][text()='Wallet']</MA_PaymentsMethod_headerLO>
+	<MBL_MA_PaymentsMethod_header>xpath=//*[@data-slnm-id='modalWrapperTitle'][contains(text(),'Payment Method')]</MBL_MA_PaymentsMethod_header>
+	<MA_paymentMethod_noItem>css=[data-slnm-id='noSavedAddressText']</MA_paymentMethod_noItem>
+	<MA_paymentMethod_addnew>xpath=//*[@data-slnm-id='sectionHeading'][contains(text(),'Payment Method')]/parent::div/*[@data-slnm-id='addNewBtn']</MA_paymentMethod_addnew>
+	<MA_paymentMethod_addnewLO>xpath=//*[@data-slnm-id='sectionHeading'][text()='Wallet']/parent::div/*[@data-slnm-id='addNewBtn']</MA_paymentMethod_addnewLO>
+	<MBL_MA_paymentMethod_addnew>xpath=//*[@data-slnm-id='billingInfo']//*[@data-slnm-id='addNewBtn']</MBL_MA_paymentMethod_addnew>
+	<MA_orderStatus_lnk>css=[data-slnm-id='ordersHistory']>*</MA_orderStatus_lnk>
+	<MA_searchOrder>css=[data-slnm-id='searchOrderNumber']</MA_searchOrder>
+	<MA_searchOrder_submit>xpath=.//*[text()='GO']</MA_searchOrder_submit>
+	<MA_searchOrder_lst>xpath=.//*[@role='tablist']//*[@data-slnm-id='orderId']</MA_searchOrder_lst>
+	<MA_expand_searchOrder></MA_expand_searchOrder>
+	<MA_orderstaus_afterexpand>xpath=.//*[@data-slnm-id='orderStatus']/..</MA_orderstaus_afterexpand>
+
+	<MA_Address_fname>css=[data-slnm-id='addressFormFirstName']</MA_Address_fname>
+	<MA_Address_Lname>css=[data-slnm-id='addressFormLastName']</MA_Address_Lname>
+	<MA_Address_Addr1>css=[data-slnm-id='addressFormAddress1']</MA_Address_Addr1>
+	<MA_Address_Addr2>css=[data-slnm-id='addressFormAddress2']</MA_Address_Addr2>
+	<MA_Address_zip>css=[data-slnm-id='addressFormPostalCode']</MA_Address_zip>
+	<MA_Address_city>css=[data-slnm-id='addressFormCity']</MA_Address_city>
+	<MA_Address_state>css=[data-slnm-id='addressFormStateSelectBoxLabel']</MA_Address_state>
+	<MA_Address_phn>css=[data-slnm-id='addressFormPhoneNumber']</MA_Address_phn>
+	<MA_Address_clearAll></MA_Address_clearAll>
+	<MA_Address_fname_error></MA_Address_fname_error>
+	<MA_Address_Lname_error></MA_Address_Lname_error>
+	<MA_Address_address1_error></MA_Address_address1_error>
+	<MA_Address_zip_error></MA_Address_zip_error>
+	<MA_Address_phone_error></MA_Address_phone_error>
+	<MA_Address_save_btn>xpath=//button[text()='Save']</MA_Address_save_btn>
+	<MA_Address_edit_btn>xpath=//*[@data-slnm-id='editCardBtn0']</MA_Address_edit_btn>
+	<MA_Address_remove_btn>xpath=//*[contains(@data-slnm-id,'removeCardBtn')]</MA_Address_remove_btn>
+	<MA_Address_remove_confirm_btn>xpath=//div[@id='removeAddress']//button[contains(text(),'Confirm')]</MA_Address_remove_confirm_btn>
+	<MBL_MA_Address_remove_confirm_btn>xpath=//div[@id='removeAddress']//button[contains(text(),'Yes')]</MBL_MA_Address_remove_confirm_btn>
+	<MA_CloseButton>css=[data-slnm-id='modalWrapperCloseButton']</MA_CloseButton>
+	<MA_AddAddress_City_Header>xpath=//div[@data-slnm-id='modalWrapper']//span[text()='City']</MA_AddAddress_City_Header>
+	<MA_Header>xpath=//*[@id="main_hp"]/div/h1</MA_Header>
+
+	<MA_billingInfo_fname>css=[id='billingFirstName']</MA_billingInfo_fname>
+	<MA_billingInfo_Lname>css=[id='billingLastName']</MA_billingInfo_Lname>
+	<MA_billingInfo_Addr1>css=[id='billingAddress']</MA_billingInfo_Addr1>
+	<MA_billingInfo_zip>css=[id='billingZip']</MA_billingInfo_zip>
+	<MA_billingInfo_city>id=billingCity</MA_billingInfo_city>
+	<MA_billingInfo_state>id=billingState-span</MA_billingInfo_state>
+	<MA_billingInfo_phn>css=[id='billingPhone']</MA_billingInfo_phn>
+	<MA_billingInfo_clearAll>css=[value='clear all']</MA_billingInfo_clearAll>
+	<MA_billingInfo_fname_error>xpath=.//*[text()='Please enter a first name']</MA_billingInfo_fname_error>
+	<MA_billingInfo_Lname_error>xpath=.//*[text()='Please enter a last name']</MA_billingInfo_Lname_error>
+	<MA_billinginfo_address1_error>xpath=.//*[contains(text(),'Please enter an address')]</MA_billinginfo_address1_error>
+	<MA_billingInfo_zip_error>xpath=.//*[text()='Please enter a zip code']</MA_billingInfo_zip_error>
+	<MA_billingInfo_phone_error>xpath=.//*[text()='Please enter a valid phone number']</MA_billingInfo_phone_error>
+	<MA_billingInfo_city_error>xpath=.//*[text()='Please enter a city']</MA_billingInfo_city_error>
+	<MA_billingInfo_state_error>xpath=.//*[text()='Please select a state']</MA_billingInfo_state_error>
+	<MA_billingInfo_Month_error>xpath=.//*[text()='Please select a month']</MA_billingInfo_Month_error>
+	<MA_billingInfo_year_error>xpath=.//*[text()='Please select a year']</MA_billingInfo_year_error>
+	<MA_billingInfo_cardNumber_error>xpath=.//*[text()='The credit card number is not valid.']</MA_billingInfo_cardNumber_error>
+	
+	<MA_billingInfo_save_btn>xpath=//*[@id='billing-btn-revieworder' or @id='billing-continue']</MA_billingInfo_save_btn>	
+	<MA_billing_edit_btn>css=[data-slnm-id='editCardBtn0']</MA_billing_edit_btn>
+	<MA_billing_remove_btn>xpath=//*[contains(@aria-label,'remove')]</MA_billing_remove_btn>
+	<MBL_MA_billing_remove_btn>xpath=//*[contains(@aria-label,'remove')]</MBL_MA_billing_remove_btn>
+	<MA_billing_remove_confirm_btn>css=[data-slnm-id='confirmRemoveCard']</MA_billing_remove_confirm_btn>	
+	<MBL_MA_billing_remove_confirm_btn>xpath=//div[@id='removeCard']//button[contains(text(),'Yes')]</MBL_MA_billing_remove_confirm_btn>
+
+	<MBL_MA_billingInfo_save_btn>billing-continue</MBL_MA_billingInfo_save_btn>
+		
+	<MA_ProfilePreference_ClickHere>xpath=.//*[contains(text(),'Click Here')]</MA_ProfilePreference_ClickHere>
+	<MA_ProfilePreference_AssociateID>css=[data-slnm-id='associateId']</MA_ProfilePreference_AssociateID>
+	<MA_ProfilePreference_Continue>xpath=.//*[contains(@class,'continue')]</MA_ProfilePreference_Continue>
+	<MA_ProfilePreference_EditPassword>xpath=.//*[@aria-label='Edit Password']</MA_ProfilePreference_EditPassword>
+	<MA_ProfilePreference_txt_CurrentPassword>css=[data-slnm-id='confirmCurrentPassword']</MA_ProfilePreference_txt_CurrentPassword>
+	<MA_ProfilePreference_txt_NewPassword>css=[data-slnm-id='enterNewPassword']</MA_ProfilePreference_txt_NewPassword>
+	<MA_ProfilePreference_txt_ConfirmPassword>css=[data-slnm-id='confirmNewPassword']</MA_ProfilePreference_txt_ConfirmPassword>
+	<MA_ProfilePreference_btn_SavePassword>xpath=.//*[contains(text(),'Save')]</MA_ProfilePreference_btn_SavePassword>
+	<MA_ProfilePreference_SuccessChangePasswordMsg></MA_ProfilePreference_SuccessChangePasswordMsg>
+	<MA_ProfilePreference_EditEmail>xpath=(.//*[contains(text(),'EDIT')])[1]</MA_ProfilePreference_EditEmail>
+	<MA_ProfilePreference_UpdateEmail>css=[data-slnm-id='updateEmailAddress']</MA_ProfilePreference_UpdateEmail>
+	<MA_ProfilePreference_ConfirmEmail>css=[data-slnm-id='confirmEmailAddress']</MA_ProfilePreference_ConfirmEmail>
+	<MA_ProfilePreference_SuccessChangeEmailMsg></MA_ProfilePreference_SuccessChangeEmailMsg>
+	<MA_paymentoption_editCard></MA_paymentoption_editCard>
+	<MA_paymentoption_checkDefault>css=[data-slnm-id='checkbox']</MA_paymentoption_checkDefault>
+	<MBL_MA_paymentoption_checkDefault>xpath=.//*[contains(@data-slnm-id,'setDefaultCheckbox')]</MBL_MA_paymentoption_checkDefault>
+	<MA_paymentoption_close_remove_card></MA_paymentoption_close_remove_card>
+	<MA_paymentoption_savedCards></MA_paymentoption_savedCards>
+	<MA_confirm_removeCard></MA_confirm_removeCard>
+	<MA_savedCard_cardNumber></MA_savedCard_cardNumber>
+	<MA_savedcard_expiry></MA_savedcard_expiry>
+	<MA_paymentoption_close_remove_card></MA_paymentoption_close_remove_card>
+	<MA_paymentoption_savedCards></MA_paymentoption_savedCards>
+	<MA_savedCard_cardType>css=[data-slnm-id='cardType0']</MA_savedCard_cardType>
+	<MA_ProfilePreference_ErrorMsg_EmailMismatch>css=[data-slnm-id='formInputErrorMessage']</MA_ProfilePreference_ErrorMsg_EmailMismatch>
+	<MA_ProfilePreference_SecurityQuestion_lbl>css=[class='security-title']</MA_ProfilePreference_SecurityQuestion_lbl>
+	<MA_ProfilePreference_ZipCode>css=[data-slnm-id='whatIsYourWorkZipCode']</MA_ProfilePreference_ZipCode>
+	<MA_ProfilePreference_DOB>css=[data-slnm-id='whatIsYourDateOfBirthMmDd']</MA_ProfilePreference_DOB>
+	<MA_ProfilePreference_Submit></MA_ProfilePreference_Submit>
+	<MA_ProfilePreference_AccountLinkMsg>css=[class='success-msg']</MA_ProfilePreference_AccountLinkMsg>
+	<MA_ProfilePreference_EmployeeID>css=[class='id-value']</MA_ProfilePreference_EmployeeID>
+	<MA_ProfilePreference_Remove>xpath=.//*[contains(@class,'remove')]</MA_ProfilePreference_Remove>
+	<MA_ProfilePreference_Remove_Confirm>xpath=.//*[contains(@class,'continue')]</MA_ProfilePreference_Remove_Confirm>
+	<MA_ProfilePreference_ErrorMsg_AlreadyAssociated></MA_ProfilePreference_ErrorMsg_AlreadyAssociated>
+	<MA_ProfilePreference_Password>css=[class='current-password']</MA_ProfilePreference_Password>
+	<MA_SignOut>css=[data-slnm-id='createAccount']</MA_SignOut>
+	<MBL_MA_SignOut>xpath=//a/span[text()='SIGN OUT']</MBL_MA_SignOut>
+	<MA_MainAccountUserName_UtilityNav></MA_MainAccountUserName_UtilityNav>
+	<MA_OrderReturn_PlusIcon>xpath=//*[@data-slnm-id='orderId']/ancestor::*[contains(@id,'accordion')]/*[2]/parent::div</MA_OrderReturn_PlusIcon>
+	<MA_OwnerName>.//h1[contains(text(),'</MA_OwnerName>
+	<!-- <MA_Dashboard_EditEmail>css=[data-slnm-id='editEmailOrPassword']>*</MA_Dashboard_EditEmail>
+	<MA_Dashboard_EditPassword>css=[data-slnm-id='editEmailPreference']>*</MA_Dashboard_EditPassword> -->
+	<MA_Dashboard_EditEmail>xpath=//a[contains(text(),'EDIT EMAIL OR PASSWORD')]</MA_Dashboard_EditEmail>
+	<MA_Dashboard_EditPassword>xpath=//a[contains(text(),'EDIT EMAIL PREFERENCES')]</MA_Dashboard_EditPassword>
+	<MA_DashBoard_ProfilePreference_ViewLink>css=[data-slnm-id='viewmyProfilePreferences']</MA_DashBoard_ProfilePreference_ViewLink>
+	<MA_DashBoard_ProfilePreference_ViewLinkLO>css=[data-slnm-id='viewprofilePreferences']</MA_DashBoard_ProfilePreference_ViewLinkLO>
+<!-- 	<MA_DashBoard_ProfilePreference_UserName>css=[data-slnm-id='userFullName']</MA_DashBoard_ProfilePreference_UserName>
+	<MA_DashBoard_ProfilePreference_Email>css=[data-slnm-id='userEmailAddress']</MA_DashBoard_ProfilePreference_Email> -->
+	<MA_DashBoard_ProfilePreference_UserName>xpath=//*[@class='prof-row'][1]//*[@class='prof-row__value']</MA_DashBoard_ProfilePreference_UserName>
+	<MA_DashBoard_ProfilePreference_Email>xpath=//*[@class='prof-row'][2]//*[@class='prof-row__value']</MA_DashBoard_ProfilePreference_Email>
+	<MA_DashBoard_ProfilePreference_EmailLO>xpath=//*[@class='prof-row'][1]//*[@class='prof-row__value'][2]</MA_DashBoard_ProfilePreference_EmailLO>
+	<MA_OrderReturn_BilledToSection>xpath=(.//*[contains(@class,'order-detail-content')])[1]</MA_OrderReturn_BilledToSection>
+	<MA_OrderReturn_PaymentSection>xpath=//*[@data-slnm-id='orderDetailCREDIT CARD']/parent::div</MA_OrderReturn_PaymentSection>
+	<MA_OrderReturn_Payment_Amount>xpath=(.//*[contains(@class,'order-detail-content')])[2]//*[contains(text(),'$')]</MA_OrderReturn_Payment_Amount>
+	<MA_OrderReturn_ShippedToSection>xpath=(.//*[contains(@class,'order-detail-content')])[3]</MA_OrderReturn_ShippedToSection>
+	<MA_OrderReturn_EstimateDelivery>xpath=(.//*[contains(@class,'order-detail-content')])[5]/*[1]</MA_OrderReturn_EstimateDelivery>
+	<MA_OrderReturn_Est.Date>xpath=(.//*[contains(@class,'order-detail-content')])[5]/*[2]</MA_OrderReturn_Est.Date>
+	<MA_ExpirationDaye_Payment>css=[data-slnm-id='cardExpiry0']</MA_ExpirationDaye_Payment>
+	<MA_CardNumber_Payment>css=[data-slnm-id='cardNumber0']</MA_CardNumber_Payment>
+	<MA_CardType_Payment>css=[data-slnm-id='cardType0']</MA_CardType_Payment>
+	<MA_CardType_Payment_1>css=[data-slnm-id='cardType1']</MA_CardType_Payment_1>
+	<MA_NoCardPresentTxt>css=[data-slnm-id='noSavedCardText']</MA_NoCardPresentTxt>
+	<MA_AddressName_PaymentMethod>xpath=.//*[@class='card-content']//*[@data-slnm-id='userName0']</MA_AddressName_PaymentMethod>
+	<MA_Address_PaymentMethod>xpath=.//*[@class='card-content']//*[@data-slnm-id='userAddress0']</MA_Address_PaymentMethod>
+	<MA_AddressCityState_PaymentMethod>xpath=.//*[@class='card-content']//*[@data-slnm-id='userAddressCityAndState0']</MA_AddressCityState_PaymentMethod>
+	<MA_AddressPhoneNo_PaymentMethod>xpath=.//*[@class='card-content']//*[@data-slnm-id='userPhone0']</MA_AddressPhoneNo_PaymentMethod>
+	<MA_EditCard_SuccessMsg>xpath=.//*[text()='Credit Card edited successfully']</MA_EditCard_SuccessMsg>
+	<MA_Wallet_LO>css=[data-slnm-id='billingInfo']>*</MA_Wallet_LO>
+	<MA_Breadcrumb_Home>xpath=.//*[text()='Home']</MA_Breadcrumb_Home>
+	<MA_BreadCrumb_MyAccount>xpath=(.//*[text()='My Account'])[2]</MA_BreadCrumb_MyAccount>
+	<MA_MBL_BreadCrumb_MyAccount>xpath=.//a[text()='My Account']</MA_MBL_BreadCrumb_MyAccount>
+	<MA_BreadCrumb_parent>xpath=.//*[text()='My Account']/ancestor::ul</MA_BreadCrumb_parent>
+	<MA_MBL_BreadCrumb_parent>xpath=.//a[text()='My Account']/ancestor::ul</MA_MBL_BreadCrumb_parent>
+	<MA_Cancel_btn>xpath=.//*[contains(@class,'cancel')]</MA_Cancel_btn>
+	<MA_Preference_Email>css=[class='current-email']</MA_Preference_Email>
+	<MA_AddressUsed_AddressLine1>css=[data-slnm-id='userAddress0']</MA_AddressUsed_AddressLine1>
+	<MA_OrderReturn_OrdersNumber>xpath=//*[@data-slnm-id='orderId']</MA_OrderReturn_OrdersNumber>
+	<!-- My Account Mobile -->
+	<MBL_expand_Preference>xpath=.//*[@data-slnm-id='preferences']//i</MBL_expand_Preference>
+	<MBL_EmailID_IOS>Email Address</MBL_EmailID_IOS>
+	<MBL_Password_IOS>Password</MBL_Password_IOS>
+	<MBL_MA_EditPassword>xpath=(.//*[text()='EDIT'])[2]</MBL_MA_EditPassword>
+	<MBL_MA_EditEmail>xpath=(.//*[text()='EDIT'])[1]</MBL_MA_EditEmail>
+	<MA_ProfilePreference_txt_CurrentPassword_IOS>Confirm Current Password</MA_ProfilePreference_txt_CurrentPassword_IOS>
+	<MA_ProfilePreference_txt_NewPassword_IOS>Enter New Password</MA_ProfilePreference_txt_NewPassword_IOS>
+	<MA_ProfilePreference_txt_ConfirmPassword_IOS>Confirm New Password</MA_ProfilePreference_txt_ConfirmPassword_IOS>
+	<MA_ProfilePreference_UpdateEmail_IOS>Update Email Address</MA_ProfilePreference_UpdateEmail_IOS>
+	<MA_ProfilePreference_ConfirmEmail_IOS>Confirm Email Address</MA_ProfilePreference_ConfirmEmail_IOS>
+	<MBL_MA_EmailAddressInUse>css=[class='email-mobile']</MBL_MA_EmailAddressInUse>
+	<MBL_HP_footer_lnk_MyAccount_HamBurger>css=[href='/my-account']</MBL_HP_footer_lnk_MyAccount_HamBurger>
+	<MBL_CardImage>xpath=.//*[contains(@alt,'Card')]</MBL_CardImage>
+	<MBL_MA_ExpirationDaye_Payment_Overlay>xpath=(.//*[@data-slnm-id='cardExpiry0'])[2]</MBL_MA_ExpirationDaye_Payment_Overlay>
+	<MBL_MA_CardNumber_Payment_Overly>xpath=(.//*[@data-slnm-id='cardNumber0'])[2]</MBL_MA_CardNumber_Payment_Overly>
+	<MBL_Save_btn_IOS>Save</MBL_Save_btn_IOS>
+	<MBL_ClearAll_IOS>Clear All</MBL_ClearAll_IOS>
+	<Next_IOS>Next</Next_IOS>
+	<Pervious_IOS>Pervious</Pervious_IOS>
+	<MA_DefaultCard>css=[data-slnm-id='setDefaultCheckbox0']</MA_DefaultCard>
+	<CardName_Master>Payment Section. Card Number. You have entered a MasterCard card.</CardName_Master>
+	<SignUp_FirstName_IOS>First Name</SignUp_FirstName_IOS>
+	<SignUp_LastName_IOS>Last Name</SignUp_LastName_IOS>
+	<SignUp_ConfirmPass_IOS>Confirm Password</SignUp_ConfirmPass_IOS>
+	<Previous>Previous</Previous>
+	
+	<!--  Full Price Site Locators -->
+	
+	<!--  Utility Navigation Locators -->
+	<FP_MB_HamBurger>xpath=//*[@aria-label='open navigation menu' or @aria-label='Open Main Navigation']</FP_MB_HamBurger>
+	<FP_HP_UN_Lnk_StoreLocator>xpath=//*[contains(@href, '/stores.jsp')]</FP_HP_UN_Lnk_StoreLocator>
+	<FP_HP_UN_Lnk_StoreLocator_LG>xpath=//a[@href='https://www.louandgrey.com/stores.jsp']</FP_HP_UN_Lnk_StoreLocator_LG>
+	<FP_HP_UN_Lnk_ShoppingBag>id=my-bag-icon</FP_HP_UN_Lnk_ShoppingBag>
+	<FP_HP_lnk_SignIn>xpath=//*[@class='sign-in hasSub' or contains(@class, 'my-account-header') or @href='/profile/login.jsp']</FP_HP_lnk_SignIn>
+	<FP_HP_UN_Lnk_CreateAccount>xpath=//*[@href='/profile/login.jsp' or text()='Create An Account']</FP_HP_UN_Lnk_CreateAccount>
+	<FP_HP_UN_Lnk_CheckOrderStatus>xpath=//a[@href='/profile/orderStatus.jsp' or text()='Order Status']</FP_HP_UN_Lnk_CheckOrderStatus>
+	<FP_HP_UN_Lnk_OrderStatus>xpath=//a[@href='/profile/orderStatus.jsp']</FP_HP_UN_Lnk_OrderStatus>
+	<FP_SB_Header>xpath=//*[@data-component='Cart']/h1</FP_SB_Header>
+	<FP_SB_Header_LO>xpath=//*[@data-component='Cart']/div/h1</FP_SB_Header_LO>
+	<FP_MBL_SB_Header_LO>xpath=//*[text()='Shopping Bag']</FP_MBL_SB_Header_LO>
+	<FP_HP_Btn_GuestSignIn>xpath=//a[@href='/profile/login.jsp' or @href='/profile/myAccount.jsp']</FP_HP_Btn_GuestSignIn>
+	<FP_MBL_HP_lnk_SignIn>xpath=//a[@href='/profile/login.jsp' or @href='/profile/myAccount.jsp']</FP_MBL_HP_lnk_SignIn>
+	<FP_HP_Lnk_Search>xpath=//*[@id='searchToggleIcon' or @id='search-toggle']</FP_HP_Lnk_Search>
+	<FP_HP_txt_SearchBox>xpath=//input[contains(@class,'typeahead tt-input')]</FP_HP_txt_SearchBox>
+	<FP_MB_SearchBox>xpath=//*[@aria-describedby='header--searchField' or @aria-describedby='searchQuestion--field' or @aria-describedby='search--label']</FP_MB_SearchBox>
+	<FP_HP_lbl_SearchBoxText_ATF>xpath=//*[@id="endeca-search-bar-frame"]/span/div/input</FP_HP_lbl_SearchBoxText_ATF>
+	<FP_HP_lbl_SearchBoxText_LO>xpath=//*[@id="endeca-search-bar-frame"]/span/div/input</FP_HP_lbl_SearchBoxText_LO>
+	<LTGHShipToUSButton_FP>xpath=//input[contains(@value,'SHIP TO THE U.S.')]</LTGHShipToUSButton_FP>
+	<FP_MA_createAccount>xpath=//*[text()='Create An Account']</FP_MA_createAccount>
+	<FP_Country_Selector_India>xpath=//div[@id='country-selector']//img[@alt='ship to IN']</FP_Country_Selector_India>
+	<FP_Wishlist_Utility_Nav>xpath=//*[@href='/profile/wishList.jsp']</FP_Wishlist_Utility_Nav>
+	<FP_OR_btnEditBillingSection>xpath=//a[@aria-label='Edit Billing']</FP_OR_btnEditBillingSection>
+	<FP_OR_lblCardNumber>xpath=//li[@class='cc']/span</FP_OR_lblCardNumber>
+	<FP_HP_Logo>xpath=//*[@class='logo']</FP_HP_Logo>
+	
+	
+	<!-- Header Main Navigation Menu -->
+	<FP_PLP_MainMenuXpath1>//*[@id='main-nav']//*[contains(text(),'</FP_PLP_MainMenuXpath1>
+	<FP_MBL_PLP_MainMenuXpath1>//*[@id='mCSB_1_container']//*[contains(text(),'</FP_MBL_PLP_MainMenuXpath1>
+	<FP_PLP_MainMenuXpath2>')]</FP_PLP_MainMenuXpath2>
+	<FP_PLP_subMenuXpath1>//*[@class='col']//*[contains(text(),'</FP_PLP_subMenuXpath1>
+	<FP_MBL_PLP_subMenuXpath1>//li[@role='presentation']//*[contains(text(),'</FP_MBL_PLP_subMenuXpath1>
+	<FP_PLP_subMenuXpath2>')]</FP_PLP_subMenuXpath2>
+	
+	<!-- PLP Page -->
+	<FP_PLP_PageHeading>xpath=//*[@class='page-title']</FP_PLP_PageHeading>
+	<FP_PLP_TotalFilters>xpath=//fieldset[@role='presentation']/div/span</FP_PLP_TotalFilters>
+	<FP_MBL_PLP_TotalFilters>xpath=//*[@class='slot']//*[contains(@class, 'filter-item')]/legend/div</FP_MBL_PLP_TotalFilters>
+	<FP_PLP_MB_FilterExpand>xpath=//*[@class='filter-wrapper component enabled']//h2[@class='filter-title']</FP_PLP_MB_FilterExpand>
+	<FP_MBL_Filter_Modal_Heading>xpath=//div[@class='overlay-header']/h4</FP_MBL_Filter_Modal_Heading>
+	<FP_PLP_MBL_Filter_Modal_Close>xpath=//*[@class='overlay-header']/a</FP_PLP_MBL_Filter_Modal_Close>
+	<FP_PLP_MoreFilterNames>xpath=//*[@class='more']/div</FP_PLP_MoreFilterNames>
+	<FP_PLP_ColorFilter>xpath=//*[@class='custom-dropdown color']/span</FP_PLP_ColorFilter>
+	<FP_MBL_PLP_ColorFilter>xpath=//*[@class='slot']//*[@data-text-original='Color' or @data-text-original='color']</FP_MBL_PLP_ColorFilter>
+	<FP_PLP_SelectColor_1>.//div[@class='custom-dropdown color active']//i[contains(text(),'</FP_PLP_SelectColor_1>
+	<FP_MBL_PLP_SelectColor_1>//*[@class='slot']//*[@class='filter-item color']//*[starts-with(@aria-label, '</FP_MBL_PLP_SelectColor_1>
+	<FP_PLP_SelectColor_2>')]</FP_PLP_SelectColor_2>
+	<FP_PLP_SelectSize>//*[@class='custom-dropdown size active']/div//*[text()='</FP_PLP_SelectSize>
+	<FP_MBL_PLP_SelectSize>//*[@class='slot']//*[@class='filter-item size']//*[starts-with(@aria-label, '</FP_MBL_PLP_SelectSize>
+	<FP_PLP_SelectSize_2> ']</FP_PLP_SelectSize_2>
+	<FP_MBL_PLP_SelectSize_2>')]</FP_MBL_PLP_SelectSize_2>
+	<FP_PLP_FilterApply>xpath=//*[@data-value='apply']</FP_PLP_FilterApply>
+	<FP_MBL_PLP_FilterApply>xpath=//*[@class='slot']//*[@class='filter-apply']</FP_MBL_PLP_FilterApply>
+	<FP_PLP_productImages>xpath=//div[@class='product-wrap']//img</FP_PLP_productImages>
+	<FP_MBL_PLP_productImages>xpath=//ul[@class='product-list']/li</FP_MBL_PLP_productImages>
+	<FP_PLP_FilterSelected_CrossIcon>xpath=//*[@class='filters-selected']/a[@data-facet]</FP_PLP_FilterSelected_CrossIcon>
+	<FP_PLP_FilterSelected>xpath=//*[@class='filters-selected']/a[@data-facet]</FP_PLP_FilterSelected>
+	<FP_PLP_SizeFilter>xpath=//*[@class='custom-dropdown size']/span</FP_PLP_SizeFilter>
+	<FP_MBL_PLP_SizeFilter>xpath=//*[@class='slot']//*[@data-text-original='Size' or @data-text-original='size']</FP_MBL_PLP_SizeFilter>
+	<FP_PLP_MB_ApplyFilter>xpath=//*[@class='slot']//*[@class='filter-apply']</FP_PLP_MB_ApplyFilter>
+	<FP_PLP_ClearAll>xpath=//*[@class='filters-selected']//*[@class='clear-all']</FP_PLP_ClearAll>
+	<FP_PLP_ProductTallyCircle>xpath=//div[@class='inset']/strong</FP_PLP_ProductTallyCircle>
+	<FP_PLP_shopNow>xpath=//a[@aria-label='Quick Shop' or @class='quick-shop']</FP_PLP_shopNow>
+	<FP_PLP_ProductList>xpath=//ul[@class='columns-2' or @class='columns-3']//div[@class='product-wrap']</FP_PLP_ProductList>
+	<FP_MBL_PLP_ProductList>xpath=//ul[@class='product-list']/li</FP_MBL_PLP_ProductList>
+	<FP_PLP_btn_AddToBag>xpath=//*[@class='add-to-bag' or @value='add to tote']</FP_PLP_btn_AddToBag>
+	<FP_PLP_LeftNavLNK>xpath=//*[@data-component='LeftNavigation']</FP_PLP_LeftNavLNK>
+	<FP_PLP_BackToTop>xpath=//*[@class='go-top active']</FP_PLP_BackToTop>
+	<FP_PLP_SortByFilter>xpath=//div[@class='custom-dropdown sort-by']</FP_PLP_SortByFilter>
+	<FP_PLP_ProductPrice>xpath=.//div[@class='product-wrap']//*[contains(@class,'price')]</FP_PLP_ProductPrice>
+	<FP_PLP_sortByHighToLow>xpath=//li[@aria-label='Sort by price high to low']</FP_PLP_sortByHighToLow>
+	<FP_PLP_sortByLowToHigh>xpath=//li[@aria-label='Sort by price low to high']</FP_PLP_sortByLowToHigh>
+	<FP_PLP_MB_ClearAll>xpath=//*[@class='slot']//*[@class='filter-clear']</FP_PLP_MB_ClearAll>
+	<FP_PLP_Loading_More>xpath=//aside[2]/span/span</FP_PLP_Loading_More>
+	<FP_PLP_Loading_More_LG>xpath=//aside[1]/span/span</FP_PLP_Loading_More_LG>
+	
+	<!-- Home Page Footer Signup Sections -->
+	<FP_HP_footer_txt_emailSignUp>xpath=//input[@id='FooterSignup' or contains(@placeholder,'Your email') or contains(@placeholder,'Sign up for Email Updates')]</FP_HP_footer_txt_emailSignUp>
+	<FP_MBL_HP_footer_txt_emailSignUp>xpath=//input[@class='input-email']</FP_MBL_HP_footer_txt_emailSignUp>
+   
+   
+   
+   	<FP_HP_footer_txt_emailConfirm>xpath=//input[@id='FooterSignupConfirm']</FP_HP_footer_txt_emailConfirm>
+    <FP_HP_EmailSignUp_Join>xpath=//input[@id='FooterSignupGo']</FP_HP_EmailSignUp_Join>
+    <FP_HP_footer_txtname_emailsignup>xpath=//i[contains(@id,'globalfooter')]</FP_HP_footer_txtname_emailsignup>
+	
+	<!-- Home Page Footer Signup Sections Customer Service Sections -->
+	
+	<FP_HP_CCMP_Modal_Close_Button>xpath=//*[@aria-label='Close Overlay']</FP_HP_CCMP_Modal_Close_Button>
+	<FP_HP_footer_lnk_customerService>xpath=//a[@href='/faq ' or @href='/faq' or @href='/customer-service']</FP_HP_footer_lnk_customerService>
+	<FP_HP_Footer_lnk_trackOrder>xpath=//a[contains(@href,'/order')]</FP_HP_Footer_lnk_trackOrder>
+	<FP_HP_Footer_lnk_ReturnsExchanges>xpath=//a[contains(text(),'Exchanges')]</FP_HP_Footer_lnk_ReturnsExchanges>
+	<FP_HP_Footer_lnk_ShippingInfo>xpath=//a[contains(text(),'Information')]</FP_HP_Footer_lnk_ShippingInfo>
+	<FP_HP_Footer_lnk_SizeGuide>xpath=//a[contains(@rev,'Size Guide')]</FP_HP_Footer_lnk_SizeGuide>
+	<FP_HP_Footer_lnk_ContactUS>xpath=//a[contains(text(),'Contact Us')]</FP_HP_Footer_lnk_ContactUS>
+	<FP_HP_Footer_lnk_AboutOurAds>xpath=//a[contains(text(),'About Our Ads')]</FP_HP_Footer_lnk_AboutOurAds>
+		
+			
+	<!-- Home Page Footer Signup Sections Copy Right Section -->
+		
+	<FP_HP_lable_rightReserved>xpath=//*[contains(text(),'©2018 Ann Inc. All Rights Reserved')]</FP_HP_lable_rightReserved>
+	<FP_MBL_HP_lable_rightReserved>xpath=//*[contains(text(),'All Rights Reserved')]</FP_MBL_HP_lable_rightReserved>
+	<FP_HP_Lnk_PrivacyPolicy>xpath=//a[contains(text(),'Privacy Policy')]</FP_HP_Lnk_PrivacyPolicy>
+	<FP_HP_lnk_CaliforniaPolicy>xpath=//a[contains(text(),'California Privacy')]</FP_HP_lnk_CaliforniaPolicy>
+	<FP_HP_lnk_TermsofUse>xpath=//a[contains(text(),'Terms')]</FP_HP_lnk_TermsofUse>
+	<FP_HP_lnk_ResponsiblyAnn>xpath=//a[contains(text(),'Responsibly Ann')]</FP_HP_lnk_ResponsiblyAnn>
+	<FP_HP_lnk_CaliforniaTransparency>xpath=//a[contains(text(),'California Transparency')]</FP_HP_lnk_CaliforniaTransparency>
+	<FP_HP_lnk_corporate_Investors>xpath=//a[contains(text(),'Investors')]</FP_HP_lnk_corporate_Investors>
+	<FP_HP_lnk_SiteMap>xpath=//a[contains(text(),'Site Map')]</FP_HP_lnk_SiteMap>
+	<FP_HP_lnk_ResponsiblyAnn>xpath=//a[contains(text(),'Responsibly Ann')]</FP_HP_lnk_ResponsiblyAnn>
+	<FP_MBL_Link_PrivacyPolicy>xpath=//*[@class='privacy-link']</FP_MBL_Link_PrivacyPolicy>
+	
+	<!-- Home Page Footer Our Company Section -->
+	<FP_Join_ThankYou>xpath=//img[@alt='Manage your Preferences']</FP_Join_ThankYou>
+	<FP_AT_Join_ThankYou>xpath=//table[2]//font</FP_AT_Join_ThankYou>
+	<FP_LG_Join_ThankYou>xpath=//div[@class='FormGM']/table//table[1]//img</FP_LG_Join_ThankYou>
+	
+	<FP_HP_Footer_Cheetah_Modal_FName>xpath=//*[@id='FNAME']</FP_HP_Footer_Cheetah_Modal_FName>
+	<FP_HP_Footer_Cheetah_Modal_LName>xpath=//*[@id='LNAME']</FP_HP_Footer_Cheetah_Modal_LName>
+	<FP_HP_Footer_Cheetah_Modal_Street>xpath=//*[@id='ADDRESS']</FP_HP_Footer_Cheetah_Modal_Street>
+	<FP_HP_Footer_Cheetah_Modal_City>xpath=//*[@id='CITY']</FP_HP_Footer_Cheetah_Modal_City>
+	<FP_HP_Footer_Cheetah_Modal_State>xpath=//*[@id='STATE']</FP_HP_Footer_Cheetah_Modal_State>
+	<FP_HP_Footer_Cheetah_Modal_PinCode>xpath=//*[@id='ZIP' or @id='zip']</FP_HP_Footer_Cheetah_Modal_PinCode>
+	<FP_HP_Footer_Cheetah_Modal_B_Month>xpath=//*[@id='bd0']</FP_HP_Footer_Cheetah_Modal_B_Month>
+	<FP_HP_Footer_Cheetah_Modal_B_Day>xpath=//*[@id='bd1']</FP_HP_Footer_Cheetah_Modal_B_Day>
+	<FP_HP_Footer_Cheetah_Modal_Save_Button>xpath=//*[@id='imageField' or @name='submit']</FP_HP_Footer_Cheetah_Modal_Save_Button>
+	<FP_HP_Footer_Cheetah_Modal_Verification>xpath=//div[2]/a[1]/img</FP_HP_Footer_Cheetah_Modal_Verification>
+	<FP_HP_Footer_Cheetah_Modal_Close_Button>xpath=//a[@aria-label='Close Overlay']</FP_HP_Footer_Cheetah_Modal_Close_Button>
+	
+	<FP_HP_Select_Brand_CheckBox>xpath=//input[@type='image']</FP_HP_Select_Brand_CheckBox>
+	<FP_HP_Close_Brand_Modal>xpath=//a[@aria-label='Close Overlay']</FP_HP_Close_Brand_Modal>
+	<FP_HP_footer_lnk_ourcompany>xpath=//*[contains(text(),'OUR COMPANY')]</FP_HP_footer_lnk_ourcompany>
+	<FP_HP_footer_lnk_corporate>xpath=//a[contains(@rev,'Corporate')]</FP_HP_footer_lnk_corporate>
+	<FP_HP_footer_lnk_careers>xpath=//div[@id='FooterColumn4']//a[contains(@rev,'Careers')]</FP_HP_footer_lnk_careers>
+	<FP_HP_footer_lnk_annCares>xpath=//a[contains(@rev,'Ann Cares')]</FP_HP_footer_lnk_annCares>
+	<FP_HP_footer_lnk_loft>xpath=//div[@id='FooterColumn4']//a[contains(@rev,'LOFT')]</FP_HP_footer_lnk_loft>
+	<FP_HP_footer_lnk_AboutAnnFactory></FP_HP_footer_lnk_AboutAnnFactory>
+	<FP_HP_footer_lnk_anntaylor>xpath=//div[@id='FooterColumn4']//a[contains(@rev,'Ann Taylor')]</FP_HP_footer_lnk_anntaylor>
+		
+	<!-- Home page Footer Store locator sectons  -->
+	<FP_HP_footer_lnk_storelocator>xpath=//footer[@data-component='GlobalFooter']//a[starts-with(@href,'/stores')]</FP_HP_footer_lnk_storelocator>
+	<FP_MBL_HP_footer_lnk_storelocator>xpath=//footer[contains(@class, 'footer-global')]//a[starts-with(@href,'/stores')]</FP_MBL_HP_footer_lnk_storelocator>
+	<FP_HP_CreditCardLOFT>xpath=//a[contains(@alt,'credit card')]</FP_HP_CreditCardLOFT>
+	<FP_HP_MasterCardLOFT>xpath=//a[contains(@alt,'mastercard')]</FP_HP_MasterCardLOFT>
+	
+	<!-- Store locator Page -->
+	<FP_SL_txtZipCode>xpath=//input[@name='address']</FP_SL_txtZipCode>
+	<FP_SL_DistanceDropdown>css=#distanceSelect-span</FP_SL_DistanceDropdown>
+	<FP_SL_DistanceDropdown_Options>//div[@aria-labelledby='distanceSelect-span']//li</FP_SL_DistanceDropdown_Options>
+	<FP_SL_btnSearch>xpath=//input[@value='SEARCH' or @value='Search']</FP_SL_btnSearch>
+	<FP_SL_label_storeResult>xpath=//*[@id='all-stores']//*[@id='num-of-stores']</FP_SL_label_storeResult>
+	<FP_MBL_SL_label_storeResult>id=num-of-stores</FP_MBL_SL_label_storeResult>
+    <FP_SL_tabATF>xpath=//ul[@role='tablist']/li[1]</FP_SL_tabATF>
+    <FP_SL_tabAT>xpath=//ul[@role='tablist']/li[2]</FP_SL_tabAT>
+    <FP_SL_StoreAddress>xpath=//div[@class='left-side' and contains(@aria-labelledby,'store-location-')]</FP_SL_StoreAddress>
+    <FP_MBL_SL_StoreAddress>xpath=//p[contains(@aria-labelledby, 'address_')]</FP_MBL_SL_StoreAddress>
+    <FP_MBL_SL_StoreAddress_LG>xpath=//address[@role='presentation']</FP_MBL_SL_StoreAddress_LG>
+    <FP_SL_StoreDistance>xpath=//*[contains(text(),'GET DIRECTIONS')]</FP_SL_StoreDistance>
+    <FP_MBL_SL_StoreDistance>xpath=//*[@class='miles']</FP_MBL_SL_StoreDistance>
+    <FP_MBL_SL_StoreDistance_LG>xpath=//address[@role='presentation']//strong</FP_MBL_SL_StoreDistance_LG>
+    <FP_SL_StoreOpenStatus>xpath=//span[contains(@class,'open-status')]</FP_SL_StoreOpenStatus>
+    <FP_SL_StoreOpenStatus_LG>xpath=//*[@class='si-hours']/li[1]/strong[1]</FP_SL_StoreOpenStatus_LG>
+    <FP_SL_StoreOpenTimings>xpath=//div[@class='store-hours']//h4</FP_SL_StoreOpenTimings>
+    <FP_MBL_SL_StoreOpenTimings>xpath=//div[@class='store-hours']</FP_MBL_SL_StoreOpenTimings>
+    <FP_MBL_SL_StoreOpenTimings_LG>xpath=//*[@class='si-hours']</FP_MBL_SL_StoreOpenTimings_LG>
+    <FP_SL_btn_viewStoreDetails>xpath=//*[contains(text(),'STORE DETAILS') or contains(text(),'Store Details')]</FP_SL_btn_viewStoreDetails>
+    <FP_FIS_StoreLocator_PickupStore>xpath=//ol[@class='store-list']//li//a[contains(text(),'Pick up in store')]</FP_FIS_StoreLocator_PickupStore>
+
+    
+    
+    <!--  Serach Type ahead  -->
+    <FP_SRP_typeahead_results>xpath=//div[@class='typeahead-results']/p</FP_SRP_typeahead_results>
+    <FP_SRP_typeahead_shopAll>css=a.shop-button</FP_SRP_typeahead_shopAll>
+    
+    <!-- PDP Page -->
+    <FP_PDP_Lnk_ColorSwatch>xpath=//fieldset[@class='colors']</FP_PDP_Lnk_ColorSwatch>
+    <FP_MBL_PDP_Lnk_ColorSwatch>xpath=//*[@class='color-list-container']/label</FP_MBL_PDP_Lnk_ColorSwatch>
+    <FP_PDP_btn_AddToBag>xpath=//*[@value='add to bag' or @value='add to tote']</FP_PDP_btn_AddToBag>
+    <FP_PDP_Lnk_SizeSwatch>xpath=//*[contains(@class, 'size-button')]</FP_PDP_Lnk_SizeSwatch>
+    <FP_PDP_Lnk_MB_SizeSwatch_options>xpath=//select[@id='customizer-sizes']/option</FP_PDP_Lnk_MB_SizeSwatch_options>
+    <FP_PDP_Lnk_MB_SizeSwatch>xpath=//select[contains(@id,'customizer-sizes')]</FP_PDP_Lnk_MB_SizeSwatch>
+    <FP_MBL_SizeSwatch_LG>xpath=//*[@class='sizes']/div/label</FP_MBL_SizeSwatch_LG>
+    <FP_PDPAddToBagNotification>xpath=//*[text()='Checkout Now' or text()='Checkout']</FP_PDPAddToBagNotification> 
+    <FP_FIS_locateStoreBtn>id=pdp-pick-up</FP_FIS_locateStoreBtn>
+    <FP_PDP_continueShopping>xpath=//*[text()='Continue Shopping' or text()='Continue shopping']</FP_PDP_continueShopping>
+    <FP_PDP_priceRange>xpath=//strong[@class='price']</FP_PDP_priceRange>
+    <FP_PDP_btn_FlyoutCheckout>xpath=//*[contains(@class, 'addedToBag')]//*[contains(@class, 'checkout')]</FP_PDP_btn_FlyoutCheckout>
+    <FP_PDP_btn_FlyoutCheckout_LG>xpath=//*[@id='my-bag']//*[contains(@class, 'checkout')]</FP_PDP_btn_FlyoutCheckout_LG>
+    <FP_BV_WriteAReviewLink>xpath=//*[@id='WAR' or text()='  Write a Review ']</FP_BV_WriteAReviewLink>
+    <FP_BV_SelectRating>xpath=.//*[@id='bv-radio-rating-5']/span[1]</FP_BV_SelectRating>
+    <FP_BV_ReviewTitle>xpath=.//*[@id='bv-text-field-title']</FP_BV_ReviewTitle>
+    <FP_BV_Reviews>xpath=.//*[@id='bv-textarea-field-reviewtext']</FP_BV_Reviews>
+    <FP_BV_recommended>xpath=.//*[@id='bv-radio-isrecommended-true-label']</FP_BV_recommended>
+    <FP_BV_nickname>xpath=//*[@id="bv-text-field-usernickname"]</FP_BV_nickname>
+    <FP_BV_wheredoyoulive>xpath=//*[@id="bv-text-field-userlocation"]</FP_BV_wheredoyoulive>
+    <FP_BV_email>xpath=//*[@id="bv-email-field-hostedauthentication_authenticationemail"]</FP_BV_email>
+    <FP_BV_age>xpath=.//*[@id='bv-select-field-contextdatavalue_Age']</FP_BV_age>
+    <FP_BV_style>xpath=//*[@id="bv-select-field-contextdatavalue_Style"]</FP_BV_style>
+    <FP_BV_bodyType>xpath=//*[@id="bv-select-field-contextdatavalue_BodyType"]</FP_BV_bodyType>
+    <FP_BV_height>xpath=//*[@id="bv-select-field-contextdatavalue_HeightFt"]</FP_BV_height>
+    <FP_BV_inches>xpath=//*[@id="bv-select-field-contextdatavalue_HeightIn"]</FP_BV_inches>
+    <FP_BV_firsttimepurchase>xpath=//*[@id='bv-select-field-contextdatavalue_FirstTime']</FP_BV_firsttimepurchase>
+    <FP_BV_reviewsread>xpath=//*[@id='bv-select-field-contextdatavalue_ReadReviews' or @id='bv-select-field-contextdatavalue_ReadReviews_1']</FP_BV_reviewsread>
+    <FP_BV_wheredoyoupurchase>xpath=//*[@id='bv-select-field-contextdatavalue_WhereDidYouPurchase'  or @id='bv-select-field-contextdatavalue_WhereDidYouPurchase_1']</FP_BV_wheredoyoupurchase>
+    <FP_BV_fit>xpath=//*[@id="bv-radio-rating_Fit-3-label"]/span[1]</FP_BV_fit>
+    <FP_BV_recommend>xpath=//*[@id="bv-radio-netpromoterscore-10-label"]</FP_BV_recommend>
+    <FP_BV_termsagree>xpath=//*[@id="bv-checkbox-reviews-termsAndConditions"]</FP_BV_termsagree>
+    <FP_BV_reviewsubmit>xpath=//*[@name="bv-submit-button"]</FP_BV_reviewsubmit>
+    <FP_BV_reviewsubmitconfirmation>xpath=//*[@id="bv-mbox-label-text"]</FP_BV_reviewsubmitconfirmation>
+    <FP_PDPRVSection>xpath=//div[@class='component product-recommendations reflektion-recommendations active'][1]</FP_PDPRVSection>
+   <FP_LO_PDPRVProductImage>xpath=//div[@class='product-details no-sticky component']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]</FP_LO_PDPRVProductImage>
+   <FP_PDPRVHeader>xpath=//div[@class='component product-recommendations reflektion-recommendations active'][1]//h3</FP_PDPRVHeader>
+   <FP_LO_PDPRVProductName>xpath=//div[@class='product-details no-sticky component']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]//strong</FP_LO_PDPRVProductName>
+   <FP_LO_PDPRVProductPrice>xpath=//div[@class='product-details no-sticky component']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]//a[1]//span[@class='price-container']</FP_LO_PDPRVProductPrice>
+    <FP_AT_PDPRVProductImage>xpath=//div[@class='component product-recommendations reflektion-recommendations active']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]</FP_AT_PDPRVProductImage>
+    <FP_PDPRVProductImage>xpath=//div[@class='component product-recommendations reflektion-recommendations active']//li[@aria-hidden='false'][1]</FP_PDPRVProductImage>
+    <FP_AT_PDPRVProductName>xpath=//div[@class='component product-recommendations reflektion-recommendations active']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]//strong</FP_AT_PDPRVProductName>
+    <FP_PDPRVProductName>xpath=//div[@class='component product-recommendations reflektion-recommendations active']//li[@aria-hidden='false'][1]//strong</FP_PDPRVProductName>
+    <FP_AT_PDPRVProductPrice>xpath=//div[@class='component product-recommendations reflektion-recommendations active']/following-sibling::div[1]//*[@class='products']/li[@aria-hidden='false'][1]//a[1]//span[@class='price']</FP_AT_PDPRVProductPrice>
+    <FP_PDPRVProductPrice>xpath=//div[@class='component product-recommendations reflektion-recommendations active']//li[@aria-hidden='false'][1]//a[1]//span[@class='price-container']</FP_PDPRVProductPrice>
+
+   
+    <!--  Shopping bag page -->
+    <FP_SB_ProceedToCheckout>xpath=//a[contains(text(),'proceed to checkout')]</FP_SB_ProceedToCheckout>
+    <FP_SB_Header>xpath=//main[@data-component='Cart']//h1[contains(text(),'Shopping Bag') or contains(text(),'MY BAG')]</FP_SB_Header>
+	<FP_SB_LoginModalGuestEmail>id=modal-email-guest</FP_SB_LoginModalGuestEmail>
+	<FP_MBL_SB_LoginModalGuestEmail>xpath=//*[@class='slot']//*[@id='modal-email-guest']</FP_MBL_SB_LoginModalGuestEmail>
+	<FP_SB_LoginModalGuestContinue>id=modal-continue-button</FP_SB_LoginModalGuestContinue>
+	<FP_SB_SaveForLater_NoItemsMessage>xpath=//p[contains(text(), 'No items have been saved for later.')]</FP_SB_SaveForLater_NoItemsMessage>
+	<FP_SB_SaveForLater_Button>xpath=//a[@class='button-save-later']</FP_SB_SaveForLater_Button>
+	<FP_SB_SaveForLater_MovetoBagButton>xpath=//a[@class='button-move-bag ']</FP_SB_SaveForLater_MovetoBagButton>
+	<FP_SBCheckoutPaypal>css=button[id=paypal-button]</FP_SBCheckoutPaypal>
+	<FP_MBL_SB_LoginModalGuestContinue>xpath=//*[@class='slot']//*[@id='modal-continue-button']</FP_MBL_SB_LoginModalGuestContinue>
+	<FP_SB_LoginModalRegCustmEmail>xpath=//*[@class='slot']//*[@id='modal-email-registered']</FP_SB_LoginModalRegCustmEmail>
+	<FP_SB_LoginModalRegCustmPwd>xpath=//*[@class='slot']//*[@id='modal-password-field']</FP_SB_LoginModalRegCustmPwd>
+	<FP_SB_LoginModalRegisteredSignIn>xpath=//*[@class='slot']//*[contains(@id,'modal-sign')]</FP_SB_LoginModalRegisteredSignIn>
+	<FP_SB_lbl_EmptySBMessage>xpath=//*[@class='my-bag empty']/p</FP_SB_lbl_EmptySBMessage>
+	
+	<FP_SB_PickUpInStoreRadio>xpath=//span[contains(text(),'Pick Up in Store')]</FP_SB_PickUpInStoreRadio>
+	<FP_SB_PickUpInStoreRadio>xpath=//*[@class='change-store']</FP_SB_PickUpInStoreRadio>
+	<FP_OR_ChangeStore>xpath=//*[@class='change-store']</FP_OR_ChangeStore>
+	
+	<FP_PDP_ColorSwatch>xpath=//a[(contains(@class,'color'))]</FP_PDP_ColorSwatch>
+	<FP_PDP_SizeSwatch>xpath=//fieldset[contains(@class,'sizes')]/div/*</FP_PDP_SizeSwatch>
+	
+	
+	<!-- Shipping Page -->
+	<FP_SP_Addr_FirstName>css=input[name=firstName]</FP_SP_Addr_FirstName>
+	<FP_MBL_SP_Addr_FirstName>xpath=//label[@class='first-name']/input</FP_MBL_SP_Addr_FirstName>
+	<FP_SP_Addr_LastName>css=input[name=lastName]</FP_SP_Addr_LastName>
+	<FP_MBL_SP_Addr_LastName>xpath=//label[@class='last-name']/input</FP_MBL_SP_Addr_LastName>
+	<FP_SP_Addr_Addr1>css=input[name=address1]</FP_SP_Addr_Addr1>
+	<FP_MBL_SP_Addr_Addr1>xpath=//label[@class='address1']/input</FP_MBL_SP_Addr_Addr1>
+	<FP_MBL_SP_Addr_POBox>xpath=//label[@class='pobox']</FP_MBL_SP_Addr_POBox>
+	<FP_SP_Addr_Addr2>css=input[name=address2]</FP_SP_Addr_Addr2>
+	<FP_MBL_SP_Addr_Addr2>xpath=//label[@class='address2']/input</FP_MBL_SP_Addr_Addr2>
+	<FP_SP_Addr_Zipcode>css=input[name=zipcode]</FP_SP_Addr_Zipcode>
+	<FP_MBL_SP_Addr_Zipcode>xpath=//label[contains(@class, 'zipcode')]/input</FP_MBL_SP_Addr_Zipcode>
+	<FP_SP_Addr_PhNum>css=input[name=phone]</FP_SP_Addr_PhNum>
+	<FP_MBL_SP_Addr_PhNum>xpath=//label[@class='phone']/input</FP_MBL_SP_Addr_PhNum>
+	<FP_SP_ShippingMethods>xpath=//*[contains(@aria-label,'Shipping method')]</FP_SP_ShippingMethods>
+	<FP_MBL_SP_ShippingMethods_Selected>xpath=//div[@class='selected-option']</FP_MBL_SP_ShippingMethods_Selected>
+	<FP_SP_MBL_ShippingMethodSelected>xpath=//div[@class='selected-option']</FP_SP_MBL_ShippingMethodSelected>
+	<FP_MBL_SP_ShippingMethods>xpath=//*[contains(@class, 'available-options')]/label</FP_MBL_SP_ShippingMethods>
+	<FP_SP_CheckoutContinueToPayment>xpath=//input[@id='shipping-continue']</FP_SP_CheckoutContinueToPayment>
+	<FP_MBL_SP_CheckoutContinueToPayment>id=shipping-continue</FP_MBL_SP_CheckoutContinueToPayment>
+	<FP_SP_ShippingPanel>xpath=//div[contains(@class,'shipping-information component')]</FP_SP_ShippingPanel>
+	<FP_SP_AddressRecommendation_btn_useThis>xpath=//*[@class='recommended-confirm']</FP_SP_AddressRecommendation_btn_useThis>
+	<FP_SP_AddressBook_Tab>xpath=//*[text()='Address Book']</FP_SP_AddressBook_Tab>
+	<FP_SP_AddressBookModal_Addreesses>xpath=//*[@class='slot']//li</FP_SP_AddressBookModal_Addreesses>
+	<FP_SP_AddressBookModal_Continue>xpath=//input[@value='Continue']</FP_SP_AddressBookModal_Continue>
+	<FP_SP_AddressBookModal_Header>xpath=//*[@class='overlay-header']/h1</FP_SP_AddressBookModal_Header>
+	<FP_Payment_btn_EditShipping>xpath=//*[@aria-label='Edit Shipping']</FP_Payment_btn_EditShipping>
+	
+	<!-- Payment Page -->
+	<FP_Payment_btn_OrderReview>id=billing-btn-revieworder</FP_Payment_btn_OrderReview>
+	<FP_MBL_Payment_btn_OrderReview>id=billing-continue</FP_MBL_Payment_btn_OrderReview>
+	<FP_Payment_txt_CVV>xpath=//input[@id='cvvCode']</FP_Payment_txt_CVV>
+	<FP_Payment_txt_CVV_withoutSRFrame>xpath=//input[@id='cvvCode']</FP_Payment_txt_CVV_withoutSRFrame>
+	<FP_Payment_ShippingHandling_Header>xpath=//h2[contains(text(),'Shipping') or contains(text(),'ship to')]</FP_Payment_ShippingHandling_Header>
+	<FP_ShipTo_Header>xpath=//h3[contains(text(),'Ship to')]</FP_ShipTo_Header>
+	<FP_MBL_ShipTo_Header>xpath=//h3[contains(text(),'Ship to')]</FP_MBL_ShipTo_Header>
+	<FP_Payment_ShippingAddress>xpath=//section[@class='summary shipping-summary component']//p[@class='address']</FP_Payment_ShippingAddress>
+	<FP_PaymentMethod_Edit>xpath=//*[@aria-label='Edit Billing']</FP_PaymentMethod_Edit>
+	<FP_PaymentMethod_Edit_LG>xpath=//*[@data-component='PaymentSummary']/p[@class='address']</FP_PaymentMethod_Edit_LG>
+	<FP_PaymentPanel>xpath=//*[@class='payment-method' or @class='payment-information']</FP_PaymentPanel>
+	<FP_Payment_Header>xpath=//div[@class='payment-information']/h2</FP_Payment_Header>
+	<FP_MBL_Payment_Header>xpath=//div[@class='payment-information']/h3</FP_MBL_Payment_Header>
+	<FP_Payment_ShippingHandling_Header>xpath=.//h2[contains(text(),'Shipping')]</FP_Payment_ShippingHandling_Header>
+	<FP_MBL_Payment_ShippingHandling_Header>xpath=//h2[contains(@aria-label, '1. shipping')]</FP_MBL_Payment_ShippingHandling_Header>
+	<FP_Pay_txt_CardNo>id=cardNumber</FP_Pay_txt_CardNo>
+	<FP_Pay_drpdwn_expiryMonth>id=exp_month-span</FP_Pay_drpdwn_expiryMonth>
+	<FP_MBL_Pay_drpdwn_expiryMonth>id=exp_month</FP_MBL_Pay_drpdwn_expiryMonth>
+	<FP_Pay_drpdwn_expiryYear>id=exp_year-span</FP_Pay_drpdwn_expiryYear>
+	<FP_MBL_Pay_drpdwn_expiryYear>id=exp_year</FP_MBL_Pay_drpdwn_expiryYear>
+	<FP_Payment_txt_CVV>id=cvvCode</FP_Payment_txt_CVV>
+	<FP_Paymentiframe>xpath=//iframe[@name='sparkred-iframe']</FP_Paymentiframe>
+	<FP_Pay_tct_CardNo_WithoutSRFrame></FP_Pay_tct_CardNo_WithoutSRFrame>
+	<FP_Pay_expMonthOptions>xpath=//*[contains(@id,'dd-opt-1')]</FP_Pay_expMonthOptions>
+	<FP_MBL_Pay_expMonthOptions>xpath=//*[@id='exp-month-dropdown']//*[contains(@aria-label,'Payment Method, Expiration Month, ')]</FP_MBL_Pay_expMonthOptions>
+	<FP_Pay_expYearOptions>xpath=//*[contains(@id,'dd-opt-2')]</FP_Pay_expYearOptions>
+	<FP_MBL_Pay_expYearOptions>xpath=//*[@id='exp-year-dropdown']//*[contains(@aria-label, 'Payment Method, Expiration Year, ')]</FP_MBL_Pay_expYearOptions>
+	
+	<FP_Payment_Addr_FirstName>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='firstName']</FP_Payment_Addr_FirstName>
+	<FP_Payment_Addr_LastName>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='lastName']</FP_Payment_Addr_LastName>
+	<FP_Payment_Addr_Addr1>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='address1']</FP_Payment_Addr_Addr1>
+	<FP_Payment_Addr_Addr2>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='address2']</FP_Payment_Addr_Addr2>
+	<FP_Payment_Addr_POBox></FP_Payment_Addr_POBox>
+	<FP_Payment_Addr_Zipcode>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='zipcode']</FP_Payment_Addr_Zipcode>
+	<FP_Payment_Addr_City>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='city']</FP_Payment_Addr_City>
+	<FP_Payment_Addr_PhNum>xpath=//form[@id='payment-info-form']//fieldset[@class='address billing-address']//input[@name='phone']</FP_Payment_Addr_PhNum>
+	<FP_AT_Payment_Tax_Heading>xpath=//li[@class='efst-taxes']/div/span</FP_AT_Payment_Tax_Heading>
+	<FP_AT_Payment_Tax_Value>xpath=//li[@class='efst-taxes']/span</FP_AT_Payment_Tax_Value>
+	<FP_AT_Payment_Shipping_Heading>xpath=//div[@arfia-label='Estimate Shipping and Handling']</FP_AT_Payment_Shipping_Heading>
+	<FP_AT_Payment_Shipping_Value>xpath=//li[@clasfs='est-shipping bottom-line']/span</FP_AT_Payment_Shipping_Value>
+
+	<FP_Payment_WalletModal_Header>xpath=//*[@class='overlay-header']/h1</FP_Payment_WalletModal_Header>
+	<FP_Payment_WalletModal_Continue>xpath=//input[@value='Continue']</FP_Payment_WalletModal_Continue>
+	<FP_PaypalRadiobtn>xpath=//*[@class='payment-method-item']</FP_PaypalRadiobtn>
+	<FP_SBCheckoutPaypal>xpath=//*[@class='paypal-button-content']</FP_SBCheckoutPaypal>
+	
+
+	<!-- Order Review Page -->
+	<FP_ShipTo_Header>xpath=//*[contains(text(),'Ship to')]</FP_ShipTo_Header>
+	<FP_Payment_ShippingAddress>xpath=//p[contains(@class,'address')]</FP_Payment_ShippingAddress>
+	<FP_OC_MBL_SelectedShippingMethod>xpath=//p[contains(@class,'shipping')]</FP_OC_MBL_SelectedShippingMethod>
+	<FP_OR_BillTo_Section>xpath=//*[contains(@data-component,'PaymentSummary')]//p[@class='address']</FP_OR_BillTo_Section>
+	<FP_OR_Billto_Adress>xpath=//*[contains(@data-component,'PaymentSummary')]//p[@class='address']</FP_OR_Billto_Adress>
+	<FP_OR_BillTo_AppliedPayment>xpath=//ul[@class='applied-payment']</FP_OR_BillTo_AppliedPayment>
+	<FP_OR_btn_PlaceOrder>xpath=//*[@value='PLACE ORDER']</FP_OR_btn_PlaceOrder>
+	<FP_OR_CreateAcntEmailID>id=emailAddress</FP_OR_CreateAcntEmailID>
+	<FP_MBL_OR_CreateAcntEmailID>xpath=//input[@aria-describedby='reviewStep--email']</FP_MBL_OR_CreateAcntEmailID>
+	<FP_OR_CreateAcntPassword>id=registerPassword</FP_OR_CreateAcntPassword>
+	<FP_MBL_OR_CreateAcntPassword>xpath=//input[@aria-describedby='reviewStep--registerPassword']</FP_MBL_OR_CreateAcntPassword>
+	<FP_OR_CreateAcntConfirmPassword>xpath=//*[@name='confirmPassword']</FP_OR_CreateAcntConfirmPassword>
+	<FP_MBL_OR_CreateAcntConfirmPassword>xpath=//input[@aria-describedby='reviewStep--confirmPassword']</FP_MBL_OR_CreateAcntConfirmPassword>
+	<FP_OR_btnAddNewBillingSection>xpath=//*[@aria-label='Add New Billing' or @data-slnm-id='PaymentAddButton']</FP_OR_btnAddNewBillingSection>
+	<FP_OR_btnEditShippingSection>xpath=//*[@aria-label='Edit Shipping']</FP_OR_btnEditShippingSection>
+	<FP_OR_ShippingAddressOrderReview>xpath=//*[@data-component='ShippingSummary']//*[@class='address']</FP_OR_ShippingAddressOrderReview>
+	<FP_OR_btnAddShippingSection>xpath=//*[@aria-label='Add New Shipping']</FP_OR_btnAddShippingSection>
+	
+	
+	<!--  My Account Locators -->
+	<FP_MA_Signup_Fname>xpath=//*[@id='firstName' or @class='first-name']</FP_MA_Signup_Fname>
+	<FP_MA_signup_Lname>xpath=//*[@name='lastName']</FP_MA_signup_Lname>
+	<FP_MB_MA_signup_Lname>xpath=//*[@class='last-name']</FP_MB_MA_signup_Lname>
+	<FP_MA_Signup_Email>xpath=//*[@aria-describedby='login--signUpEmailAddress' or @aria-describedby='loginSignUp--email']</FP_MA_Signup_Email>
+	<FP_MA_Signup_pwd>xpath=//*[@id='password' or @class='password']</FP_MA_Signup_pwd>
+	<FP_MA_Signup_Confrm_pwd>xpath=//*[@name='confirmPassword' or @class='conf-password']</FP_MA_Signup_Confrm_pwd>
+	<FP_MBL_MA_Signup_Confrm_pwd>xpath=//*[@class='existing-account-form-content']//*[@class='conf-password']</FP_MBL_MA_Signup_Confrm_pwd>
+	<FP_MA_Signup_revEmail>xpath=//*[@class='custom-checkbox']</FP_MA_Signup_revEmail>
+	<FP_MA_Signup_btn>xpath=//*[contains(@class, 'existing-account')]//*[@class='submit' or @id='signup-submit']</FP_MA_Signup_btn>
+	<FP_Login_txt_email>xpath=//input[@aria-describedby='login--signInEmailAddress' or @id='email']</FP_Login_txt_email>
+	<FP_Login_txt_password>xpath=//*[@id='login-password' or @aria-labelledby='login--signInPassword']</FP_Login_txt_password>
+	<FP_Login_btn_SignIn>id=login-submit</FP_Login_btn_SignIn>
+	
+	
+	<!--  Wishlist Locators My Account  -->
+	<FP_WishList_MainNav>xpath=//a[contains(@href, 'wishList.jsp')]</FP_WishList_MainNav>
+	<FP_MBL_WishList_MainNav>xpath=//a[contains(@href, 'wishList.jsp')]</FP_MBL_WishList_MainNav>
+	<FP_MBL_WishList_MainNav>xpath=//*[contains(@class, 'global-header')]//*[contains(@href, 'wishList.jsp')]</FP_MBL_WishList_MainNav>
+	<FP_WishList_Empty_Msg>xpath=//*[@class='hidden-recommendations']/p</FP_WishList_Empty_Msg>
+	<FP_WishList_Header>xpath=//*[contains(@class, 'wishlist-page component')]</FP_WishList_Header>
+	<FP_WishList_Remove>xpath=//*[@class='buttons-box']/a[@class='remove']</FP_WishList_Remove>
+	
+	<!--  Wishlist Locators PDP  -->
+	<FP_Add_To_WishList>xpath=//*[@class='wishlist-add']</FP_Add_To_WishList>
+	<FP_WishList_Added_Msg>xpath=//*[@class='wishlist-add mouse-focus added']</FP_WishList_Added_Msg>
+	<FP_WishList_Modal_Msg>xpath=//*[@class='modal-view-wishlist']</FP_WishList_Modal_Msg>
+	
+	
+	<!-- My Account Address Book Locators -->
+	<FP_MA_AddressBook_lnk>xpath=//*[text()='Address Book' or @aria-label='Address Book']</FP_MA_AddressBook_lnk>
+	<FP_MBL_MA_AddressBook_lnk>ab-tab</FP_MBL_MA_AddressBook_lnk>
+	<FP_MA_AddressBookHeader>xpath=//*[@class='address-book component']/header/h2</FP_MA_AddressBookHeader>
+	<FP_MA_AddressBookAddNew>xpath=//*[@id='my-account-address-book']//*[text()='Add New']</FP_MA_AddressBookAddNew>
+	<FP_MBL_MA_AddressBookAddNew>xpath=//*[@aria-label='add new address']</FP_MBL_MA_AddressBookAddNew>
+	<FP_MA_AddressBookModalHeader>xpath=//*[@class='overlay-header']</FP_MA_AddressBookModalHeader>
+	<FP_MA_Address_fname>id=shipping-first-name</FP_MA_Address_fname>
+	<FP_MBL_MA_Address_fname>xpath=//*[@class='slot']//*[@id='shipping-first-name']</FP_MBL_MA_Address_fname>
+	<FP_MA_Address_Lname>id=shipping-last-name</FP_MA_Address_Lname>
+	<FP_MBL_MA_Address_Lname>xpath=//*[@class='slot']//*[@id='shipping-last-name']</FP_MBL_MA_Address_Lname>
+	<FP_MA_Address_Addr1>id=shipping-address-1</FP_MA_Address_Addr1>
+	<FP_MBL_MA_Address_Addr1>xpath=//*[@class='slot']//*[@id='shipping-address-1']</FP_MBL_MA_Address_Addr1>
+	<FP_MA_Address_Addr2>xpath=//*[@name='address2']</FP_MA_Address_Addr2>
+	<FP_MA_Address_zip>id=shipping-zip-code</FP_MA_Address_zip>
+	<FP_MBL_MA_Address_zip>xpath=//*[@class='slot']//*[@id='shipping-zip-code']</FP_MBL_MA_Address_zip>
+	<FP_MA_Address_city>id=locality</FP_MA_Address_city>
+	<FP_MBL_MA_Address_city>xpath=//*[@class='slot']//*[@id='locality']</FP_MBL_MA_Address_city>
+	<FP_MA_Address_state>id=dd-label-1</FP_MA_Address_state>
+	<FP_MA_Address_phn>xpath=//input[@name='phone']</FP_MA_Address_phn>
+	<FP_MBL_MA_Address_phn>xpath=//*[@class='slot']//*[@aria-describedby='addEditAddress--phoneNumber']</FP_MBL_MA_Address_phn>
+	<FP_MA_Address_save_btn>xpath=//form[@class='address-book']//div[@class='submit']</FP_MA_Address_save_btn>
+	<FP_MBL_MA_Address_save_btn>xpath=//*[@class='slot']//*[@value='save']</FP_MBL_MA_Address_save_btn>
+	<FP_MA_Address_remove_btn>xpath=//li[@class='item']//*[@class='remove']</FP_MA_Address_remove_btn>
+	<FP_MA_Address_remove_confirm_btn>xpath=//div[@class='remove-address']//*[@class='remove-confirm']</FP_MA_Address_remove_confirm_btn>
+	<FP_MBL_MA_Address_remove_confirm_btn>xpath=//*[contains(@class, 'remove-address-notification active')]//*[contains(text(),'Yes')]</FP_MBL_MA_Address_remove_confirm_btn>
+	<FP_MA_CloseButton>xpath=//div[@class='overlay-header']/a[@class='close']</FP_MA_CloseButton>
+	<FP_MA_Address_edit_btn>xpath=//li[@class='item']//*[@class='edit']</FP_MA_Address_edit_btn>
+	<FP_MA_AddressBookModalEditHeader>xpath=//*[text()='EDIT ADDRESS']</FP_MA_AddressBookModalEditHeader>
+	<FP_MBL_MA_AddressBookModalEditHeader>xpath=//*[@class='overlay-header']/*[text()='Edit address']</FP_MBL_MA_AddressBookModalEditHeader>
+	<FP_MA_AddAddress_City_Header>xpath=//form[@class='address-book']//span[text()='City']</FP_MA_AddAddress_City_Header>
+	<FP_MBL_MA_AddAddress_City_Header>xpath=//*[contains(@class, 'city placeholder')]/span[text()='City']</FP_MBL_MA_AddAddress_City_Header>
+	<FP_MA_Header>xpath=//*[contains(@class, 'my-account dashboard')]/h1</FP_MA_Header>
+	<FP_MBL_MA_Sign_In_Account_Tab>xpath=//button[text()='Sign in']</FP_MBL_MA_Sign_In_Account_Tab>
+	
+	<!-- My Account Payment / Wallet Locators -->
+	<FP_MA_PaymentsMethod_header>xpath=//h2[text()='My Payment Methods']</FP_MA_PaymentsMethod_header>
+	<FP_MA_PaymentsMethod_headerLO>xpath=//h2[text()='Wallet']</FP_MA_PaymentsMethod_headerLO>
+	<FP_MA_paymentMethod_addnew>xpath=//*[@id='wallet']//*[contains(text(), 'Add New')]</FP_MA_paymentMethod_addnew>
+	<FP_MBL_MA_paymentMethod_addnew>xpath=//*[@aria-label='add new payment']</FP_MBL_MA_paymentMethod_addnew>
+	<FP_MA_paymentMethod_addnewLO>xpath=//*[@id='wallet']//*[contains(text(), 'Add New')]</FP_MA_paymentMethod_addnewLO>
+	<FP_MA_billing_edit_btn>xpath=//li[@class='item checked']/button[@class='edit']</FP_MA_billing_edit_btn>
+	<FP_MBL_MA_billing_edit_btn>xpath=//*[@id='pm-tab-contents']//*[@class='edit']</FP_MBL_MA_billing_edit_btn>
+	<FP_MA_billingInfo_save_btn>id=billing-btn-revieworder</FP_MA_billingInfo_save_btn>
+	<FP_MA_billingInfo_city>id=billingCity</FP_MA_billingInfo_city>
+	<FP_MBL_MA_billingInfo_save_btn>id=billing-continue</FP_MBL_MA_billingInfo_save_btn>
+	<FP_MA_billing_remove_btn>xpath=//*[contains(@aria-label,'remove')]</FP_MA_billing_remove_btn>
+	<FP_MBL_MA_billing_remove_btn>xpath=//*[contains(@aria-label,'remove')]</FP_MBL_MA_billing_remove_btn>
+	<FP_MA_CardType_Payment>xpath=//span[@class='cardType']</FP_MA_CardType_Payment>
+	<FP_MA_billing_remove_confirm_btn>xpath=//div[@class='remove-btn-wrapper']/div[@class='submit']/input</FP_MA_billing_remove_confirm_btn>
+	<FP_MBL_MA_billing_remove_confirm_btn>xpath=//*[@id='remove-wallet-notification']//*[contains(text(),'Yes')]</FP_MBL_MA_billing_remove_confirm_btn>
+	<FP_MA_PaymentsMethod>xpath=//*[contains(@class, 'my-account-navigation')]/a[text()='Payment Methods']</FP_MA_PaymentsMethod>
+	<FP_MBL_MA_PaymentsMethod>pm-tab</FP_MBL_MA_PaymentsMethod>
+	<FP_MA_Wallet_LO>xpath=//*[contains(@class, 'my-account-navigation')]/a[text()='Wallet']</FP_MA_Wallet_LO>
+	<FP_MA_Wallet_LG>xpath=//*[contains(@class, 'my-account-navigation')]/a[@aria-label='Billing Info']</FP_MA_Wallet_LG>
+	<FP_MA_billingInfo_fname>id=billingFirstName</FP_MA_billingInfo_fname>
+	<FP_MA_billingInfo_Lname>id=billingLastName</FP_MA_billingInfo_Lname>
+	<FP_MA_billingInfo_Addr1>id=billingAddress</FP_MA_billingInfo_Addr1>
+	<FP_MA_billingInfo_zip>id=billingZip</FP_MA_billingInfo_zip>
+	<FP_MA_billingInfo_phn>id=billingPhone</FP_MA_billingInfo_phn>
+	<FP_MA_Pay_drpdwn_expiryMonth>id=exp_month-span</FP_MA_Pay_drpdwn_expiryMonth>
+	<FP_Pay_drpdwn_expiryYear>id=exp_year-span</FP_Pay_drpdwn_expiryYear>
+	<FP_MA_Pay_drpdwn_expiryYear>id=dd-optns-2</FP_MA_Pay_drpdwn_expiryYear>
+	<FP_Payment_wallet_tab>xpath=//*[contains(text(), 'Wallet')]</FP_Payment_wallet_tab>
+	<FP_Payment_WalletModal_Cards>xpath=//*[@class='address-book wallet']//label[@class='select']</FP_Payment_WalletModal_Cards>
+	
+	
+	<!-- GIft card Page -->
+	<FP_GC_Link_footer>xpath=//*[@class='footerHover']//*[text()='GIFT CARDS']</FP_GC_Link_footer>
+	<FP_GC_applybtn_footer>xpath=//*[contains(@href, 'store-giftcards.jsp')]</FP_GC_applybtn_footer> 
+	<FP_GC_Product_Price>xpath=//fieldset[@class='sizes prices']/div/label</FP_GC_Product_Price>
+	<FP_GC_Recepient_To>xpath=//*[@name='gcTo']</FP_GC_Recepient_To>
+	<FP_GC_Recepient_From>xpath=//*[@name='gcFrom']</FP_GC_Recepient_From>
+	<FP_GC_Recepient_Message>xpath=//*[@name='gcMessage']</FP_GC_Recepient_Message>
+	<FP_GC_SB_Remove>xpath=//*[@class='remove']</FP_GC_SB_Remove>
+	
+	<!-- FIS Search Page -->
+	<FP_FIS_Enter_ZipCode>xpath=//input[@name='address']</FP_FIS_Enter_ZipCode>
+	<FP_FIS_findInStoreBtn>xpath=//input[@value='SEARCH' or @value='Search']</FP_FIS_findInStoreBtn>
+	<FP_FIS_StoreResult>xpath=//div[@class='results-confirmation active']//span</FP_FIS_StoreResult>
+	<FP_FIS_GetDirections>xpath=//*[@class='store-list']//*[contains(text(), 'Get Directions')]</FP_FIS_GetDirections>
+	<FP_FIS_distance_dropdown>css=#distanceSelect-span</FP_FIS_distance_dropdown>
+	<FP_MBL_FIS_distance_dropdown>id=distance</FP_MBL_FIS_distance_dropdown>
+	<FP_FIS_distanceValue_Mbl>xpath=//option[contains(text(),'Miles') or contains(text(),'miles')]</FP_FIS_distanceValue_Mbl>
+	<FP_FIS_distance>xpath=//div[@aria-labelledby='distanceSelect-span']//li</FP_FIS_distance>
+	<FP_FIS_closeFIS>xpath=//div[contains(@class,'pick-up-in-store-overlay')]//a[@class='close']</FP_FIS_closeFIS>
+	<FP_FIS_See_More_Details>xpath=//*[@class='see-more js-more-details']</FP_FIS_See_More_Details>
+	<FP_FIS_Show_Less>xpath=//*[@class='see-more js-more-details less']</FP_FIS_Show_Less>
+	<FP_SB_btn_Remove>xpath=//*[contains(@class,'remove sfl')]</FP_SB_btn_Remove>
+	<FP_SB_ShoppingBagItems>xpath=//*[@class='cartItem']//ancestor::li</FP_SB_ShoppingBagItems>
+	<FP_SB_btn_Edit>xpath=//*[contains(@class,'edit sfl')]</FP_SB_btn_Edit>
+	<FP_SB_edit_drpdwn_qty>id=quantity0-span</FP_SB_edit_drpdwn_qty>
+	<SBQtySelect>xpath=//*[contains(@data-slnm-id,'editCartQuantity-0-SelectBoxOption')]</SBQtySelect>
+	<FP_SB_btn_saveEdit>xpath=//*[@class='customizer cart-customizer']//*[contains(@class, 'submit')]</FP_SB_btn_saveEdit>
+	<FP_SB_SR_btn>id=srd_XC</FP_SB_SR_btn>
+	<FP_SB_MP_btn>xpath=//*[contains(@class,'masterpass-checkout')]</FP_SB_MP_btn>
+	<FP_SR_logo>id=sr_header_logo</FP_SR_logo>
+	<FP_MP_logo>xpath=//*[contains(@class,'img-header-brand')]</FP_MP_logo>
+	<FP_SP_shippingmethods>xpath=//fieldset[@class='shipping-method active']/label/strong</FP_SP_shippingmethods>
+	<FP_SP_Addr_POBox>id=pobox</FP_SP_Addr_POBox>
+	<FP_MA_dashboard_profile_preference_lnk>xpath=//*[contains(text(), 'Profile')]</FP_MA_dashboard_profile_preference_lnk>
+	<FP_MBL_MA_EditPassword>xpath=//*[@aria-label='edit password']</FP_MBL_MA_EditPassword>
+	<FP_MA_ProfilePreference_btn_SavePassword>xpath=//*[@id='password-edit-mode']//*[contains(@class, 'submit')]</FP_MA_ProfilePreference_btn_SavePassword>
+	<FP_MA_NoCardPresentTxt>xpath=//*[@class='cc empty']/p</FP_MA_NoCardPresentTxt>
+	<FP_MA_ProfilePreference_EditPassword>xpath=//*[@class='edit-email-password']</FP_MA_ProfilePreference_EditPassword>
+	<FP_MA_ProfilePreference_txt_CurrentPassword>xpath=//*[@class='current-password']/input</FP_MA_ProfilePreference_txt_CurrentPassword>
+	<FP_MA_ProfilePreference_txt_NewPassword>xpath=//*[@class='new-password']/input</FP_MA_ProfilePreference_txt_NewPassword>
+	<FP_MA_ProfilePreference_txt_ConfirmPassword>xpath=//*[@class='confirm-new-password']/input</FP_MA_ProfilePreference_txt_ConfirmPassword>
+	<FP_MA_SignOut>xpath=//*[@class='logout']</FP_MA_SignOut>
+	<FP_MA_Signin_Email>xpath=//*[@id='email']</FP_MA_Signin_Email>
+	<FP_MA_Signin_Pwd>xpath=//*[@id='login-password']</FP_MA_Signin_Pwd>
+	<FP_MA_Signin_btn>xpath=//*[@id='login-submit']</FP_MA_Signin_btn>
+	
+	
+	<!-- Mobile -->
+	<!-- Store Locatorr -->
+	<FP_MBL_HP_storelocater>xpath=//*[contains(@aria-label,'Store Locator')]</FP_MBL_HP_storelocater>
+	<FP_SL_errorMsg_nozipCode>xpath=//*[contains(text(),'current location')]</FP_SL_errorMsg_nozipCode>
+	<FP_MBL_HP_footer_lnk_customerService>xpath=//footer[@data-component='Footer']//a[@href='/customer-service' or @href='/faq']</FP_MBL_HP_footer_lnk_customerService>
+	<FP_SL_numberOfStore_Mbl>xpath=//*[@class='count']/strong</FP_SL_numberOfStore_Mbl>
+	<FP_MBL_SL_StoreOpenTimings>xpath=//*[@class='store-hours']</FP_MBL_SL_StoreOpenTimings>
+	<FP_SL_firstStoreAddressLine1>xpath=//*[@aria-labelledby='address_1']</FP_SL_firstStoreAddressLine1>
+	
+</Factory>	
+</Category> 

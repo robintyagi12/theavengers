@@ -1,0 +1,23 @@
+{
+	"_***********": "********************************************************************************",
+	"_Comment": "Browser Type - GOOGLE_CHROME (Chrome) | MOZILLA_FIREFOX (FF) | MICROSOFT_IE (IE)",
+    "browser": "GOOGLE_CHROME",
+    "browserHeadlessMode": "disable",
+	"device": "desktop",
+	"remoteLevel": "LOCAL",
+	"implicitWait": 10,
+	"_************": "********************************************************************************",
+    "EmailID": "robin.accept.qa@gmail.com",
+    "Password": "sapient@123",
+    "browserName": "firefox",
+	"build": "FastForward",
+	"extentreportpath":"D:/photon-workspace/TheOptimusPrime/configs/extent-config.xml",
+	"ignoreProtectedModeSettings": true,
+    "Address": [
+        "FirstName",
+        "LastName",
+        "Line1Address",
+        "ZipCode",
+        "PhoneNo"
+    ]
+}

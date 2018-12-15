@@ -1,0 +1,5 @@
+INFO  | 2018-12-15 18:09:34 | [main] stepDefinitions.Hooks (Hooks.java:17) - ***** FEATURE FILE :-- +Placeholder.getInstance().getFeatureFileName(scenario)+ --: *****
+INFO  | 2018-12-15 18:09:34 | [main] stepDefinitions.Hooks (Hooks.java:18) - ***** Scenario Started :-- Add/Edit Shipping Address from Order Review Page as Reg User --: *****
+INFO  | 2018-12-15 18:10:04 | [main] utilities.Placeholder (Placeholder.java:120) - Chrome Browser Launched on : WINDOWS 7 | Downloaded Version : 72.0.3626.7
+ERROR | 2018-12-15 18:11:54 | [main] stepDefinitions.AddEditOrdRevShipAdd (AddEditOrdRevShipAdd.java:56) - | Order Review: Billing Payment Method not Display
+ERROR | 2018-12-15 18:12:29 | [main] stepDefinitions.Hooks (Hooks.java:29) - ***** Scenario Completed : Add/Edit Shipping Address from Order Review Page as Reg User, Test Case is -> failed *****

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Properties>
+        <Property name="basePath">../TheOptimusPrime/log</Property>
+    </Properties>
+    <Appenders>
+        <!-- File Appender -->
+        <File name="FILE" fileName="${basePath}/ApplicationLevel.log" append="false">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" />
+        </File>
+<!--         <File name="SYSTEMFILE" fileName="${basePath}/SystemLevel.log" append="false"> -->
+<!--             <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" /> -->
+<!--         </File> -->
+<!--          <File name="TESTFILE" fileName="${basePath}/FailedTestCases.log" append="false"> -->
+<!--             <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" /> -->
+<!--         </File> -->
+<!--         Console Appender -->
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d [%t] %-5level: %msg%n%throwable}{FATAL=bright magenta, ERROR=bright red, WARN=bright blue, INFO=bright black, DEBUG=bright green, TRACE=bright blue}" />
+        </Console>
+    </Appenders>
+    <Loggers>
+    
+<!--     <Logger name="com.ann.automation.utilities" level="debug"> -->
+<!--       <AppenderRef ref="SYSTEMFILE"/> -->
+<!--     </Logger> -->
+<!--         <Logger name="com.ann.automation.tests.desktop.stepDefinitions" level="trace" /> -->
+        <Root level="debug">
+<!--             <AppenderRef ref="STDOUT" level="error" /> -->
+            <AppenderRef ref="FILE" />
+<!--             <AppenderRef ref="SYSTEMFILE" level="debug"/> -->
+<!--             <AppenderRef ref="TESTFILE" level="error"/> -->
+        </Root>
+    </Loggers>
+</Configuration>
